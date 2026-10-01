@@ -1,0 +1,50 @@
+{
+  "scope": "jsdom logic regression; not browser layout, timing, screen reader or real key event certification",
+  "results": [
+    {
+      "name": "Japanese keyword and city select identify the pottery sample",
+      "status": "PASS"
+    },
+    {
+      "name": "URL state restores genre and accessibility selection",
+      "status": "PASS"
+    },
+    {
+      "name": "Unknown select values in a URL do not silently remove all results",
+      "status": "PASS"
+    },
+    {
+      "name": "Reset restores four results and focuses the keyword input",
+      "status": "PASS"
+    },
+    {
+      "name": "Multiple keyword terms use a conjunctive search and input stays plain text",
+      "status": "PASS"
+    },
+    {
+      "name": "Mobile disclosure opens, Escape closes, and focus returns to the trigger",
+      "status": "PASS"
+    },
+    {
+      "name": "Returning from mobile to desktop leaves the navigation visible",
+      "status": "PASS"
+    },
+    {
+      "name": "Details stay consistent for each selected sample and unknown IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Poster direction persists through search and detail navigation",
+      "status": "PASS"
+    },
+    {
+      "name": "No JavaScript HTML keeps four sample events and complete default details",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline bundle initializes each page and injects assets without external requests",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,313 @@
+{
+  "scope": "D2 static checks; browser layout, screen reader, real keyboard, CWV and user testing are not certified",
+  "pages": [
+    {
+      "page": "design-lab/components.html",
+      "h1": 1,
+      "images": 1,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/documents.html",
+      "h1": 1,
+      "images": 1,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/event-detail.html",
+      "h1": 1,
+      "images": 2,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/event-search.html",
+      "h1": 1,
+      "images": 5,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/home-a.html",
+      "h1": 1,
+      "images": 10,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/home-b.html",
+      "h1": 1,
+      "images": 10,
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "page": "design-lab/index.html",
+      "h1": 1,
+      "images": 2,
+      "status": "PASS",
+      "issues": []
+    }
+  ],
+  "contrasts": [
+    {
+      "direction": "editorial",
+      "foreground": "ink",
+      "background": "page",
+      "ratio": 11.158,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "muted",
+      "background": "page",
+      "ratio": 5.712,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "muted",
+      "background": "wash",
+      "ratio": 5.224,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "accent",
+      "background": "page",
+      "ratio": 4.745,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "white",
+      "background": "ink",
+      "ratio": 12.256,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "white",
+      "background": "accent",
+      "ratio": 5.212,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "control-line",
+      "background": "surface",
+      "ratio": 4.203,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "editorial",
+      "foreground": "focus",
+      "background": "page",
+      "ratio": 5.126,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "ink",
+      "background": "page",
+      "ratio": 10.55,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "muted",
+      "background": "page",
+      "ratio": 5.6,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "muted",
+      "background": "wash",
+      "ratio": 4.936,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "accent",
+      "background": "page",
+      "ratio": 5.723,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "white",
+      "background": "ink",
+      "ratio": 11.821,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "white",
+      "background": "accent",
+      "ratio": 6.412,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "control-line",
+      "background": "surface",
+      "ratio": 4.203,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "poster",
+      "foreground": "focus",
+      "background": "page",
+      "ratio": 5.025,
+      "minimum": 3,
+      "status": "PASS"
+    }
+  ],
+  "css_checks": {
+    "reduced_motion_override": true,
+    "visible_focus_style": true,
+    "hidden_attribute_respected": true,
+    "minimum_control_height": true,
+    "mobile_layout_rule": true
+  },
+  "asset_hashes": [
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-latin.woff2",
+      "status": "PASS"
+    }
+  ],
+  "mobile_asset_budgets": [
+    {
+      "page": "home-a.html",
+      "condition": "320–390 CSS px / DPR 1 / hero+inset 480w / uncompressed transfer upper estimate",
+      "bytes": 339937,
+      "limit_bytes": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "home-b.html",
+      "condition": "320–390 CSS px / DPR 1 / hero+inset 480w / uncompressed transfer upper estimate",
+      "bytes": 330193,
+      "limit_bytes": 500000,
+      "status": "PASS"
+    }
+  ],
+  "offline_review_scripts": [
+    {
+      "script": 0,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "issues": []
+}

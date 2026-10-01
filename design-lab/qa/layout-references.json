@@ -1,0 +1,72 @@
+[
+  {
+    "file": "home-a.html",
+    "width": 1440,
+    "height": 1000,
+    "output": "design-lab/qa/layout-home-a-desktop.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "home-a.html",
+    "width": 390,
+    "height": 1200,
+    "output": "design-lab/qa/layout-home-a-mobile.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "home-b.html",
+    "width": 1440,
+    "height": 1000,
+    "output": "design-lab/qa/layout-home-b-desktop.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "home-b.html",
+    "width": 390,
+    "height": 1200,
+    "output": "design-lab/qa/layout-home-b-mobile.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "event-search.html",
+    "width": 1440,
+    "height": 1000,
+    "output": "design-lab/qa/layout-event-search-desktop.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "event-search.html",
+    "width": 390,
+    "height": 1200,
+    "output": "design-lab/qa/layout-event-search-mobile.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "event-detail.html",
+    "width": 1440,
+    "height": 1000,
+    "output": "design-lab/qa/layout-event-detail-desktop.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "event-detail.html",
+    "width": 390,
+    "height": 1200,
+    "output": "design-lab/qa/layout-event-detail-mobile.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "documents.html",
+    "width": 1440,
+    "height": 1000,
+    "output": "design-lab/qa/layout-documents-desktop.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  },
+  {
+    "file": "documents.html",
+    "width": 390,
+    "height": 1200,
+    "output": "design-lab/qa/layout-documents-mobile.png",
+    "renderer": "WeasyPrint 70 static reference; not Chromium"
+  }
+]

@@ -1,0 +1,6 @@
+Pillow==12.3.0
+fonttools[woff]==4.61.1
+brotli==1.2.0
+WeasyPrint==70.0
+PyMuPDF==1.26.6
+tinycss2==1.5.1

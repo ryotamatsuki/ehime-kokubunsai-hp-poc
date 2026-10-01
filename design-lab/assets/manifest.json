@@ -1,0 +1,225 @@
+{
+  "version": "2.0.0-alpha.2",
+  "photos": [
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-480.webp",
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "source_sha256": "18c62fa79971080f39cabd135aea5d36ac3ea53e842fc6a6c276b48e74594961",
+      "width": 480,
+      "height": 270,
+      "bytes": 23676,
+      "sha256": "340ab0110c0811069440e857ef7297a5538c10cafde98f0f6e486b67374406ca"
+    },
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-960.webp",
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "source_sha256": "18c62fa79971080f39cabd135aea5d36ac3ea53e842fc6a6c276b48e74594961",
+      "width": 960,
+      "height": 540,
+      "bytes": 74852,
+      "sha256": "ff40559750fc82537aa46641d2e9fe7a1b0f0ce00f78a11caeebdabedb3558d9"
+    },
+    {
+      "path": "design-lab/assets/photos/hero-ehime-culture-festival-1440.webp",
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "source_sha256": "18c62fa79971080f39cabd135aea5d36ac3ea53e842fc6a6c276b48e74594961",
+      "width": 1440,
+      "height": 810,
+      "bytes": 134454,
+      "sha256": "23d02c387c669207d542de46e0494b060c92fbf0aa4aac75ec67773a5101cd54"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-480.webp",
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "source_sha256": "043d679ff14739e4c718fe999a5034021b00485ba5aa3cf319476835b68e3862",
+      "width": 480,
+      "height": 270,
+      "bytes": 28832,
+      "sha256": "5a608c19a5a26bb0a04a0d16786e8c4347e21a69393eadb5312fa6c3786df40e"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-960.webp",
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "source_sha256": "043d679ff14739e4c718fe999a5034021b00485ba5aa3cf319476835b68e3862",
+      "width": 960,
+      "height": 540,
+      "bytes": 68452,
+      "sha256": "3b72ae10ee5f542a9b52251f42219c0114a099a50aef0a5e68e12f6e52c85b77"
+    },
+    {
+      "path": "design-lab/assets/photos/tobe-ceramics-workshop-1440.webp",
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "source_sha256": "043d679ff14739e4c718fe999a5034021b00485ba5aa3cf319476835b68e3862",
+      "width": 1440,
+      "height": 810,
+      "bytes": 110568,
+      "sha256": "e47b6de00bf1c9400b2dbf159a6c704d769fd100be183dcc4d87ac4f9aa9ca4d"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-480.webp",
+      "source": "assets/inclusive-art-gallery.jpg",
+      "source_sha256": "1f62a2eda0cc4a3b0e897f5c902e18a023265956ccc7eadd87f49b8dea174e1e",
+      "width": 480,
+      "height": 270,
+      "bytes": 20374,
+      "sha256": "13b5eeda44d1fba3acb8c6c8bd502555431d9098c3abf9d27bfd403344fdc93f"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-960.webp",
+      "source": "assets/inclusive-art-gallery.jpg",
+      "source_sha256": "1f62a2eda0cc4a3b0e897f5c902e18a023265956ccc7eadd87f49b8dea174e1e",
+      "width": 960,
+      "height": 540,
+      "bytes": 58248,
+      "sha256": "3db13c78aa232595050bf9222f2df78266d3efaa167c8aa5ad5bbf99f52b24e8"
+    },
+    {
+      "path": "design-lab/assets/photos/inclusive-art-gallery-1440.webp",
+      "source": "assets/inclusive-art-gallery.jpg",
+      "source_sha256": "1f62a2eda0cc4a3b0e897f5c902e18a023265956ccc7eadd87f49b8dea174e1e",
+      "width": 1440,
+      "height": 810,
+      "bytes": 104084,
+      "sha256": "3efc4b7e25fea7166cba60112aca348836e09fbda9511f09f912b128e64519f6"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-480.webp",
+      "source": "assets/event-stage-lanterns.jpg",
+      "source_sha256": "e3b41ed1fa04cf973d76dd17c7b8dc4e7170f91b43f7d4b10a11f938fa269faa",
+      "width": 480,
+      "height": 270,
+      "bytes": 19016,
+      "sha256": "e4ada1ee1abe72dc67c65ad55f6f992cd919cf4c5fb66be448b9c02e509cca84"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-960.webp",
+      "source": "assets/event-stage-lanterns.jpg",
+      "source_sha256": "e3b41ed1fa04cf973d76dd17c7b8dc4e7170f91b43f7d4b10a11f938fa269faa",
+      "width": 960,
+      "height": 540,
+      "bytes": 56142,
+      "sha256": "8a4756f70c14719db453c9fd1bad2beba09a6fd6d0e43a76f97b4474e4d62429"
+    },
+    {
+      "path": "design-lab/assets/photos/event-stage-lanterns-1440.webp",
+      "source": "assets/event-stage-lanterns.jpg",
+      "source_sha256": "e3b41ed1fa04cf973d76dd17c7b8dc4e7170f91b43f7d4b10a11f938fa269faa",
+      "width": 1440,
+      "height": 810,
+      "bytes": 104532,
+      "sha256": "4901313f4671c3c661a40c99ec31e5597a63c8a85ee651460247269e52346481"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-480.webp",
+      "source": "assets/family-culture-workshop.jpg",
+      "source_sha256": "8edd64288e88872e8784d6e9730f938cc781701401b209db2dc8327562381333",
+      "width": 480,
+      "height": 270,
+      "bytes": 23378,
+      "sha256": "a41e0dde544cea3c30848365a2f690ace7eeb141538f1b4a83a69da033802db8"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-960.webp",
+      "source": "assets/family-culture-workshop.jpg",
+      "source_sha256": "8edd64288e88872e8784d6e9730f938cc781701401b209db2dc8327562381333",
+      "width": 960,
+      "height": 540,
+      "bytes": 61850,
+      "sha256": "7b241eb14078249cba1af06a911fb9b70d623ba65ee7271b0890950b1d47a5fb"
+    },
+    {
+      "path": "design-lab/assets/photos/family-culture-workshop-1440.webp",
+      "source": "assets/family-culture-workshop.jpg",
+      "source_sha256": "8edd64288e88872e8784d6e9730f938cc781701401b209db2dc8327562381333",
+      "width": 1440,
+      "height": 810,
+      "bytes": 106122,
+      "sha256": "f7869586489c46e8decdb57476f57cfd4c9c53a8961ce0c913ec97af11771a1c"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-480.webp",
+      "source": "assets/uwajima-sea-culture.jpg",
+      "source_sha256": "d7a9de4d5f41e717a0249c2d655fee8be10e5e2a0e6cfbbb513c7c7f0513bbb5",
+      "width": 480,
+      "height": 270,
+      "bytes": 32874,
+      "sha256": "5b259ad00a8cb12594bc3e86423809880a7e26eefcce8f8a7960735274d005b1"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-960.webp",
+      "source": "assets/uwajima-sea-culture.jpg",
+      "source_sha256": "d7a9de4d5f41e717a0249c2d655fee8be10e5e2a0e6cfbbb513c7c7f0513bbb5",
+      "width": 960,
+      "height": 540,
+      "bytes": 101172,
+      "sha256": "ee489a458883d90848c2dad1faa202a605a9f02f2ed0b1aadc29e7579f9ca0dd"
+    },
+    {
+      "path": "design-lab/assets/photos/uwajima-sea-culture-1440.webp",
+      "source": "assets/uwajima-sea-culture.jpg",
+      "source_sha256": "d7a9de4d5f41e717a0249c2d655fee8be10e5e2a0e6cfbbb513c7c7f0513bbb5",
+      "width": 1440,
+      "height": 810,
+      "bytes": 173230,
+      "sha256": "662bb5909dfb80b23445e654fc96939d21eace7c710d686f5c1c4c5f550e0ccc"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-480.webp",
+      "source": "assets/uchiko-ozu-townscape.jpg",
+      "source_sha256": "0fdc44ecce7ee57c7aeb0e72ce570c04b939b261c5a85423c608f01d91d1e5d1",
+      "width": 480,
+      "height": 270,
+      "bytes": 24584,
+      "sha256": "6807f1097284d942f5460b3fc21deb6948f2bba529467532a943211b771f3ce2"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-960.webp",
+      "source": "assets/uchiko-ozu-townscape.jpg",
+      "source_sha256": "0fdc44ecce7ee57c7aeb0e72ce570c04b939b261c5a85423c608f01d91d1e5d1",
+      "width": 960,
+      "height": 540,
+      "bytes": 76110,
+      "sha256": "79ec70a5bddb529b7e09c59d3af8842d8da48c0e5e9d0c11eb374e4764e0c83b"
+    },
+    {
+      "path": "design-lab/assets/photos/uchiko-ozu-townscape-1440.webp",
+      "source": "assets/uchiko-ozu-townscape.jpg",
+      "source_sha256": "0fdc44ecce7ee57c7aeb0e72ce570c04b939b261c5a85423c608f01d91d1e5d1",
+      "width": 1440,
+      "height": 810,
+      "bytes": 137196,
+      "sha256": "88e5f5e4072a05fa3408a9ca502d7b380c38925ec6f70062e482164017bdcfb9"
+    }
+  ],
+  "fonts": [
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+      "family": "Ehime Lab Sans",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Regular.ttf",
+      "source_sha256": "b840cd07a67d89cacca44249ae49aa99ee7640eb5ce623be8d8983d6aabac801",
+      "bytes": 108776,
+      "sha256": "0c2648ace3833737fd6ee3c1673c6f31e9e2e200c770876cc669140143e88dd0",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+      "family": "Ehime Lab Sans",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Bold.ttf",
+      "source_sha256": "0081cedabc4921982fcd061f845a005664ac7fb642af2dd34b4007bc63ccd235",
+      "bytes": 109992,
+      "sha256": "27c57bdbb45b8ba33620435dce4cfe646c050afd5f5a3b975f6b934f10f00ae5",
+      "license": "SIL Open Font License 1.1"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-latin.woff2",
+      "family": "Ehime Lab Latin",
+      "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/manrope/Manrope[wght].ttf",
+      "source_sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
+      "bytes": 16284,
+      "sha256": "084af446bb8cc94ac39551441e17483efa9957440843b2530f1e188b51a96ecd",
+      "license": "SIL Open Font License 1.1"
+    }
+  ],
+  "font_source_ref": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+  "subset_character_count": 849
+}
