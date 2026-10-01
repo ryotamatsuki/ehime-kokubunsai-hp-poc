@@ -8,7 +8,7 @@
 
 - **v1**: 2026-04-26〜27に作成した静的HTMLモックの保存版。
 - **v1-frozen**: v1完全版を固定保存するブランチ。今後変更しません。
-- **main**: v2.0開発系列。現在は `2.0.0-alpha.4`（integrated-experience-review）。
+- **main**: v2.0開発系列。現在は `2.0.0-alpha.5`（festival-content-review）。
 - v2.0完成後は `v2-frozen` を作成し、その後の比較的小規模な改善は v2.1 / v2.2 として管理します。
 - 情報設計・技術構成・体験設計を再び根本から作り直す場合は v3.0 とします。
 
@@ -26,60 +26,70 @@ v2.0では、v1の掲載情報と必要な機能を保ちながら、Awwwards / 
 
 ## 現在のデザインと確認ファイル
 
-方向を「愛媛を、ひらく。」に統合しました。
-このコピーはPoCの提案であり、大会の正式なキャッチフレーズではありません。
-白磁と藍を起点に、工芸・文学・食文化・表現の背景を読み、催しを探し、自分の文化帖へ集める体験です。
-工芸ページには、任意のデジタル絵付けとSVGの持ち出しを実装しています。
+文化祭全体の主景へ改訂しました。
+舞台・作品・ことば・食・制作・交流と、多世代の参加を扱う生成画像をトップに置きます。
+本文はPC20px、小画面18pxを基本にし、日付・料金・支援・申込の状態も大きく読みやすくしました。
+全6件の催しに固有のAI生成画像を設け、一覧、詳細、文化4章、文化帖へ反映しています。
 
-`design-lab/review.html` は、22ページを一つに同梱した確認ファイルです。
-画像と書体を同梱しており、このファイル単独で開けます。
-表示幅は画面幅、390px、320pxから選べます。
-トップ、文化の各章、検索、催しの案内、文化帖、参加の支援、資料まで内部リンクで巡れます。
-文化帖の追加・削除と絵付け、SVGの持ち出しも操作できます。
+**最初に `design-lab/compare.html` を開いてください。**
+v1固定版と現在のv2を、同じ114ページの組み合わせで比較できます。
+「並べる」「v1のみ」「v2のみ」、390pxの表示を切り替えられます。
+PC本来の文字と写真のバランスを見るときは「v2のみ」を使います。
+比較画面の左右それぞれで内部リンクをたどると、対応するページへ移ります。
 
-通常配信の入口は、ルートの `index.html` です。
-トップを含む21の実ルートに今回の設計を適用しました。
-同内容の22ページを `design-lab/` に生成しています。
-適用ルートの一覧は `design-lab/experience-manifest.json` に記録しています。
-旧A/B比較は終了し、`home-a.html` と `home-b.html` は現在のトップへ案内します。
-既存115ページすべての移行は未完了です。
+`design-lab/review.html` は128ページの本文・画像・書体を一つに同梱したv2確認ファイルです。
+このファイル単独でも開けます。表示幅は画面幅、390px、320pxから選べます。
+通常配信の入口はルートの `index.html` で、127の通常ルートに共通設計を適用しました。
+全体案内は `site-map.html`、キーワード探索は `common/search.html` です。
+
+元114サイトページの本文をすべて保持し、元トップの本文はリンクした `festival-guide.html` へ再配置しました。
+元の基本構成資料1件と、画像・CSS・JavaScriptを含む161ファイルの固定版も `comparison/v1/` に同梱します。
+内容対応表は `docs/V2_CONTENT_INVENTORY.json`、保持検査は `design-lab/qa/content-preservation.json` に記録します。
 v1-frozenは `94df551e752129e45e7f21c3d38282d87c5690db` のまま固定します。
 
-大会の名称と会期は、[愛媛県の案内](https://www.pref.ehime.jp/page/155598.html)を2026-10-01に確認しました。
-2028年10月22日から12月3日までの43日間です。
-催しは確認済みのプレイベント1件と架空の掲載例4件を区別しています。
-AI生成画像を実在の作品・会場の記録として扱いません。
+催しは確認済みプレイベント1件と架空の掲載例5件を区別しています。
+元v1の全4仮イベントの名称・日付・地域・料金・支援を掲載例として保持しています。
+その仮日付は本大会の会期より前であり、実際の開催告知ではありません。
+確認済み催しの画像も概念イメージであり、実際の出演者・舞台・作品の記録写真として扱いません。
+大会名称・会期の確認は `docs/V2_ART_DIRECTION.md` の一次出典に記録しています。
 
-設計と検証記録:
+設計と検査記録:
 
+- `docs/V2_DESIGN_BRIEF.md`
+- `docs/V2_DESIGN_BENCHMARK.md`
 - `docs/V2_DESIGN_SYSTEM.md`
-- `docs/V2_SELF_REVIEW.md`
 - `docs/V2_ART_DIRECTION.md`
+- `docs/V2_SELF_REVIEW.md`
 - `design-lab/qa/static-checks.json`
 - `design-lab/qa/interaction-checks.json`
+- `design-lab/qa/revision-checks.json`
 - `design-lab/qa/layout-references.json`
 
-静的検査と25件の操作ロジック検査は通過しています。
-配置の参考画像を使って9巡の自己レビューと修正を行いました。
-参考画像はWeasyPrintによる静的描画であり、実ブラウザーのスクリーンショットではありません。
-実ブラウザーの表示、読み上げ、実機操作、Core Web Vitalsは未確認です。
-この環境のブラウザーはローカルプレビューを `ERR_BLOCKED_BY_CLIENT` で拒否しています。
-v2.0の最終品質ゲートは保留としています。
+静的HTML、全本文の保持、画像・書体、操作ロジックを検査し、静的参考画像のレビューを繰り返しています。
+WeasyPrintの参考画像とjsdomの操作検査は、実ブラウザーの表示・読み上げ・実機・Core Web Vitalsの確認とは区別しています。
+実ブラウザーのローカルプレビューが `ERR_BLOCKED_BY_CLIENT` で拒否されるため、最終品質ゲートと総合点は保留しています。
+配点と完成条件を下げず、2.0.0の完成版として固定しません。
 
 ## 再生成と検査
 
 ```bash
 python scripts/build_v2_experience.py
 python scripts/build_v2_art.py
+python scripts/build_v2_legacy_assets.py
+python scripts/build_v2_assets.py --font-source-dir /path/to/font-sources
 python scripts/build_v2_review.py
+python scripts/build_v2_compare.py
+python scripts/qa_v2_content.py
 python scripts/qa_v2_experience.py
 npm install --prefix .cache/v2-qa jsdom@30.1.1
 NODE_PATH="$PWD/.cache/v2-qa/node_modules" node scripts/qa_v2_experience.cjs
+NODE_PATH="$PWD/.cache/v2-qa/node_modules" node scripts/qa_v2_revision.cjs
 NODE_PATH="$PWD/.cache/v2-qa/node_modules" python scripts/render_v2_experience.py --all --extended --cycle review
 ```
 
 Pythonの描画にはWeasyPrint 70、PyMuPDF、tinycss2、Pillowを使用します。
-書体の再生成にはfonttoolsと、資産マニフェストで固定した元書体を使用します。
+本文の解析にはtinyhtml5、書体の再生成にはfonttoolsと固定した元書体を使用します。
+元書体のコミット、SHA-256、ライセンスは素材マニフェストに記録しています。
 `build_v2_lab.py`、`qa_v2_lab.py`、`qa_v2_interactions.cjs`、`render_v2_layouts.py` は現在の各処理への互換入口です。
 
 ## v1 contents

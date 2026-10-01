@@ -81,7 +81,12 @@
         const index = saved.indexOf(id); saved = saved.filter(item => item !== id); persist(); update(index);
         announce(event.title + 'を文化帖から削除しました。');
       });
-      article.append(copy, remove); list.append(article);
+      const image = document.createElement('img'); image.className = 'notebook-event-image';
+      const imageKey = 'assets/art/' + event.image + '-480.webp';
+      const assetBase = document.documentElement.dataset.assetBase || '';
+      image.src = window.__POC_ASSET_URLS__?.[imageKey] || (assetBase ? assetBase.replace(/\/$/, '') + '/' : '') + imageKey;
+      image.alt = event.imageAlt; image.width = 1536; image.height = 1024; image.loading = 'lazy'; image.decoding = 'async';
+      article.append(image, copy, remove); list.append(article);
     });
     const empty = document.querySelector('[data-notebook-empty]'); if (empty) empty.hidden = saved.length !== 0;
     const counter = document.querySelector('[data-notebook-count]'); if (counter) counter.textContent = String(saved.length);

@@ -7,6 +7,8 @@ const dom=new JSDOM(html,{url:'https://poc.example/'+file+query,runScripts:'outs
 const w=dom.window;w.matchMedia=q=>({matches:q.includes('max-width')?Number(width)<=700:false,addEventListener(){}});
 for(const s of w.document.querySelectorAll('script:not([src])'))w.eval(s.textContent);
 w.eval(fs.readFileSync(path.join(lab,'experience-data.js'),'utf8'));w.eval(fs.readFileSync(path.join(lab,'experience.js'),'utf8'));
+if(w.document.querySelector('[data-search-page]'))w.eval(fs.readFileSync(path.join(lab,'site-search-data.js'),'utf8'));
+w.eval(fs.readFileSync(path.join(lab,'legacy-ui.js'),'utf8'));
 if(w.document.querySelector('[data-paint-studio]')){w.eval(fs.readFileSync(path.join(lab,'painting.js'),'utf8'));w.document.querySelector('[data-paint-preset="circle"]').click();w.document.querySelector('[data-paint-preset="wave"]').click()}
 for(const input of w.document.querySelectorAll('input'))input.setAttribute('value',input.value);
 for(const select of w.document.querySelectorAll('select'))for(const option of select.options){if(option.selected)option.setAttribute('selected','');else option.removeAttribute('selected')}

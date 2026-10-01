@@ -1,0 +1,438 @@
+{
+  "version": "2.0.0-alpha.5",
+  "method": "delivery resize and encoding; original imagery retained",
+  "images": [
+    {
+      "source": "assets/archive-digital-gallery.jpg",
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 21786,
+      "sha256": "8e16210f5551fc291542e0eca280984593b1a349df2e811a544586b22463704a"
+    },
+    {
+      "source": "assets/archive-digital-gallery.jpg",
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 55088,
+      "sha256": "018823ed868fc779a7e456674b31356b5010659c40f9152e27e1249aae8ac5ae"
+    },
+    {
+      "source": "assets/archive-digital-gallery.jpg",
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 90018,
+      "sha256": "bb16da8c1be957128ac92502ae33658b072021506c1e741b6674d97ba34949f1"
+    },
+    {
+      "source": "assets/culture-participation-workshop.jpg",
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 30260,
+      "sha256": "66d0f72d2975128b395c2f66f939ffeb6248c622e7663576213c1abe216832f0"
+    },
+    {
+      "source": "assets/culture-participation-workshop.jpg",
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-960.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 75854,
+      "sha256": "43315ad9afb486e2e4bfc03b7ceb340fe2b7889ed27d3cd9279315e634dc7013"
+    },
+    {
+      "source": "assets/culture-participation-workshop.jpg",
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-1440.webp",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 123558,
+      "sha256": "7942b6c0fcee381920dc6faaaaf2790a64f689dddcc9cf3c959aae522a97d8a0"
+    },
+    {
+      "source": "assets/dogo-onsen-night.jpg",
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 24968,
+      "sha256": "c4b84e551674e080f0fb90ee0ca03b7bc49e0c09735e2fdced81946ae514e12d"
+    },
+    {
+      "source": "assets/dogo-onsen-night.jpg",
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 73392,
+      "sha256": "600ed49bf026ccefcfc516650c17ffbfd59e491bb1b0e90ed9da5fb27c411308"
+    },
+    {
+      "source": "assets/dogo-onsen-night.jpg",
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 125966,
+      "sha256": "c2e24f4f4b248d05851e63b626406dfe673bf735a1204f507b23e85f9a8fc9f9"
+    },
+    {
+      "source": "assets/ehime-travel-landscape.jpg",
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 28188,
+      "sha256": "53cbed8ddc8aaefed3f7ab0592aabb4a1d844f4c01ad911fdeb5a0cccdc58a24"
+    },
+    {
+      "source": "assets/ehime-travel-landscape.jpg",
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 91346,
+      "sha256": "dc1575a5e260e4e48e935d56ae91af3ab081490213fabe245e4906e2b021cbc8"
+    },
+    {
+      "source": "assets/ehime-travel-landscape.jpg",
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 166466,
+      "sha256": "e4c049547cb6768118666aeeb36b7c24b83dc040e89e50a5bb786a2f0f14243e"
+    },
+    {
+      "source": "assets/event-stage-lanterns.jpg",
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 19016,
+      "sha256": "e4ada1ee1abe72dc67c65ad55f6f992cd919cf4c5fb66be448b9c02e509cca84"
+    },
+    {
+      "source": "assets/event-stage-lanterns.jpg",
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 56142,
+      "sha256": "8a4756f70c14719db453c9fd1bad2beba09a6fd6d0e43a76f97b4474e4d62429"
+    },
+    {
+      "source": "assets/event-stage-lanterns.jpg",
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 104532,
+      "sha256": "4901313f4671c3c661a40c99ec31e5597a63c8a85ee651460247269e52346481"
+    },
+    {
+      "source": "assets/family-culture-workshop.jpg",
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 23378,
+      "sha256": "a41e0dde544cea3c30848365a2f690ace7eeb141538f1b4a83a69da033802db8"
+    },
+    {
+      "source": "assets/family-culture-workshop.jpg",
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 61850,
+      "sha256": "7b241eb14078249cba1af06a911fb9b70d623ba65ee7271b0890950b1d47a5fb"
+    },
+    {
+      "source": "assets/family-culture-workshop.jpg",
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 106122,
+      "sha256": "f7869586489c46e8decdb57476f57cfd4c9c53a8961ce0c913ec97af11771a1c"
+    },
+    {
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 23676,
+      "sha256": "340ab0110c0811069440e857ef7297a5538c10cafde98f0f6e486b67374406ca"
+    },
+    {
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 74852,
+      "sha256": "ff40559750fc82537aa46641d2e9fe7a1b0f0ce00f78a11caeebdabedb3558d9"
+    },
+    {
+      "source": "assets/hero-ehime-culture-festival.jpg",
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 134454,
+      "sha256": "23d02c387c669207d542de46e0494b060c92fbf0aa4aac75ec67773a5101cd54"
+    },
+    {
+      "source": "assets/inclusive-art-gallery.jpg",
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 20374,
+      "sha256": "13b5eeda44d1fba3acb8c6c8bd502555431d9098c3abf9d27bfd403344fdc93f"
+    },
+    {
+      "source": "assets/inclusive-art-gallery.jpg",
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 58248,
+      "sha256": "3db13c78aa232595050bf9222f2df78266d3efaa167c8aa5ad5bbf99f52b24e8"
+    },
+    {
+      "source": "assets/inclusive-art-gallery.jpg",
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 104084,
+      "sha256": "3efc4b7e25fea7166cba60112aca348836e09fbda9511f09f912b128e64519f6"
+    },
+    {
+      "source": "assets/ishizuchi-mountain.jpg",
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 20288,
+      "sha256": "0e1f5cca865f314c088c19484c50b21b2ecbd23aa84db88853fba156ffd556db"
+    },
+    {
+      "source": "assets/ishizuchi-mountain.jpg",
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 79426,
+      "sha256": "cff4f68175afcfa6642362e275fde41aad7ec239afb3813ccbabade4f638669c"
+    },
+    {
+      "source": "assets/ishizuchi-mountain.jpg",
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 158418,
+      "sha256": "a75960472fbbb446a32aa5dd4df882e75ac964dff7e8a31d16bdc0ef31f3b893"
+    },
+    {
+      "source": "assets/media-archive-workspace.jpg",
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-480.webp",
+      "width": 480,
+      "height": 360,
+      "bytes": 26354,
+      "sha256": "967f72116b8db3b83dc6ee8b053cabd4c8d365c95176608af26c6462ce1b8725"
+    },
+    {
+      "source": "assets/media-archive-workspace.jpg",
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-960.webp",
+      "width": 960,
+      "height": 720,
+      "bytes": 66076,
+      "sha256": "e446ff1f4c555196656aa9ac733cdb70c2046bf1872d50b5c5f4960255a7c7a5"
+    },
+    {
+      "source": "assets/media-archive-workspace.jpg",
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-1440.webp",
+      "width": 1440,
+      "height": 1080,
+      "bytes": 111086,
+      "sha256": "fef5af8d948ae66586936919a1cfffe4a78f7ac35a7c06ae7d435f54a261a191"
+    },
+    {
+      "source": "assets/press-media-room.jpg",
+      "path": "design-lab/assets/legacy/press-media-room-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 25820,
+      "sha256": "66e180be8c2d5f9a3c038083c01a5f80d39b2a8e260afe0a21f65d14110a766c"
+    },
+    {
+      "source": "assets/press-media-room.jpg",
+      "path": "design-lab/assets/legacy/press-media-room-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 63784,
+      "sha256": "0a2b1a97d1a9524ca00be6311be639ba1c5b4d4b1168121a18fb184948c72f8d"
+    },
+    {
+      "source": "assets/press-media-room.jpg",
+      "path": "design-lab/assets/legacy/press-media-room-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 105584,
+      "sha256": "38dc482f3ddfa6a3808428c39ffa1c57111a7eb6e90b2b0720d1c5d07e34fc1b"
+    },
+    {
+      "source": "assets/shimanami-cycling.jpg",
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 24036,
+      "sha256": "573d4fcd441e7226fcec560ccc0069a86c66e05aa62dea91ec482d87f65fde7f"
+    },
+    {
+      "source": "assets/shimanami-cycling.jpg",
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 77364,
+      "sha256": "2e8fd4d983fddd08c4d954ab915c22c23e0a25512a0bff2155987217fd507f73"
+    },
+    {
+      "source": "assets/shimanami-cycling.jpg",
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 140060,
+      "sha256": "b13afa573564cc16f188cc0d8671e3e2c98de4040371a0d458a99157e6708a95"
+    },
+    {
+      "source": "assets/sponsor-lp-hero.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 25310,
+      "sha256": "846a4c0cdac2ef3b73d5bde932f59c802db8d90c5e3631ad3d61d001324b6e58"
+    },
+    {
+      "source": "assets/sponsor-lp-hero.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 82862,
+      "sha256": "30ceaccf3d095b535144c7703a10369ccf832da302df33ba55616d5161dc0ac3"
+    },
+    {
+      "source": "assets/sponsor-lp-hero.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 152352,
+      "sha256": "a00e8569fb59cb950f6a5f5b69e30adea5298b658ecf564d953162b737749749"
+    },
+    {
+      "source": "assets/sponsor-lp-theme-mosaic.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 36206,
+      "sha256": "d869c6d6117d7116948e1be81503a6538b2ca4c5d9e2471e34018708528f1e49"
+    },
+    {
+      "source": "assets/sponsor-lp-theme-mosaic.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 114158,
+      "sha256": "a05bbca882021be98c8923b68b93a07df0ef4a2b65f5cb7e7479ba6da822f708"
+    },
+    {
+      "source": "assets/sponsor-lp-theme-mosaic.png",
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 199600,
+      "sha256": "8c4fed1df3cb189ee6c53f2993e72767227ff4ce26365025ee87cb3a57220665"
+    },
+    {
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 28832,
+      "sha256": "5a608c19a5a26bb0a04a0d16786e8c4347e21a69393eadb5312fa6c3786df40e"
+    },
+    {
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 68452,
+      "sha256": "3b72ae10ee5f542a9b52251f42219c0114a099a50aef0a5e68e12f6e52c85b77"
+    },
+    {
+      "source": "assets/tobe-ceramics-workshop.jpg",
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 110568,
+      "sha256": "e47b6de00bf1c9400b2dbf159a6c704d769fd100be183dcc4d87ac4f9aa9ca4d"
+    },
+    {
+      "source": "assets/transport-access-hub.jpg",
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 21746,
+      "sha256": "b58408fcaaabc107c3db25f8ccaceb1a3dc25f7291e77cddd8109f849e32927c"
+    },
+    {
+      "source": "assets/transport-access-hub.jpg",
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 56712,
+      "sha256": "afa9b8234bcf4c7913c4e8c7290102e95c33af0c5d3c31eaebe0374288e18cbb"
+    },
+    {
+      "source": "assets/transport-access-hub.jpg",
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 92676,
+      "sha256": "89d4de32448298e80e5b5d00062b41ac40e025c8b82d31eaf0d778399c867b0b"
+    },
+    {
+      "source": "assets/uwajima-sea-culture.jpg",
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 32874,
+      "sha256": "5b259ad00a8cb12594bc3e86423809880a7e26eefcce8f8a7960735274d005b1"
+    },
+    {
+      "source": "assets/uwajima-sea-culture.jpg",
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 101172,
+      "sha256": "ee489a458883d90848c2dad1faa202a605a9f02f2ed0b1aadc29e7579f9ca0dd"
+    },
+    {
+      "source": "assets/uwajima-sea-culture.jpg",
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 173230,
+      "sha256": "662bb5909dfb80b23445e654fc96939d21eace7c710d686f5c1c4c5f550e0ccc"
+    },
+    {
+      "source": "assets/volunteer-information-desk.jpg",
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-480.webp",
+      "width": 480,
+      "height": 270,
+      "bytes": 20418,
+      "sha256": "b63dc0ab99778ee5c8417d40d5f8a1658e761352a1194219a395ad71153fbb1b"
+    },
+    {
+      "source": "assets/volunteer-information-desk.jpg",
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-960.webp",
+      "width": 960,
+      "height": 540,
+      "bytes": 52686,
+      "sha256": "5a6e160f92d52a85b3f861c9cc4ec3cdba4768748793a79b275228e3439dccb7"
+    },
+    {
+      "source": "assets/volunteer-information-desk.jpg",
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-1440.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 88650,
+      "sha256": "be41dee6e1cfd2c8c07b00f7bbfe416e979db66525019156667c7f663ba8c082"
+    }
+  ]
+}

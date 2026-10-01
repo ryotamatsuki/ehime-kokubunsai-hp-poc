@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "method": "built-in image_gen; delivery encoding only",
   "images": [
     {
@@ -55,6 +55,195 @@
       "height": 960,
       "bytes": 74456,
       "sha256": "a2a1b01a6893825b1f7a00f5a9d51b73e37b376d7fb5edeffd0927ae79f97f84"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-480.webp",
+      "source": "design-lab/assets/art-masters/festival-hero.png",
+      "source_sha256": "716a80f7f004636d63ec9733de0891cc2e306f34ab07dcab5773f48fd5ec623a",
+      "width": 480,
+      "height": 320,
+      "bytes": 40456,
+      "sha256": "9f2507cd6de0d451425ad1480204cacf5a216e5f0924f0ac76e166f8ff1446f7"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-960.webp",
+      "source": "design-lab/assets/art-masters/festival-hero.png",
+      "source_sha256": "716a80f7f004636d63ec9733de0891cc2e306f34ab07dcab5773f48fd5ec623a",
+      "width": 960,
+      "height": 640,
+      "bytes": 132354,
+      "sha256": "071ef7bf07d6da11c1c831b9a0510bfa3f099f88df5ba60b5e0ff78dde8f815d"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-1440.webp",
+      "source": "design-lab/assets/art-masters/festival-hero.png",
+      "source_sha256": "716a80f7f004636d63ec9733de0891cc2e306f34ab07dcab5773f48fd5ec623a",
+      "width": 1440,
+      "height": 960,
+      "bytes": 245200,
+      "sha256": "3d8dd804c98d125984de66e1598b901e08b9af518e4c10c4a98857681e4f7a12"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-480.webp",
+      "source": "design-lab/assets/art-masters/event-stage.png",
+      "source_sha256": "1a9ef849aa1d37a571ec528bcf2f951e3b1cb66c1334525cd7bc72c3f60ccead",
+      "width": 480,
+      "height": 320,
+      "bytes": 35370,
+      "sha256": "c44646926dbbd10a3c30e7b902d108e31f7f98e81f5f8a10648b5860579a8e3e"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-960.webp",
+      "source": "design-lab/assets/art-masters/event-stage.png",
+      "source_sha256": "1a9ef849aa1d37a571ec528bcf2f951e3b1cb66c1334525cd7bc72c3f60ccead",
+      "width": 960,
+      "height": 640,
+      "bytes": 102210,
+      "sha256": "ea0e42a13329553fc37d125756be416b824575a4f016708d03165d2683ef6942"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-1440.webp",
+      "source": "design-lab/assets/art-masters/event-stage.png",
+      "source_sha256": "1a9ef849aa1d37a571ec528bcf2f951e3b1cb66c1334525cd7bc72c3f60ccead",
+      "width": 1440,
+      "height": 960,
+      "bytes": 179612,
+      "sha256": "6a85fdd0d92c580215d714f62928e86873f71a52321a68a93d6ad396669c0fb4"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-480.webp",
+      "source": "design-lab/assets/art-masters/event-craft.png",
+      "source_sha256": "6ce39cc2609f36c98c9b1d9327af88d447b1142f9a51ebbd7273db2ff2703376",
+      "width": 480,
+      "height": 320,
+      "bytes": 33224,
+      "sha256": "c79884b76922aa58c58d8bc72fe92a81e81bc1818ad6f324040431c027420e81"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-960.webp",
+      "source": "design-lab/assets/art-masters/event-craft.png",
+      "source_sha256": "6ce39cc2609f36c98c9b1d9327af88d447b1142f9a51ebbd7273db2ff2703376",
+      "width": 960,
+      "height": 640,
+      "bytes": 82210,
+      "sha256": "4012416040c78dd5bf16d98ed740e28fd7c8926e8cd55af14ae1ebea6ad9902b"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-1440.webp",
+      "source": "design-lab/assets/art-masters/event-craft.png",
+      "source_sha256": "6ce39cc2609f36c98c9b1d9327af88d447b1142f9a51ebbd7273db2ff2703376",
+      "width": 1440,
+      "height": 960,
+      "bytes": 134796,
+      "sha256": "0cfb244b4e23a5233c1d475b11fc517f22f4e9cdc5d26324f98fd7fc4c864dc2"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-480.webp",
+      "source": "design-lab/assets/art-masters/event-food.png",
+      "source_sha256": "b0965671569ea5a72c35bfd592eef2efa96b4d04b5f4304858dd03154a1f0d44",
+      "width": 480,
+      "height": 320,
+      "bytes": 39950,
+      "sha256": "e9966efb65eea1ad3f358936717c20cad0e7a3b5a96ae9eb8f48597bb76da07d"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-960.webp",
+      "source": "design-lab/assets/art-masters/event-food.png",
+      "source_sha256": "b0965671569ea5a72c35bfd592eef2efa96b4d04b5f4304858dd03154a1f0d44",
+      "width": 960,
+      "height": 640,
+      "bytes": 104450,
+      "sha256": "5e574ab2e0056445560b88a16b1c3df177bae393215a4e0aa81cb608c55cc283"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-1440.webp",
+      "source": "design-lab/assets/art-masters/event-food.png",
+      "source_sha256": "b0965671569ea5a72c35bfd592eef2efa96b4d04b5f4304858dd03154a1f0d44",
+      "width": 1440,
+      "height": 960,
+      "bytes": 177428,
+      "sha256": "b1efbd7509722f234294c18d2507a72e073b5332bb0fe21955bbd6659f0eda7b"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-480.webp",
+      "source": "design-lab/assets/art-masters/event-literature.png",
+      "source_sha256": "2c4d95cf8f7651658b3c17c3221e1428a2a727b2c8cacba7df521029a154994b",
+      "width": 480,
+      "height": 320,
+      "bytes": 39970,
+      "sha256": "8c47660a3a664ba3b5326da0ac4d80cc46f1bde2c335428f0ec52ed3ee632ee5"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-960.webp",
+      "source": "design-lab/assets/art-masters/event-literature.png",
+      "source_sha256": "2c4d95cf8f7651658b3c17c3221e1428a2a727b2c8cacba7df521029a154994b",
+      "width": 960,
+      "height": 640,
+      "bytes": 109570,
+      "sha256": "321a6169738922ead75608dc476c9b68257d2eb00940ff0c9734fabb3f71a907"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-1440.webp",
+      "source": "design-lab/assets/art-masters/event-literature.png",
+      "source_sha256": "2c4d95cf8f7651658b3c17c3221e1428a2a727b2c8cacba7df521029a154994b",
+      "width": 1440,
+      "height": 960,
+      "bytes": 186072,
+      "sha256": "aa4338565770344961b70b2a33902c662ca4ea8553982583f128af2b81fd9473"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-480.webp",
+      "source": "design-lab/assets/art-masters/event-art.png",
+      "source_sha256": "d3c532f6bc863fac01a89adf6e04ae5b2fb8e5b285910e0397128bfaf360d53f",
+      "width": 480,
+      "height": 320,
+      "bytes": 28784,
+      "sha256": "a345e814c5cd261494fc940073684b20f6e0a685836fd6479f9b7969d9382aed"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-960.webp",
+      "source": "design-lab/assets/art-masters/event-art.png",
+      "source_sha256": "d3c532f6bc863fac01a89adf6e04ae5b2fb8e5b285910e0397128bfaf360d53f",
+      "width": 960,
+      "height": 640,
+      "bytes": 78590,
+      "sha256": "d8594debd777dcf6fbe43de873ba9584daa12f215fd9c154b6a6e35527c12e2f"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-1440.webp",
+      "source": "design-lab/assets/art-masters/event-art.png",
+      "source_sha256": "d3c532f6bc863fac01a89adf6e04ae5b2fb8e5b285910e0397128bfaf360d53f",
+      "width": 1440,
+      "height": 960,
+      "bytes": 135500,
+      "sha256": "600bfa8259238bcf3e881a48c4dc66c2cb32d2624f86de38086a4a444f14ceaa"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-480.webp",
+      "source": "design-lab/assets/art-masters/event-pre2026.png",
+      "source_sha256": "5ee611fd010b08bae40cb371e9decf8931cbc16e4114df367278732f7080e1b7",
+      "width": 480,
+      "height": 320,
+      "bytes": 27630,
+      "sha256": "c8c23c8acefbcbf6f71875aaabcb288ae0ca02268f0b681f284240d267980481"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-960.webp",
+      "source": "design-lab/assets/art-masters/event-pre2026.png",
+      "source_sha256": "5ee611fd010b08bae40cb371e9decf8931cbc16e4114df367278732f7080e1b7",
+      "width": 960,
+      "height": 640,
+      "bytes": 77010,
+      "sha256": "da110ef9f1560a2a6167d1345d8721b7e0494105596a0dc911a883d15f175370"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-1440.webp",
+      "source": "design-lab/assets/art-masters/event-pre2026.png",
+      "source_sha256": "5ee611fd010b08bae40cb371e9decf8931cbc16e4114df367278732f7080e1b7",
+      "width": 1440,
+      "height": 960,
+      "bytes": 135304,
+      "sha256": "c4e900e2833e398e661f1d2607a079948cef5a8954854c0b9f174ab79eddf3b1"
     }
   ]
 }

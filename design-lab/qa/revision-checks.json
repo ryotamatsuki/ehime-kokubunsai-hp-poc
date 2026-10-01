@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0-alpha.5",
+  "method": "jsdom content, local controls and offline source assembly; not a browser display test",
+  "passed": 9,
+  "total": 9,
+  "results": [
+    {
+      "name": "All six events have a unique generated photograph in listing and detail",
+      "status": "PASS"
+    },
+    {
+      "name": "Notebook uses event images on a canonical route",
+      "status": "PASS"
+    },
+    {
+      "name": "All 114 original routes are discoverable through the site index",
+      "status": "PASS"
+    },
+    {
+      "name": "Japanese site search reaches preserved tourism and form content",
+      "status": "PASS"
+    },
+    {
+      "name": "Retained filters operate on the four v1 event cards",
+      "status": "PASS"
+    },
+    {
+      "name": "Prototype contact form stays local and announces its state",
+      "status": "PASS"
+    },
+    {
+      "name": "Comparison pack retains byte-identical v1 HTML and all paired routes",
+      "status": "PASS"
+    },
+    {
+      "name": "Comparison left pane is self-contained, interactive and paired with v2",
+      "status": "PASS"
+    },
+    {
+      "name": "Comparison offers full-width PC and a fixed 390px review",
+      "status": "PASS"
+    }
+  ]
+}

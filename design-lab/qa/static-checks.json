@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "status": "PASS",
   "method": "static HTML and code checks; not WCAG conformance/browser/CWV confirmation",
   "pages": [
@@ -30,6 +30,11 @@
     },
     {
       "file": "design-lab/event-pre2026.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-stage.html",
       "status": "PASS",
       "issues": []
     },
@@ -110,6 +115,531 @@
     },
     {
       "file": "design-lab/components.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/site-map.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/festival-guide.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-catchphrase.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-disability-arts-festival.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-downloads.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-kokubunsai.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-logo.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-mascot.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-name.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-organizers.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-plan.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-policy.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-programs.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-schedule-venues.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-about-significance.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-barrierfree-transport.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-bus.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-car.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-ferry.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-flight.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-access-venues.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-accessibility-consultation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-accessibility-easy-japanese.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-accessibility-event-support.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-accessibility-participation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-accessibility-venue-barrierfree.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-gallery.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-records.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-report.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-results.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-sponsors.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-archive-videos.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-bids-index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-budget.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-committees.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-concept-meeting.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-concept.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-general-assembly.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-committee-implementation-plan.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-common-accessibility-tool.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-common-important.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-common-language.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-common-search.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-common-sns.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-contact-contacts.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-contact-faq.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-contact-form.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-contact-notes.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-barrierfree.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-by-city.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-by-genre.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-calendar-detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-calendar.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-disability-art.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-during.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-event-contacts.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-family.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-free.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-general-contact.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-latest.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-open-call-info.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-open-call.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-events-reservation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-media-contact.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-media-coverage.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-media-logo-usage.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-media-materials.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-media-press.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-news-committee.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-news-detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-news-important.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-news-press.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-news-recruitment.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-copyright.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-disclaimer.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-links.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-sns.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-ssl.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-policy-universal-design.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-ambassador.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-cooperation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-downloads.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-sns-campaign.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-video-accessible.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-video-standard.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-pr-video.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-bids.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-other-pref.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-performers.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-sponsors.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-support-projects.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-recruitment-volunteer.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-donation-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-interest-form.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-interviews.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-partner-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-partner-recruitment.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-sponsors-sponsor-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-city-links.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-courses.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-food-culture.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-lodging.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-travel-center.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/info-tourism-trip.html",
       "status": "PASS",
       "issues": []
     },
@@ -215,6 +745,536 @@
     },
     {
       "file": "policy/privacy.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/stage.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "site-map.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "festival-guide.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/catchphrase.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/disability-arts-festival.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/downloads.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/kokubunsai.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/logo.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/mascot.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/name.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/organizers.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/plan.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/policy.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/programs.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/schedule-venues.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/significance.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/barrierfree-transport.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/bus.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/car.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/ferry.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/flight.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/venues.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/consultation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/easy-japanese.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/event-support.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/participation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/venue-barrierfree.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/gallery.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/records.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/report.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/results.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/sponsors.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "archive/videos.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "bids/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/budget.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/committees.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/concept-meeting.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/concept.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/general-assembly.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/implementation-plan.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "common/accessibility-tool.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "common/important.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "common/language.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "common/search.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "common/sns.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "contact/contacts.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "contact/faq.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "contact/form.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "contact/notes.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/barrierfree.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/by-city.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/by-genre.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/calendar-detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/calendar.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/disability-art.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/during.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/event-contacts.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/family.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/free.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/general-contact.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/latest.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/open-call-info.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/open-call.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/reservation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "media/contact.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "media/coverage.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "media/logo-usage.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "media/materials.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "media/press.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/committee.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/important.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/press.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/recruitment.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/copyright.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/disclaimer.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/links.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/sns.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/ssl.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/universal-design.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/ambassador.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/cooperation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/downloads.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/sns-campaign.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/video-accessible.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/video-standard.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "pr/video.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/bids.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/other-pref.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/performers.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/sponsors.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/support-projects.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/volunteer.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/donation-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/interest-form.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/interviews.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/partner-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/partner-recruitment.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/sponsor-companies.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/city-links.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/courses.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/food-culture.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/lodging.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/travel-center.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "tourism/trip.html",
       "status": "PASS",
       "issues": []
     }
@@ -362,6 +1422,306 @@
     {
       "path": "design-lab/assets/art/craft-hands-1440.webp",
       "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/festival-hero-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-stage-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-craft-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-food-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-literature-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-art-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/event-pre2026-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/archive-digital-gallery-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/culture-participation-workshop-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/dogo-onsen-night-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ehime-travel-landscape-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/event-stage-lanterns-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/family-culture-workshop-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/hero-ehime-culture-festival-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/inclusive-art-gallery-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/ishizuchi-mountain-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/media-archive-workspace-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/press-media-room-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/press-media-room-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/press-media-room-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/shimanami-cycling-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-hero-png-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/sponsor-lp-theme-mosaic-png-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/tobe-ceramics-workshop-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/transport-access-hub-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/uwajima-sea-culture-jpg-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-1440.webp",
+      "status": "PASS"
     }
   ],
   "cssStates": {
@@ -375,7 +1735,7 @@
       "page": "index.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 378963,
+      "estimatedFirstViewBytes": 427055,
       "limit": 500000,
       "status": "PASS"
     },
@@ -383,15 +1743,15 @@
       "page": "index.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 459441,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 631799,
+      "limit": 750000,
       "status": "PASS"
     },
     {
       "page": "culture-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 359212,
+      "estimatedFirstViewBytes": 412192,
       "limit": 500000,
       "status": "PASS"
     },
@@ -399,15 +1759,15 @@
       "page": "culture-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 387246,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 461178,
+      "limit": 750000,
       "status": "PASS"
     },
     {
       "page": "event-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 349697,
+      "estimatedFirstViewBytes": 402325,
       "limit": 500000,
       "status": "PASS"
     },
@@ -415,15 +1775,15 @@
       "page": "event-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 377731,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 451311,
+      "limit": 750000,
       "status": "PASS"
     },
     {
       "page": "event-search.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 338831,
+      "estimatedFirstViewBytes": 424607,
       "limit": 500000,
       "status": "PASS"
     },
@@ -431,15 +1791,15 @@
       "page": "event-search.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 338831,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 424607,
+      "limit": 750000,
       "status": "PASS"
     },
     {
       "page": "documents.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 332047,
+      "estimatedFirstViewBytes": 380333,
       "limit": 500000,
       "status": "PASS"
     },
@@ -447,15 +1807,15 @@
       "page": "documents.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 332047,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 380333,
+      "limit": 750000,
       "status": "PASS"
     },
     {
       "page": "notebook.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 332272,
+      "estimatedFirstViewBytes": 367749,
       "limit": 500000,
       "status": "PASS"
     },
@@ -463,16 +1823,16 @@
       "page": "notebook.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 332272,
-      "limit": 500000,
+      "estimatedFirstViewBytes": 367749,
+      "limit": 750000,
       "status": "PASS"
     }
   ],
   "budgetLimits": "DPR1 estimate; excludes later/lazy requests, cache, response headers, real loading time",
   "offlinePack": {
-    "pages": 22,
-    "assets": 9,
-    "bytes": 1292612
+    "pages": 128,
+    "assets": 84,
+    "bytes": 12938577
   },
   "legacyTopFragments": [
     "about",
@@ -484,147 +1844,207 @@
   "issues": [],
   "staticReferenceIntegrity": [
     {
-      "path": "design-lab/qa/cycle-9/index-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-1440-full.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-1440-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-craft-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-craft-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-craft-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-literature-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-literature-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-literature-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-search-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-search-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-search-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-search-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-search-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-search-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-craft-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-craft-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-craft-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-craft-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/event-craft-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/event-craft-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/documents-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/documents-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/documents-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/documents-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/documents-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/documents-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/notebook-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/participation-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/notebook-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/participation-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/notebook-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/participation-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/participation-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/support-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/participation-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/support-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/participation-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/support-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/support-1440.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-768.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/support-390.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/support-320.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-1250.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-768.png",
+      "path": "design-lab/qa/cycle-alpha5-4/index-1600.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-1024.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-1440-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-1250.png",
+      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-320-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/index-1600.png",
+      "path": "design-lab/qa/cycle-alpha5-4/documents-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-craft-1440-full.png",
+      "path": "design-lab/qa/cycle-alpha5-4/notebook-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/culture-craft-320-full.png",
+      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/documents-1024.png",
+      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-9/notebook-1024.png",
+      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/site-map-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/site-map-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-4/site-map-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-6/notebook-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-6/notebook-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha5-6/notebook-320.png",
       "status": "PASS"
     }
   ]

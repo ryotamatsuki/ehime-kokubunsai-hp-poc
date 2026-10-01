@@ -1,0 +1,855 @@
+{
+  "version": "2.0.0-alpha.5",
+  "baselineCommit": "94df551e752129e45e7f21c3d38282d87c5690db",
+  "policy": "All v1 main-body text remains visible in v2; changed headings, routes and image delivery preserve content. The homepage body is on the linked festival guide.",
+  "pages": [
+    {
+      "source": "about/catchphrase.html",
+      "target": "about/catchphrase.html",
+      "title": "キャッチフレーズ",
+      "sourceSha256": "2119bba031ed392c716b0b95e60c7b4ffbefd83a768e9f9587f16aa456cc9c57",
+      "sourceBodyCharacters": 1398
+    },
+    {
+      "source": "about/disability-arts-festival.html",
+      "target": "about/disability-arts-festival.html",
+      "title": "全国障害者芸術・文化祭とは",
+      "sourceSha256": "ea3265c79491738378f117d7c8fc0bc978179e347035c67ed244f59b96aa4c74",
+      "sourceBodyCharacters": 1430
+    },
+    {
+      "source": "about/downloads.html",
+      "target": "about/downloads.html",
+      "title": "各種ダウンロード",
+      "sourceSha256": "853e6747178f5117bd389fb6e55740315a787312419cd64eb912a6422ff86025",
+      "sourceBodyCharacters": 1424
+    },
+    {
+      "source": "about/index.html",
+      "target": "about/index.html",
+      "title": "愛媛大会（仮）とは",
+      "sourceSha256": "d6fbacb287637fdb89e0d3bfcad53a7e1d5ee4d6bb7c58f8f2879b619b06728c",
+      "sourceBodyCharacters": 1403
+    },
+    {
+      "source": "about/kokubunsai.html",
+      "target": "about/kokubunsai.html",
+      "title": "国民文化祭とは",
+      "sourceSha256": "10c1eb726bf00493b3274b84c84b66866d48e48c3aa216ff657970b188be31a2",
+      "sourceBodyCharacters": 1426
+    },
+    {
+      "source": "about/logo.html",
+      "target": "about/logo.html",
+      "title": "大会ロゴマーク",
+      "sourceSha256": "7266bc26975cc5fbdf24003f0b4febc3f8f84502af0a3cbfc4a58b8a1c66c46c",
+      "sourceBodyCharacters": 1421
+    },
+    {
+      "source": "about/mascot.html",
+      "target": "about/mascot.html",
+      "title": "マスコットキャラクター",
+      "sourceSha256": "f567d1bc8849c429b263e99b5fae92d4d668b288eb02cc5fddbc40473446e0bc",
+      "sourceBodyCharacters": 1365
+    },
+    {
+      "source": "about/name.html",
+      "target": "about/name.html",
+      "title": "大会名称",
+      "sourceSha256": "3cd456f2f04dce22eabaf1e31b8c791bd8f9ba29f725c59cd278ca494b015956",
+      "sourceBodyCharacters": 1365
+    },
+    {
+      "source": "about/organizers.html",
+      "target": "about/organizers.html",
+      "title": "主催者",
+      "sourceSha256": "db9d905520b89291135e7c7dce7dabed6239c79a9b15f65dede076e2922af3b9",
+      "sourceBodyCharacters": 1408
+    },
+    {
+      "source": "about/plan.html",
+      "target": "about/plan.html",
+      "title": "基本構想・実施計画",
+      "sourceSha256": "873d3a6740b609d1818ea1f446bd8599bb7ed6e808e4bfe9437d47aecad49f44",
+      "sourceBodyCharacters": 1411
+    },
+    {
+      "source": "about/policy.html",
+      "target": "about/policy.html",
+      "title": "基本方針",
+      "sourceSha256": "663aa88d5ea707cb3a7f0d344f3f50921c71cb4ac83f0eaa9db57e15a141e74e",
+      "sourceBodyCharacters": 1433
+    },
+    {
+      "source": "about/programs.html",
+      "target": "about/programs.html",
+      "title": "事業構成",
+      "sourceSha256": "92d4c996ed583c532964d5a36b04561aaeb9450686f8f4e99f6eea1542e1a837",
+      "sourceBodyCharacters": 1409
+    },
+    {
+      "source": "about/schedule-venues.html",
+      "target": "about/schedule-venues.html",
+      "title": "会期・開催地",
+      "sourceSha256": "f3eb0e8988eae8a3cee9bce56b3b6a9d9777edfc4ac9d462fdbb78c6581e4205",
+      "sourceBodyCharacters": 1406
+    },
+    {
+      "source": "about/significance.html",
+      "target": "about/significance.html",
+      "title": "開催意義",
+      "sourceSha256": "254c60530a2daa5380d35a0450a8db999f0cdd53467394a131236fb7000753a5",
+      "sourceBodyCharacters": 1427
+    },
+    {
+      "source": "access/barrierfree-transport.html",
+      "target": "access/barrierfree-transport.html",
+      "title": "バリアフリー交通情報",
+      "sourceSha256": "6c8d1e21303b89dffd499a301e8b5da7a125ad4cb9c18944a7e804bb825bca18",
+      "sourceBodyCharacters": 1446
+    },
+    {
+      "source": "access/bus.html",
+      "target": "access/bus.html",
+      "title": "バスでのアクセス",
+      "sourceSha256": "c0807a66155b6ff7a0e73998cc5b85ce31d75178474a3b621f4d990e4dd141dd",
+      "sourceBodyCharacters": 1444
+    },
+    {
+      "source": "access/car.html",
+      "target": "access/car.html",
+      "title": "車でのアクセス",
+      "sourceSha256": "d97396bb57eb458f25e434fcf4a5fc65c23adebd00ccfcea6a070ee046f7cbab",
+      "sourceBodyCharacters": 1431
+    },
+    {
+      "source": "access/ferry.html",
+      "target": "access/ferry.html",
+      "title": "フェリーでのアクセス",
+      "sourceSha256": "63bccb19aaf054cbe5b0f64630e7829ff09db731700b58181bc1b4cc7fdd7ccd",
+      "sourceBodyCharacters": 1443
+    },
+    {
+      "source": "access/flight.html",
+      "target": "access/flight.html",
+      "title": "飛行機でのアクセス",
+      "sourceSha256": "2e394b490ead89be32c8d74516d2b314f7a48ac01ea67d9fbdfcd3dda806af3f",
+      "sourceBodyCharacters": 1428
+    },
+    {
+      "source": "access/train.html",
+      "target": "access/train.html",
+      "title": "電車でのアクセス",
+      "sourceSha256": "cc60937788ab1fcd6c74699af5f7694bc5c5fecdebc971f60fc2d05fdec3d47f",
+      "sourceBodyCharacters": 1436
+    },
+    {
+      "source": "access/venues.html",
+      "target": "access/venues.html",
+      "title": "会場別アクセス",
+      "sourceSha256": "91abbb840e043afdc7a6ed9c8962f6acc0356c57b4b3f884df20f5e47fac4250",
+      "sourceBodyCharacters": 1441
+    },
+    {
+      "source": "accessibility/consultation.html",
+      "target": "accessibility/consultation.html",
+      "title": "相談窓口",
+      "sourceSha256": "810e754c723ac76c59a75a3a506862727fe53d75bbde72f9882e3c206f112210",
+      "sourceBodyCharacters": 1245
+    },
+    {
+      "source": "accessibility/easy-japanese.html",
+      "target": "accessibility/easy-japanese.html",
+      "title": "やさしい日本語ページ（仮）",
+      "sourceSha256": "63248e80b813c70e5a169d1c362375c931d9e23e00ff0a8bc858b33882470db3",
+      "sourceBodyCharacters": 1319
+    },
+    {
+      "source": "accessibility/event-support.html",
+      "target": "accessibility/event-support.html",
+      "title": "イベント別対応一覧",
+      "sourceSha256": "5ad9d4fdabbccdcf92ba638ff155087c1a3b127ee955382d1e94c0386d526533",
+      "sourceBodyCharacters": 1459
+    },
+    {
+      "source": "accessibility/information-support.html",
+      "target": "accessibility/information-support.html",
+      "title": "情報保障について",
+      "sourceSha256": "efafc085781296aea46f9c740f1411d1da71a4dc72ca90b5aff6662c579602ff",
+      "sourceBodyCharacters": 1211
+    },
+    {
+      "source": "accessibility/participation.html",
+      "target": "accessibility/participation.html",
+      "title": "参加・鑑賞時の配慮事項",
+      "sourceSha256": "6cb24ae2eb9c104ca99e6c901793cc39f67dac95d63107f572f9a689549ae5b2",
+      "sourceBodyCharacters": 1270
+    },
+    {
+      "source": "accessibility/venue-barrierfree.html",
+      "target": "accessibility/venue-barrierfree.html",
+      "title": "会場バリアフリー情報",
+      "sourceSha256": "0664b5109d528950ca017dcfeee04e63860ddb9243a44aac1dcf931007684ba5",
+      "sourceBodyCharacters": 1267
+    },
+    {
+      "source": "archive/gallery.html",
+      "target": "archive/gallery.html",
+      "title": "写真ギャラリー",
+      "sourceSha256": "b30647b946df197e3853a0735f9ce4b4c94301d6e361a7d834cffd169a818e73",
+      "sourceBodyCharacters": 1224
+    },
+    {
+      "source": "archive/records.html",
+      "target": "archive/records.html",
+      "title": "記録集PDF",
+      "sourceSha256": "caf311aa55410896e894bd30ad39056e35a787817ef6b4c8408415ae1ef66a5e",
+      "sourceBodyCharacters": 1236
+    },
+    {
+      "source": "archive/report.html",
+      "target": "archive/report.html",
+      "title": "成果報告書",
+      "sourceSha256": "6abfc332e734de050c97c7707c17e93c28ca883857a92efa152ee3f3cce7f26b",
+      "sourceBodyCharacters": 1209
+    },
+    {
+      "source": "archive/results.html",
+      "target": "archive/results.html",
+      "title": "開催結果概要",
+      "sourceSha256": "e373c518d775bbdb25fe7d5fca66af5f2ae888131f58f231795916e3f5a0a72a",
+      "sourceBodyCharacters": 1226
+    },
+    {
+      "source": "archive/sponsors.html",
+      "target": "archive/sponsors.html",
+      "title": "協賛企業・団体一覧",
+      "sourceSha256": "ad2cb3b1b356d95bf0ae09c0f816cb8029f7313dd8ce52142d74c72cf6f3f3c7",
+      "sourceBodyCharacters": 1234
+    },
+    {
+      "source": "archive/videos.html",
+      "target": "archive/videos.html",
+      "title": "動画アーカイブ",
+      "sourceSha256": "f2287ff6e0941d2a5121c74be8403ecbab2187186c7f06f3f52c05fa1f7248f2",
+      "sourceBodyCharacters": 1135
+    },
+    {
+      "source": "bids/index.html",
+      "target": "bids/index.html",
+      "title": "入札・契約情報",
+      "sourceSha256": "737f901f18ecb68b011138276b38cac88c6188e3a121840f51b5af44f4eef28a",
+      "sourceBodyCharacters": 1190
+    },
+    {
+      "source": "committee/budget.html",
+      "target": "committee/budget.html",
+      "title": "収支予算・事業計画",
+      "sourceSha256": "1209d9c47d80d24ed8bb2910f631f526d6322126193a591bc80100f975d2234c",
+      "sourceBodyCharacters": 1238
+    },
+    {
+      "source": "committee/committees.html",
+      "target": "committee/committees.html",
+      "title": "専門委員会・部会資料",
+      "sourceSha256": "4f410698f544370f5d27525b122c7182376afce1184bd88026e74f12be1fc32a",
+      "sourceBodyCharacters": 1235
+    },
+    {
+      "source": "committee/concept-meeting.html",
+      "target": "committee/concept-meeting.html",
+      "title": "基本構想検討会",
+      "sourceSha256": "034ad61e6e57f958f7988a4fdb78560fe0e4f820922be6203d67c02c75c444d9",
+      "sourceBodyCharacters": 1232
+    },
+    {
+      "source": "committee/concept.html",
+      "target": "committee/concept.html",
+      "title": "基本構想",
+      "sourceSha256": "9b587a296512a5fe5c03021c61a1208c57df91cdda83e3dc977d446995da8185",
+      "sourceBodyCharacters": 1221
+    },
+    {
+      "source": "committee/general-assembly.html",
+      "target": "committee/general-assembly.html",
+      "title": "総会資料",
+      "sourceSha256": "d1267ef10aff393367858bc65c87f1bf727c6bd9ed644280576e783983d394db",
+      "sourceBodyCharacters": 1223
+    },
+    {
+      "source": "committee/implementation-plan.html",
+      "target": "committee/implementation-plan.html",
+      "title": "実施計画",
+      "sourceSha256": "4989a294ad2e5ac9d71332eb00901d59e3cdc8dbbe820910d3922b53a0b6e009",
+      "sourceBodyCharacters": 1217
+    },
+    {
+      "source": "committee/overview.html",
+      "target": "committee/overview.html",
+      "title": "実行委員会概要",
+      "sourceSha256": "965d72a172060d1dd04ba2db84f0a5082960247105af53430441d98b46c1d851",
+      "sourceBodyCharacters": 1218
+    },
+    {
+      "source": "common/accessibility-tool.html",
+      "target": "common/accessibility-tool.html",
+      "title": "アクセシビリティ支援ツール",
+      "sourceSha256": "90b42b1c02466843dea78d064b3f674809fc94d7dad4b675697f13d1c94b24d3",
+      "sourceBodyCharacters": 1176
+    },
+    {
+      "source": "common/important.html",
+      "target": "common/important.html",
+      "title": "重要なお知らせ表示",
+      "sourceSha256": "25dba36634c448bd831888ef8521c64c2bf9f2504aa7026c48b56400c216f72a",
+      "sourceBodyCharacters": 1155
+    },
+    {
+      "source": "common/language.html",
+      "target": "common/language.html",
+      "title": "言語切替（仮）",
+      "sourceSha256": "64a3eb8803a434382f1a64438ed1bef8b501b8a93d754aad3d515bffd37bd0ca",
+      "sourceBodyCharacters": 1259
+    },
+    {
+      "source": "common/search.html",
+      "target": "common/search.html",
+      "title": "サイト内検索",
+      "sourceSha256": "5ae44593a982cd19beb6ff36d4227f16b5638554be67fea451f1f1ccf414aa66",
+      "sourceBodyCharacters": 1090
+    },
+    {
+      "source": "common/sns.html",
+      "target": "common/sns.html",
+      "title": "SNSリンク",
+      "sourceSha256": "a123fe32cad20ee23c079068d991bba5838fa6fb28c0bbda8f1c40d4e984904e",
+      "sourceBodyCharacters": 1172
+    },
+    {
+      "source": "contact/contacts.html",
+      "target": "contact/contacts.html",
+      "title": "問い合わせ先一覧",
+      "sourceSha256": "144fe1f861b0d506fd53a9ccc33d64d2c08f0ae369a0e533310fc734a3afae46",
+      "sourceBodyCharacters": 1245
+    },
+    {
+      "source": "contact/faq.html",
+      "target": "contact/faq.html",
+      "title": "よくある質問",
+      "sourceSha256": "9fc634492ce02deaf239de7bf7e6d728d87c134866e00e9198acfcb9a26bf603",
+      "sourceBodyCharacters": 1287
+    },
+    {
+      "source": "contact/form.html",
+      "target": "contact/form.html",
+      "title": "メールフォーム",
+      "sourceSha256": "621e1a4dd7af9162dace8e05299c9223b8ee6dee1dd6d7c6e15a583172915fd7",
+      "sourceBodyCharacters": 1165
+    },
+    {
+      "source": "contact/notes.html",
+      "target": "contact/notes.html",
+      "title": "お問い合わせ注意事項",
+      "sourceSha256": "1258e22adfb3b3099f50ca6da22f9dface2f2d9c6c80b828d1e3e64c38675cf4",
+      "sourceBodyCharacters": 1238
+    },
+    {
+      "source": "events/barrierfree.html",
+      "target": "events/barrierfree.html",
+      "title": "バリアフリー対応イベント一覧",
+      "sourceSha256": "1063e0c44f80318ad6993117bba472a753a4e8a573382aaf8dfeaf050dffe2a2",
+      "sourceBodyCharacters": 1658
+    },
+    {
+      "source": "events/by-city.html",
+      "target": "events/by-city.html",
+      "title": "市町別イベント一覧",
+      "sourceSha256": "dc92a95e84bbd64cf515bf2dd1f0865c7a6555484f13395aca3b020c9e441988",
+      "sourceBodyCharacters": 1618
+    },
+    {
+      "source": "events/by-genre.html",
+      "target": "events/by-genre.html",
+      "title": "ジャンル別イベント一覧",
+      "sourceSha256": "2802e4cb30c9d44e79f95488ee6fcc6718f1f364c85941ce0f272a4622075f25",
+      "sourceBodyCharacters": 1647
+    },
+    {
+      "source": "events/calendar-detail.html",
+      "target": "events/calendar-detail.html",
+      "title": "イベントカレンダー詳細",
+      "sourceSha256": "387b17575d051b914c38103919dd5acdb308f00d719485aa7a766bf3133bc4dd",
+      "sourceBodyCharacters": 1661
+    },
+    {
+      "source": "events/calendar.html",
+      "target": "events/calendar.html",
+      "title": "イベントカレンダー",
+      "sourceSha256": "fd118482bf659e8c17d939274a94d7d6f65208abf2dbb55783d2b7097991daf3",
+      "sourceBodyCharacters": 1652
+    },
+    {
+      "source": "events/detail.html",
+      "target": "events/detail.html",
+      "title": "イベント詳細ページ",
+      "sourceSha256": "94b31f539851e274f79295237ca8a044b2e6b91699d31d8db5906aab61035c2c",
+      "sourceBodyCharacters": 1612
+    },
+    {
+      "source": "events/disability-art.html",
+      "target": "events/disability-art.html",
+      "title": "障がい者芸術・文化関連イベント",
+      "sourceSha256": "a0d513743c38e46d6d8fd590de122336d39bcac103a474bae2849a4d1da81294",
+      "sourceBodyCharacters": 1657
+    },
+    {
+      "source": "events/during.html",
+      "target": "events/during.html",
+      "title": "文化祭期間中のイベント",
+      "sourceSha256": "d7c290f60ec47a0e6fd9ef8098c04be717a07ab61a913f0408e907defec80a7a",
+      "sourceBodyCharacters": 1641
+    },
+    {
+      "source": "events/event-contacts.html",
+      "target": "events/event-contacts.html",
+      "title": "各イベントの問い合わせ先",
+      "sourceSha256": "005867f6438ad018f3824828363a6c425624ffe10711b3e320110d690eb91537",
+      "sourceBodyCharacters": 1511
+    },
+    {
+      "source": "events/family.html",
+      "target": "events/family.html",
+      "title": "子ども・親子向けイベント",
+      "sourceSha256": "54a4dda7c527d4b27fa9f78bc378101179de9fc85c5dfc818fcedea60844ad1c",
+      "sourceBodyCharacters": 1638
+    },
+    {
+      "source": "events/free.html",
+      "target": "events/free.html",
+      "title": "無料イベント一覧",
+      "sourceSha256": "a6f817428ccd4650ce7e83f03c5550c80ea3c86d1cc0481da20dbc60f9cd732a",
+      "sourceBodyCharacters": 1626
+    },
+    {
+      "source": "events/general-contact.html",
+      "target": "events/general-contact.html",
+      "title": "全般的な問い合わせ先",
+      "sourceSha256": "cab1f058d2843ab12c78c5fed673ec7369306df5588915fb526d873973265da2",
+      "sourceBodyCharacters": 1493
+    },
+    {
+      "source": "events/latest.html",
+      "target": "events/latest.html",
+      "title": "新着イベント情報一覧",
+      "sourceSha256": "fd7337f3a3c343014892247a0f37b100e06dc1f1b2ebcee0c9f92eab983fa890",
+      "sourceBodyCharacters": 1634
+    },
+    {
+      "source": "events/open-call-info.html",
+      "target": "events/open-call-info.html",
+      "title": "全国公募イベント情報",
+      "sourceSha256": "7445c53711b3f6e445e6cf67101f81d70618712383f9b18437d1ef786a17acbe",
+      "sourceBodyCharacters": 1489
+    },
+    {
+      "source": "events/open-call.html",
+      "target": "events/open-call.html",
+      "title": "全国公募・募集を行うイベント",
+      "sourceSha256": "84abbdde62f329c23c917b727afda9246a04d0e2d19e9de959ece82bb498e7df",
+      "sourceBodyCharacters": 1650
+    },
+    {
+      "source": "events/reservation.html",
+      "target": "events/reservation.html",
+      "title": "予約・申込が必要なイベント",
+      "sourceSha256": "3e832c1081a46ae1723b109cc6cccb48e049f7d8098d7db15ae2f39a890e9a04",
+      "sourceBodyCharacters": 1647
+    },
+    {
+      "source": "events/search.html",
+      "target": "events/search.html",
+      "title": "検索結果一覧",
+      "sourceSha256": "44d38f00cb1ce98f9ec7603468119d09112c4c1d188c49adf2bbcaee2781f0bb",
+      "sourceBodyCharacters": 1622
+    },
+    {
+      "source": "index.html",
+      "target": "festival-guide.html",
+      "title": "愛媛の文化を、全国へ。そして、次の世代へ。",
+      "sourceSha256": "ea7a61b851b25e56dee832f1abae6e1e0cb75c2e7afeef2ecf308c53c1f394ab",
+      "sourceBodyCharacters": 1952
+    },
+    {
+      "source": "media/contact.html",
+      "target": "media/contact.html",
+      "title": "問い合わせ先",
+      "sourceSha256": "cee710d53cff9b39c843966ca2ea72c6dce138309feb35ab8a079243f1fef05c",
+      "sourceBodyCharacters": 1261
+    },
+    {
+      "source": "media/coverage.html",
+      "target": "media/coverage.html",
+      "title": "取材申込",
+      "sourceSha256": "74245c7fa278c45630b01cb6d77bdf7b238807225046a1ac8d6c9a8a396955d7",
+      "sourceBodyCharacters": 1195
+    },
+    {
+      "source": "media/logo-usage.html",
+      "target": "media/logo-usage.html",
+      "title": "ロゴ・名称使用について",
+      "sourceSha256": "6f60924a8028146d8a9265aa392a9651bea42388af2b9c0a30a9e674bc8b3441",
+      "sourceBodyCharacters": 1229
+    },
+    {
+      "source": "media/materials.html",
+      "target": "media/materials.html",
+      "title": "写真・動画素材提供",
+      "sourceSha256": "4aae28a4057e2610b73c63e76588c9de741759d684b0b337c5956b4a77da9219",
+      "sourceBodyCharacters": 1250
+    },
+    {
+      "source": "media/press.html",
+      "target": "media/press.html",
+      "title": "プレスリリース",
+      "sourceSha256": "294115fab268ceaaa45fefa7ebc462cba60b0389d2300b1ddefb2554a14b1ae0",
+      "sourceBodyCharacters": 1186
+    },
+    {
+      "source": "news/committee.html",
+      "target": "news/committee.html",
+      "title": "実行委員会からのお知らせ",
+      "sourceSha256": "59f95a720d3471e351c18510864340ecad14c2739b9abff0429d6855accff2f4",
+      "sourceBodyCharacters": 1256
+    },
+    {
+      "source": "news/detail.html",
+      "target": "news/detail.html",
+      "title": "お知らせ詳細",
+      "sourceSha256": "9c00e8fe920e44b6a13281f975ac0cd549f271be4575316b86055c7d0af0aa8c",
+      "sourceBodyCharacters": 1250
+    },
+    {
+      "source": "news/important.html",
+      "target": "news/important.html",
+      "title": "重要なお知らせ",
+      "sourceSha256": "1607eda323c1e034655b74063ea59a2ee8ff9b04801bc20bd50423d0682c5108",
+      "sourceBodyCharacters": 1176
+    },
+    {
+      "source": "news/index.html",
+      "target": "news/index.html",
+      "title": "お知らせ一覧",
+      "sourceSha256": "2f626f973013019190b6f9af186f363c471bb3d8f352bdd1ab8002d88dd37711",
+      "sourceBodyCharacters": 1235
+    },
+    {
+      "source": "news/press.html",
+      "target": "news/press.html",
+      "title": "報道発表",
+      "sourceSha256": "9f4ed47ee96c338f82b2569ca0cd38ca2ac1f3d23ad41d001220bd2f14c1ac15",
+      "sourceBodyCharacters": 1248
+    },
+    {
+      "source": "news/recruitment.html",
+      "target": "news/recruitment.html",
+      "title": "募集情報のお知らせ",
+      "sourceSha256": "5dd1e4403bcb604a6eefa97e2e8c20a2e57797e8b8b953589f8aad6971636629",
+      "sourceBodyCharacters": 1253
+    },
+    {
+      "source": "policy/copyright.html",
+      "target": "policy/copyright.html",
+      "title": "著作権について",
+      "sourceSha256": "65946b536648e38a73493a82a57e3ad221a588e3717d8697aef5872b56d73c5f",
+      "sourceBodyCharacters": 1222
+    },
+    {
+      "source": "policy/disclaimer.html",
+      "target": "policy/disclaimer.html",
+      "title": "免責事項",
+      "sourceSha256": "425d9bf07f776f2b284ce06682a7323d124460107ddd2625f3516435f8512dcb",
+      "sourceBodyCharacters": 1215
+    },
+    {
+      "source": "policy/links.html",
+      "target": "policy/links.html",
+      "title": "リンクについて",
+      "sourceSha256": "5c16fcf75424f8a62990ad2a0ffd520f081d736060a7d8b23bb08e6099d8b5c4",
+      "sourceBodyCharacters": 1224
+    },
+    {
+      "source": "policy/privacy.html",
+      "target": "policy/privacy.html",
+      "title": "個人情報の取扱い",
+      "sourceSha256": "cb98af955e39d3e7fb28b985779b235718d022a3a3cdf049d4600f12ca309e92",
+      "sourceBodyCharacters": 1213
+    },
+    {
+      "source": "policy/sns.html",
+      "target": "policy/sns.html",
+      "title": "SNSアカウント運用方針",
+      "sourceSha256": "280ff33aa40a582637a895a77763b2ab82414ab2b5e8ab26a1e40bc0fa4056f1",
+      "sourceBodyCharacters": 1239
+    },
+    {
+      "source": "policy/ssl.html",
+      "target": "policy/ssl.html",
+      "title": "SSL・暗号化通信について",
+      "sourceSha256": "9cb7007c1b489d4a77832e17a1460276fe235eec18e67bcaa16930401d37a9a5",
+      "sourceBodyCharacters": 1230
+    },
+    {
+      "source": "policy/universal-design.html",
+      "target": "policy/universal-design.html",
+      "title": "ユニバーサルデザインについて",
+      "sourceSha256": "96591b6e03bc5b37e1f9e924780a4ca392fe43d825cd2b5e67542fd0decd0582",
+      "sourceBodyCharacters": 1239
+    },
+    {
+      "source": "pr/ambassador.html",
+      "target": "pr/ambassador.html",
+      "title": "広報大使・アンバサダー（仮）",
+      "sourceSha256": "3bddd4ca7e5aa074c51dcc35805adb839177c8284b6feb2e8814ac3d7cc4e2f0",
+      "sourceBodyCharacters": 1317
+    },
+    {
+      "source": "pr/cooperation.html",
+      "target": "pr/cooperation.html",
+      "title": "市町・企業向け広報協力のお願い",
+      "sourceSha256": "66929df898d7e5349bbafd9b8cad7da6ca83efded16840e73ba9c9340bd69155",
+      "sourceBodyCharacters": 1328
+    },
+    {
+      "source": "pr/downloads.html",
+      "target": "pr/downloads.html",
+      "title": "広報素材ダウンロード",
+      "sourceSha256": "07fd81ac4eb556703863593a14cc61a08fe44ac2ef9e097fc7536b6533112669",
+      "sourceBodyCharacters": 1310
+    },
+    {
+      "source": "pr/index.html",
+      "target": "pr/index.html",
+      "title": "広報活動一覧",
+      "sourceSha256": "f0ddd3c23de65c63857d8c429103c2aa1d27d01cb9833581540d9a18eb6aeb04",
+      "sourceBodyCharacters": 1310
+    },
+    {
+      "source": "pr/sns-campaign.html",
+      "target": "pr/sns-campaign.html",
+      "title": "SNSキャンペーン（仮）",
+      "sourceSha256": "8107a26dd828719e8c5a3c320ca4123ce4f04c6ca216e449ed616dff11415071",
+      "sourceBodyCharacters": 1247
+    },
+    {
+      "source": "pr/video-accessible.html",
+      "target": "pr/video-accessible.html",
+      "title": "PR動画 字幕・手話あり",
+      "sourceSha256": "e66ca856c73d29f65179275eb09ab58036daefe2cfcbd0b11bd6856b53604d59",
+      "sourceBodyCharacters": 1212
+    },
+    {
+      "source": "pr/video-standard.html",
+      "target": "pr/video-standard.html",
+      "title": "PR動画 字幕・手話なし",
+      "sourceSha256": "1b316d80d847a7ac004ef1635298f031635cf9aaabcc875409caed794cbb453f",
+      "sourceBodyCharacters": 1204
+    },
+    {
+      "source": "pr/video.html",
+      "target": "pr/video.html",
+      "title": "PR動画",
+      "sourceSha256": "b2a6565c49f0662f3f2dbd989f05eae7edb3ef692e1cc5ae2c35a40807f54217",
+      "sourceBodyCharacters": 1182
+    },
+    {
+      "source": "recruitment/bids.html",
+      "target": "recruitment/bids.html",
+      "title": "入札情報",
+      "sourceSha256": "ba3d1b86eb055130edf299054cd061339f9b4abc9bafb744fb53516dad27b1e6",
+      "sourceBodyCharacters": 1244
+    },
+    {
+      "source": "recruitment/index.html",
+      "target": "recruitment/index.html",
+      "title": "募集情報一覧",
+      "sourceSha256": "b2c6abd164a95ef64b8d6e837db4038f120ba33b360a4838b68336151262d270",
+      "sourceBodyCharacters": 1252
+    },
+    {
+      "source": "recruitment/other-pref.html",
+      "target": "recruitment/other-pref.html",
+      "title": "他県大会への出演募集",
+      "sourceSha256": "cb69fbdcbe0886ec705ad73c6b90834fd03c38c58f8f5e9992d6211e599d642d",
+      "sourceBodyCharacters": 1243
+    },
+    {
+      "source": "recruitment/performers.html",
+      "target": "recruitment/performers.html",
+      "title": "出演・出品者募集",
+      "sourceSha256": "5fd705c29a094b7df95d56a8ae48dc029c967e795ac261f3e96f4ecd80eb600f",
+      "sourceBodyCharacters": 1282
+    },
+    {
+      "source": "recruitment/sponsors.html",
+      "target": "recruitment/sponsors.html",
+      "title": "応援企業・協賛企業募集",
+      "sourceSha256": "b92d8cf0ad9ee91f9d042703b597421f584964e16557ed5bfbc8fecf07f94cf4",
+      "sourceBodyCharacters": 2198
+    },
+    {
+      "source": "recruitment/support-projects.html",
+      "target": "recruitment/support-projects.html",
+      "title": "応援事業募集",
+      "sourceSha256": "70f7ab6b7f7585e26cbd7b094aabad28541d5b3db644534bf1b7c858e51abdd8",
+      "sourceBodyCharacters": 1268
+    },
+    {
+      "source": "recruitment/volunteer.html",
+      "target": "recruitment/volunteer.html",
+      "title": "スタッフ・ボランティア募集",
+      "sourceSha256": "402c0d98b802c3d0ed7526459def21f0a3ef339722023d11f19f9544256e5ef1",
+      "sourceBodyCharacters": 1222
+    },
+    {
+      "source": "sponsors/donation-companies.html",
+      "target": "sponsors/donation-companies.html",
+      "title": "寄付企業一覧",
+      "sourceSha256": "b0e579b7eed96bd491e7d0ac2bdba090b17e3bd2b8a18f1844b0d7f6c231ae33",
+      "sourceBodyCharacters": 2268
+    },
+    {
+      "source": "sponsors/index.html",
+      "target": "sponsors/index.html",
+      "title": "協賛・応援企業一覧",
+      "sourceSha256": "988e53e563674ec6dbac2a63b80d31087aac28783e387e9edadbb759bc6a4c5c",
+      "sourceBodyCharacters": 2277
+    },
+    {
+      "source": "sponsors/interest-form.html",
+      "target": "sponsors/interest-form.html",
+      "title": "関心表明フォーム（仮）",
+      "sourceSha256": "ab05305fba99e87858b809a29b24d62c08ebe4077ca14312e47528fa483d492b",
+      "sourceBodyCharacters": 2297
+    },
+    {
+      "source": "sponsors/interviews.html",
+      "target": "sponsors/interviews.html",
+      "title": "協賛企業インタビュー（仮）",
+      "sourceSha256": "d20bbc7b33114f2453a133d18b00f8a9bc8f1a4b7a6113dacc9989480ad739b8",
+      "sourceBodyCharacters": 2311
+    },
+    {
+      "source": "sponsors/partner-companies.html",
+      "target": "sponsors/partner-companies.html",
+      "title": "協力企業一覧",
+      "sourceSha256": "cc359b533b0698c60e8311f62dc4b5b7294541695e5da49e08906e9b649e881c",
+      "sourceBodyCharacters": 2276
+    },
+    {
+      "source": "sponsors/partner-recruitment.html",
+      "target": "sponsors/partner-recruitment.html",
+      "title": "協賛パートナー募集",
+      "sourceSha256": "75d1bdb649785cf6098f8c204de338f1c0c953ebe1c46745a646acf128f4870b",
+      "sourceBodyCharacters": 2301
+    },
+    {
+      "source": "sponsors/sponsor-companies.html",
+      "target": "sponsors/sponsor-companies.html",
+      "title": "協賛企業一覧",
+      "sourceSha256": "7f501fb33194a6a4ba4877671faf637a22c3e553000eae14cf5a4b5612a95e44",
+      "sourceBodyCharacters": 2282
+    },
+    {
+      "source": "tourism/city-links.html",
+      "target": "tourism/city-links.html",
+      "title": "市町観光リンク集",
+      "sourceSha256": "eb61d0d24e3188d0a655b851d449bd306462cec5d6c408e83d6efd393880a9ac",
+      "sourceBodyCharacters": 1477
+    },
+    {
+      "source": "tourism/courses.html",
+      "target": "tourism/courses.html",
+      "title": "モデルコース",
+      "sourceSha256": "5011e0a880cf2ab3aca4e8b7319859736159175ab35048d8f680c836b6c173bb",
+      "sourceBodyCharacters": 1445
+    },
+    {
+      "source": "tourism/food-culture.html",
+      "target": "tourism/food-culture.html",
+      "title": "食・土産・文化体験",
+      "sourceSha256": "e29f41d6bd8e75fe258a76e6f8eb968a1ce02f174301a0457a416793d9de11b1",
+      "sourceBodyCharacters": 1449
+    },
+    {
+      "source": "tourism/lodging.html",
+      "target": "tourism/lodging.html",
+      "title": "宿泊案内",
+      "sourceSha256": "67a10fd0475cd8fb9db594fbee3854ff65e05352cf7236aaec4c21240609d651",
+      "sourceBodyCharacters": 1487
+    },
+    {
+      "source": "tourism/travel-center.html",
+      "target": "tourism/travel-center.html",
+      "title": "トラベルセンター（仮）",
+      "sourceSha256": "609a4c16c9286e5868aa3889d9b0cd007c89839553b6ba6075a9fd2655c57e35",
+      "sourceBodyCharacters": 1506
+    },
+    {
+      "source": "tourism/trip.html",
+      "target": "tourism/trip.html",
+      "title": "愛媛への旅",
+      "sourceSha256": "7b0cf76b41dba7f0de6f96b08a891ab9558c388ceb16faa90497143734a654cf",
+      "sourceBodyCharacters": 1465
+    }
+  ],
+  "events": [
+    {
+      "title": "瀬戸内文化ステージ（仮）",
+      "dateISO": "2028-08-12",
+      "city": "松山市",
+      "genre": "舞台",
+      "fee": "無料（掲載例）",
+      "supports": [
+        "手話通訳"
+      ],
+      "target": "events/stage.html",
+      "image": "event-stage"
+    },
+    {
+      "title": "砥部焼とことばの工房（仮）",
+      "dateISO": "2028-08-18",
+      "city": "砥部町",
+      "genre": "工芸",
+      "fee": "要申込（掲載例）",
+      "supports": [
+        "親子向け"
+      ],
+      "target": "events/craft.html",
+      "image": "event-craft"
+    },
+    {
+      "title": "俳句とまち歩き（仮）",
+      "dateISO": "2028-09-09",
+      "city": "松山市",
+      "genre": "文学",
+      "fee": "無料（掲載例）",
+      "supports": [
+        "やさしい日本語"
+      ],
+      "target": "events/literature.html",
+      "image": "event-literature"
+    },
+    {
+      "title": "宇和海の食文化交流（仮）",
+      "dateISO": "2028-09-02",
+      "city": "宇和島市",
+      "genre": "食文化",
+      "fee": "有料（掲載例）",
+      "supports": [
+        "車椅子席"
+      ],
+      "target": "events/food.html",
+      "image": "event-food"
+    }
+  ]
+}

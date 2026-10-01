@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="愛媛大会仮ブランドマーク">
+  <rect width="120" height="120" rx="18" fill="#0C3554"/>
+  <path d="M20 76c18-13 35-13 52-2 11 7 19 7 30-1" fill="none" stroke="#F28C28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M27 89c19-9 39-8 58 1" fill="none" stroke="#E8F2F7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M37 64 60 28l23 36" fill="none" stroke="#F7F3EA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="88" cy="34" r="10" fill="#C9A646"/>
+</svg>

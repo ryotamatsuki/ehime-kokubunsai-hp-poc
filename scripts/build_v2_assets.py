@@ -32,7 +32,7 @@ def build(font_dir):
     photo_dir.mkdir(parents=True, exist_ok=True)
     font_out.mkdir(parents=True, exist_ok=True)
     font_dir.mkdir(parents=True, exist_ok=True)
-    manifest = {"version": "2.0.0-alpha.4", "photos": [], "fonts": [], "font_source_ref": FONT_REF}
+    manifest = {"version": json.loads((LAB/'content.json').read_text())['version'], "photos": [], "fonts": [], "font_source_ref": FONT_REF}
     for name in PHOTOS:
         source = ROOT / ("assets/" + name + ".jpg")
         im = Image.open(source).convert("RGB")
@@ -48,7 +48,7 @@ def build(font_dir):
             pending.replace(output)
             manifest["photos"].append(dict(path=output.relative_to(ROOT).as_posix(), source=source.relative_to(ROOT).as_posix(), source_sha256=sha(source.read_bytes()), width=width, height=height, bytes=len(data), sha256=sha(data)))
     # Union of current v1 and D2 text. Characters added later use the system fallback.
-    text = "".join(p.read_text(encoding="utf-8") for p in ROOT.rglob("*.html") if p.name != "review.html")
+    text = "".join(p.read_text(encoding="utf-8") for p in ROOT.rglob("*.html") if p.name not in ["review.html","compare.html"])
     text += "".join(p.read_text(encoding="utf-8") for p in LAB.glob("*.js"))
     unicodes = sorted({ord(c) for c in text} | set(range(32, 127)))
     manifest["subset_character_count"] = len(unicodes)

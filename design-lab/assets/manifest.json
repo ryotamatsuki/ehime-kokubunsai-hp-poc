@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "photos": [
     {
       "path": "design-lab/assets/photos/hero-ehime-culture-festival-480.webp",
@@ -197,8 +197,8 @@
       "family": "Ehime Lab Sans",
       "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Regular.ttf",
       "source_sha256": "b840cd07a67d89cacca44249ae49aa99ee7640eb5ce623be8d8983d6aabac801",
-      "bytes": 115284,
-      "sha256": "89bf2aa9cf0969bc176e66055498823eb822ee9594dbd8aad75084a0413e5129",
+      "bytes": 117000,
+      "sha256": "8c1e56b29f071addadbc4cb030e61f01eb1f86d6b6eb3ed97ca072fb5afbbe10",
       "license": "SIL Open Font License 1.1"
     },
     {
@@ -206,8 +206,8 @@
       "family": "Ehime Lab Sans",
       "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Bold.ttf",
       "source_sha256": "0081cedabc4921982fcd061f845a005664ac7fb642af2dd34b4007bc63ccd235",
-      "bytes": 116712,
-      "sha256": "bd3e86efb0ceb3e423ae65d6b9a4f9b6b33b6dae9bff8e2091c4f334269f615d",
+      "bytes": 118304,
+      "sha256": "dfa9b35bb9a44e1e64c97fe9a36d5ffe32f2194229e597af59d3bd58af611d98",
       "license": "SIL Open Font License 1.1"
     },
     {
@@ -221,5 +221,5 @@
     }
   ],
   "font_source_ref": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
-  "subset_character_count": 906
+  "subset_character_count": 916
 }

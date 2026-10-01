@@ -1,0 +1,560 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-1440-full.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-craft-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-craft-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-craft-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-literature-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-literature-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-literature-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-search-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-search-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-search-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-craft-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-craft-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/event-craft-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/documents-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/documents-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/documents-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 390,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-4/notebook-390.png",
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -16.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -16.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -28.0,
+        "width": 60.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -28.0,
+        "width": 60.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 320,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -20.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -20.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -32.0,
+        "width": 60.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -32.0,
+        "width": 60.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/participation-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/participation-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/participation-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/support-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/support-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/support-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "height": 1900,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-768.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "height": 1900,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-1024.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1250,
+    "height": 1900,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-1250.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1600,
+    "height": 1900,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/index-1600.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 3400,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-craft-1440-full.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 4300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/culture-craft-320-full.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/documents-1024.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-4/notebook-1024.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-contact-form-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-contact-form-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-contact-form-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-common-search-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-common-search-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/info-common-search-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/site-map-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/site-map-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-4/site-map-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  }
+]

@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>令和10年度 愛媛大会（仮） ホームページ基本構成（案）</title>
+    <style>
+      @page {
+        size: A3 landscape;
+        margin: 11mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        color: #111;
+        background: #fff;
+        font-family: "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+        font-size: 10.5px;
+        line-height: 1.42;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .sheet {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        page-break-after: always;
+      }
+
+      .sheet:last-child {
+        page-break-after: auto;
+      }
+
+      .doc-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: end;
+        gap: 16px;
+        margin-bottom: 8px;
+        padding-bottom: 5px;
+        border-bottom: 1.4px solid #111;
+      }
+
+      h1 {
+        margin: 0;
+        text-align: center;
+        font-size: 19px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+      }
+
+      .meta {
+        min-width: 172px;
+        text-align: right;
+        font-size: 9.2px;
+        line-height: 1.5;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: 1.2fr 2.8fr;
+        gap: 7px;
+        margin-bottom: 8px;
+      }
+
+      .summary-box,
+      .legend {
+        border: 1px solid #111;
+        padding: 6px 8px;
+      }
+
+      .summary-box strong,
+      .legend strong {
+        display: inline-block;
+        margin-right: 8px;
+        font-size: 10px;
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .legend span {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+      }
+
+      .mark {
+        display: inline-block;
+        width: 28px;
+        height: 12px;
+        border: 1px solid #111;
+        background: #fff;
+      }
+
+      .mark--key {
+        border-width: 2px;
+      }
+
+      .mark--draft {
+        border-style: dashed;
+        background: #f4f4f4;
+      }
+
+      .map {
+        display: grid;
+        grid-template-columns: 110px repeat(4, minmax(0, 1fr));
+        gap: 6px;
+        align-items: start;
+      }
+
+      .map--three {
+        grid-template-columns: 110px repeat(3, minmax(0, 1fr));
+      }
+
+      .tier {
+        min-height: 22px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #111;
+        background: #e9e9e9;
+        font-weight: 800;
+        text-align: center;
+      }
+
+      .axis {
+        display: grid;
+        gap: 6px;
+      }
+
+      .axis-label {
+        min-height: 22px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #111;
+        background: #e9e9e9;
+        font-weight: 800;
+      }
+
+      .node {
+        position: relative;
+        min-height: 27px;
+        padding: 5px 7px 5px 8px;
+        border: 1px solid #111;
+        background: #fff;
+      }
+
+      .node--key {
+        border-width: 2px;
+        font-weight: 800;
+      }
+
+      .node--draft {
+        border-style: dashed;
+        background: #f6f6f6;
+      }
+
+      .node--group {
+        padding-bottom: 7px;
+      }
+
+      .node b {
+        display: block;
+        font-size: 10.6px;
+        line-height: 1.32;
+      }
+
+      .node small {
+        display: block;
+        margin-top: 2px;
+        color: #333;
+        font-size: 8.6px;
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+      }
+
+      .connector {
+        display: grid;
+        place-items: center;
+        min-height: 27px;
+        font-weight: 800;
+      }
+
+      .stack {
+        display: grid;
+        gap: 4px;
+      }
+
+      .group-title {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 7px;
+        min-height: 25px;
+        padding: 4px 7px;
+        border: 2px solid #111;
+        background: #fff;
+        font-weight: 800;
+      }
+
+      .group-title span:last-child {
+        font-size: 8.8px;
+        font-weight: 700;
+      }
+
+      .subgrid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4px;
+      }
+
+      .subgrid--three {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .section-note {
+        margin-top: 6px;
+        padding: 5px 7px;
+        border: 1px solid #111;
+        background: #f7f7f7;
+        font-size: 9.2px;
+      }
+
+      .wide-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+      }
+
+      .inventory {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 4px;
+      }
+
+      .inventory .node {
+        min-height: 24px;
+      }
+
+      .foot {
+        margin-top: 8px;
+        padding-top: 4px;
+        border-top: 1px solid #111;
+        font-size: 8.6px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sheet">
+      <header class="doc-header">
+        <h1>令和10年度 国民文化祭・全国障害者芸術・文化祭 愛媛大会（仮） ホームページ基本構成（案）</h1>
+        <div class="meta">作成日 2026年4月27日<br>対象：ehime-kokubunsai-hp</div>
+      </header>
+
+      <div class="summary">
+        <div class="summary-box">
+          <strong>構成概要</strong>
+          既存HTML 114ページを、公式サイト公開時の導線が分かるように整理。トップページからグローバルナビ、補助ナビ、各カテゴリ下層へ展開する構成とする。
+        </div>
+        <div class="legend">
+          <strong>凡例</strong>
+          <span><i class="mark mark--key"></i>主要導線・カテゴリトップ</span>
+          <span><i class="mark"></i>通常ページ</span>
+          <span><i class="mark mark--draft"></i>仮ページ・正式決定後更新</span>
+          <span>→ 直接導線</span>
+          <span>点線枠：未確定情報を含むページ</span>
+        </div>
+      </div>
+
+      <div class="map">
+        <div class="axis-label">第0階層</div>
+        <div class="axis-label">第1階層</div>
+        <div class="axis-label">第2階層</div>
+        <div class="axis-label">第3階層</div>
+        <div class="axis-label">共通機能</div>
+
+        <div class="node node--key">
+          <b>トップページ</b>
+          <small>index.html</small>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>01</span><b>大会とは</b><span>about / 14ページ</span></div>
+          <div class="group-title"><span>02</span><b>イベント情報</b><span>events / 17ページ</span></div>
+          <div class="group-title"><span>03</span><b>募集情報</b><span>recruitment / 7ページ</span></div>
+          <div class="group-title"><span>04</span><b>協賛・応援企業</b><span>sponsors / 7ページ</span></div>
+          <div class="group-title"><span>05</span><b>アクセス・観光</b><span>access + tourism / 13ページ</span></div>
+          <div class="group-title"><span>06</span><b>アクセシビリティ</b><span>accessibility / 6ページ</span></div>
+          <div class="group-title"><span>07</span><b>お知らせ</b><span>news / 6ページ</span></div>
+          <div class="group-title"><span>08</span><b>問い合わせ</b><span>contact / 4ページ</span></div>
+        </div>
+
+        <div class="stack">
+          <div class="node node--group"><b>公式情報の確認</b><small>大会名称、基本方針、会期、開催地、事業構成、主催者、ロゴ等</small></div>
+          <div class="node node--group"><b>探す・選ぶ</b><small>カレンダー、市町別、ジャンル別、バリアフリー、予約、無料、親子向け等</small></div>
+          <div class="node node--group"><b>参加する</b><small>出演・出品、ボランティア、応援事業、他県大会、協賛、入札</small></div>
+          <div class="node node--group"><b>支援・協力する</b><small>協賛企業、寄付企業、協力企業、募集、関心表明、インタビュー</small></div>
+          <div class="node node--group"><b>来場する</b><small>飛行機、電車、バス、車、フェリー、会場別アクセス、旅、宿泊、モデルコース</small></div>
+          <div class="node node--group"><b>誰もが使える</b><small>情報保障、会場情報、イベント別対応、相談、やさしい日本語</small></div>
+          <div class="node node--group"><b>更新情報を見る</b><small>重要、報道発表、募集、実行委員会、詳細記事</small></div>
+          <div class="node node--group"><b>問い合わせる</b><small>フォーム、FAQ、問い合わせ先一覧、注意事項</small></div>
+        </div>
+
+        <div class="stack">
+          <div class="node node--draft"><b>仮情報の扱い</b><small>正式決定前は「仮」「未定」「正式決定後掲載」を明示</small></div>
+          <div class="node"><b>ページ間導線</b><small>カテゴリ内 sibling nav、関連ページ、CTA、検索導線</small></div>
+          <div class="node"><b>資料・PDF導線</b><small>要項、申込書、委員会資料、記録集、広報素材</small></div>
+          <div class="node node--draft"><b>協賛LP調デザイン</b><small>協賛関連は sponsor LP のトーンを継承</small></div>
+          <div class="node"><b>画像・ビジュアル</b><small>愛媛の風景、文化活動、工芸、舞台、人物を各ページに配置</small></div>
+          <div class="node"><b>支援ツール</b><small>文字サイズ、コントラスト、検索、言語、SNS</small></div>
+          <div class="node"><b>緊急表示</b><small>会期前・会期中の変更、中止、交通規制等を掲出</small></div>
+          <div class="node"><b>運用窓口</b><small>総合、募集、協賛、報道、アクセシビリティに分けて案内</small></div>
+        </div>
+
+        <div class="stack">
+          <div class="node"><b>ヘッダー</b><small>グローバルナビ、補助ナビ、検索フォーム</small></div>
+          <div class="node"><b>重要なお知らせ帯</b><small>全ページ共通表示</small></div>
+          <div class="node"><b>サイト内検索</b><small>search-index.js と common/search.html</small></div>
+          <div class="node"><b>フッター</b><small>主要カテゴリ、問い合わせ、運用情報</small></div>
+          <div class="node"><b>ポリシー</b><small>個人情報、著作権、免責、リンク、SNS、SSL、UD</small></div>
+          <div class="node node--draft"><b>会期後アーカイブ</b><small>結果、写真、動画、成果報告、協賛、記録集</small></div>
+        </div>
+      </div>
+
+      <div class="foot">1 / 4　全体構成・グローバル導線</div>
+    </section>
+
+    <section class="sheet">
+      <header class="doc-header">
+        <h1>第1階層から第2階層への展開（大会情報・イベント・お知らせ）</h1>
+        <div class="meta">ホームページ基本構成（案）<br>ページ一覧ベース</div>
+      </header>
+
+      <div class="wide-grid">
+        <div class="stack">
+          <div class="group-title"><span>01</span><b>大会とは</b><span>about</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>愛媛大会（仮）とは</b><small>about/index.html</small></div>
+            <div class="node"><b>国民文化祭とは</b><small>about/kokubunsai.html</small></div>
+            <div class="node"><b>全国障害者芸術・文化祭とは</b><small>about/disability-arts-festival.html</small></div>
+            <div class="node"><b>開催意義</b><small>about/significance.html</small></div>
+            <div class="node"><b>基本方針</b><small>about/policy.html</small></div>
+            <div class="node"><b>基本構想・実施計画</b><small>about/plan.html</small></div>
+            <div class="node"><b>事業構成</b><small>about/programs.html</small></div>
+            <div class="node"><b>会期・開催地</b><small>about/schedule-venues.html</small></div>
+            <div class="node node--draft"><b>大会名称</b><small>about/name.html</small></div>
+            <div class="node node--draft"><b>キャッチフレーズ</b><small>about/catchphrase.html</small></div>
+            <div class="node node--draft"><b>大会ロゴマーク</b><small>about/logo.html</small></div>
+            <div class="node node--draft"><b>マスコットキャラクター</b><small>about/mascot.html</small></div>
+            <div class="node"><b>主催者</b><small>about/organizers.html</small></div>
+            <div class="node"><b>各種ダウンロード</b><small>about/downloads.html</small></div>
+          </div>
+          <div class="section-note">役割：大会の公式性・背景・未確定事項の扱いを明確化し、トップページから最初に参照される基礎情報群とする。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>02</span><b>イベント情報</b><span>events</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>イベントカレンダー</b><small>events/calendar.html</small></div>
+            <div class="node"><b>イベントカレンダー詳細</b><small>events/calendar-detail.html</small></div>
+            <div class="node"><b>検索結果一覧</b><small>events/search.html</small></div>
+            <div class="node"><b>イベント詳細ページ</b><small>events/detail.html</small></div>
+            <div class="node"><b>新着イベント情報一覧</b><small>events/latest.html</small></div>
+            <div class="node"><b>文化祭期間中のイベント</b><small>events/during.html</small></div>
+            <div class="node"><b>市町別イベント一覧</b><small>events/by-city.html</small></div>
+            <div class="node"><b>ジャンル別イベント一覧</b><small>events/by-genre.html</small></div>
+            <div class="node"><b>全国公募イベント情報</b><small>events/open-call-info.html</small></div>
+            <div class="node"><b>全国公募・募集イベント</b><small>events/open-call.html</small></div>
+            <div class="node"><b>障がい者芸術・文化関連イベント</b><small>events/disability-art.html</small></div>
+            <div class="node"><b>バリアフリー対応イベント一覧</b><small>events/barrierfree.html</small></div>
+            <div class="node"><b>子ども・親子向けイベント</b><small>events/family.html</small></div>
+            <div class="node"><b>無料イベント一覧</b><small>events/free.html</small></div>
+            <div class="node"><b>予約・申込が必要なイベント</b><small>events/reservation.html</small></div>
+            <div class="node"><b>各イベントの問い合わせ先</b><small>events/event-contacts.html</small></div>
+            <div class="node"><b>全般的な問い合わせ先</b><small>events/general-contact.html</small></div>
+          </div>
+          <div class="section-note">役割：日時・地域・ジャンル・支援対応からイベントを探せる実用導線。会期中は更新頻度が最も高い領域。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>07</span><b>お知らせ</b><span>news</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>お知らせ一覧</b><small>news/index.html</small></div>
+            <div class="node"><b>お知らせ詳細</b><small>news/detail.html</small></div>
+            <div class="node"><b>重要なお知らせ</b><small>news/important.html</small></div>
+            <div class="node"><b>報道発表</b><small>news/press.html</small></div>
+            <div class="node"><b>募集情報のお知らせ</b><small>news/recruitment.html</small></div>
+            <div class="node"><b>実行委員会からのお知らせ</b><small>news/committee.html</small></div>
+          </div>
+          <div class="group-title"><span>09</span><b>実行委員会・会議資料</b><span>committee</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>実行委員会概要</b><small>committee/overview.html</small></div>
+            <div class="node"><b>基本構想検討会</b><small>committee/concept-meeting.html</small></div>
+            <div class="node"><b>基本構想</b><small>committee/concept.html</small></div>
+            <div class="node"><b>総会資料</b><small>committee/general-assembly.html</small></div>
+            <div class="node"><b>専門委員会・部会資料</b><small>committee/committees.html</small></div>
+            <div class="node"><b>実施計画</b><small>committee/implementation-plan.html</small></div>
+            <div class="node"><b>収支予算・事業計画</b><small>committee/budget.html</small></div>
+          </div>
+          <div class="section-note">役割：公式発表・会議資料・透明性確保のための情報を集約。報道・行政・関係団体の参照導線になる。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>共通</span><b>補助ナビ・サイト機能</b><span>common</span></div>
+          <div class="subgrid">
+            <div class="node"><b>重要なお知らせ表示</b><small>common/important.html</small></div>
+            <div class="node"><b>アクセシビリティ支援ツール</b><small>common/accessibility-tool.html</small></div>
+            <div class="node node--draft"><b>言語切替</b><small>common/language.html</small></div>
+            <div class="node"><b>SNSリンク</b><small>common/sns.html</small></div>
+            <div class="node node--key"><b>サイト内検索</b><small>common/search.html</small></div>
+          </div>
+          <div class="group-title"><span>10</span><b>入札・契約情報</b><span>bids</span></div>
+          <div class="node node--key"><b>入札・契約情報</b><small>bids/index.html</small></div>
+          <div class="section-note">役割：全ページのヘッダー・フッターから常時アクセスできる共通機能。閲覧支援、検索、SNS、重要情報の入口を担う。</div>
+        </div>
+      </div>
+
+      <div class="foot">2 / 4　大会情報・イベント・お知らせ・委員会資料</div>
+    </section>
+
+    <section class="sheet">
+      <header class="doc-header">
+        <h1>第1階層から第2階層への展開（募集・協賛・広報・報道）</h1>
+        <div class="meta">ホームページ基本構成（案）<br>協賛関連はLP調のデザインを継承</div>
+      </header>
+
+      <div class="wide-grid">
+        <div class="stack">
+          <div class="group-title"><span>03</span><b>募集情報</b><span>recruitment</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>募集情報一覧</b><small>recruitment/index.html</small></div>
+            <div class="node"><b>出演・出品者募集</b><small>recruitment/performers.html</small></div>
+            <div class="node"><b>スタッフ・ボランティア募集</b><small>recruitment/volunteer.html</small></div>
+            <div class="node"><b>応援事業募集</b><small>recruitment/support-projects.html</small></div>
+            <div class="node"><b>他県大会への出演募集</b><small>recruitment/other-pref.html</small></div>
+            <div class="node node--draft"><b>応援企業・協賛企業募集</b><small>recruitment/sponsors.html</small></div>
+            <div class="node"><b>入札情報</b><small>recruitment/bids.html</small></div>
+          </div>
+          <div class="section-note">役割：参加募集の入口。対象、期間、申込方法、要項、様式、問い合わせ先を整理し、正式募集前は仮情報として明示する。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>04</span><b>協賛・応援企業</b><span>sponsors</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>協賛・応援企業一覧</b><small>sponsors/index.html</small></div>
+            <div class="node"><b>協賛企業一覧</b><small>sponsors/sponsor-companies.html</small></div>
+            <div class="node"><b>寄付企業一覧</b><small>sponsors/donation-companies.html</small></div>
+            <div class="node"><b>協力企業一覧</b><small>sponsors/partner-companies.html</small></div>
+            <div class="node node--key node--draft"><b>協賛パートナー募集</b><small>sponsors/partner-recruitment.html</small></div>
+            <div class="node node--draft"><b>関心表明フォーム</b><small>sponsors/interest-form.html</small></div>
+            <div class="node node--draft"><b>協賛企業インタビュー</b><small>sponsors/interviews.html</small></div>
+          </div>
+          <div class="section-note">役割：協賛金、寄付、物品、サービス、広報協力を分けて案内。協賛LPのキービジュアル、深藍・金・伊予オレンジのトーンを継承。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>11</span><b>広報活動</b><span>pr</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>広報活動一覧</b><small>pr/index.html</small></div>
+            <div class="node node--draft"><b>広報大使・アンバサダー</b><small>pr/ambassador.html</small></div>
+            <div class="node"><b>広報素材ダウンロード</b><small>pr/downloads.html</small></div>
+            <div class="node node--draft"><b>SNSキャンペーン</b><small>pr/sns-campaign.html</small></div>
+            <div class="node"><b>市町・企業向け広報協力</b><small>pr/cooperation.html</small></div>
+            <div class="node"><b>PR動画</b><small>pr/video.html</small></div>
+            <div class="node"><b>PR動画 字幕・手話なし</b><small>pr/video-standard.html</small></div>
+            <div class="node"><b>PR動画 字幕・手話あり</b><small>pr/video-accessible.html</small></div>
+          </div>
+          <div class="section-note">役割：県民・市町・企業・報道が共通して使う広報素材を整理。アクセシブルな動画導線も別ページで管理する。</div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>12</span><b>報道・メディア向け</b><span>media</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>プレスリリース</b><small>media/press.html</small></div>
+            <div class="node"><b>取材申込</b><small>media/coverage.html</small></div>
+            <div class="node"><b>写真・動画素材提供</b><small>media/materials.html</small></div>
+            <div class="node"><b>ロゴ・名称使用について</b><small>media/logo-usage.html</small></div>
+            <div class="node"><b>問い合わせ先</b><small>media/contact.html</small></div>
+          </div>
+          <div class="group-title"><span>08</span><b>問い合わせ</b><span>contact</span></div>
+          <div class="subgrid">
+            <div class="node node--key"><b>メールフォーム</b><small>contact/form.html</small></div>
+            <div class="node"><b>よくある質問</b><small>contact/faq.html</small></div>
+            <div class="node"><b>問い合わせ先一覧</b><small>contact/contacts.html</small></div>
+            <div class="node"><b>お問い合わせ注意事項</b><small>contact/notes.html</small></div>
+          </div>
+          <div class="section-note">役割：報道対応と一般問い合わせを分離し、用途別の窓口を明示する。</div>
+        </div>
+      </div>
+
+      <div class="foot">3 / 4　募集・協賛・広報・報道・問い合わせ</div>
+    </section>
+
+    <section class="sheet">
+      <header class="doc-header">
+        <h1>第1階層から第2階層への展開（来場・支援・アーカイブ・サイトポリシー）</h1>
+        <div class="meta">ホームページ基本構成（案）<br>公開前から会期後までを想定</div>
+      </header>
+
+      <div class="two-col">
+        <div class="stack">
+          <div class="group-title"><span>05-A</span><b>アクセス</b><span>access / 7ページ</span></div>
+          <div class="subgrid subgrid--three">
+            <div class="node node--key"><b>会場別アクセス</b><small>access/venues.html</small></div>
+            <div class="node"><b>飛行機でのアクセス</b><small>access/flight.html</small></div>
+            <div class="node"><b>電車でのアクセス</b><small>access/train.html</small></div>
+            <div class="node"><b>バスでのアクセス</b><small>access/bus.html</small></div>
+            <div class="node"><b>車でのアクセス</b><small>access/car.html</small></div>
+            <div class="node"><b>フェリーでのアクセス</b><small>access/ferry.html</small></div>
+            <div class="node"><b>バリアフリー交通情報</b><small>access/barrierfree-transport.html</small></div>
+          </div>
+          <div class="group-title"><span>05-B</span><b>観光・宿泊</b><span>tourism / 6ページ</span></div>
+          <div class="subgrid subgrid--three">
+            <div class="node node--key"><b>愛媛への旅</b><small>tourism/trip.html</small></div>
+            <div class="node"><b>宿泊案内</b><small>tourism/lodging.html</small></div>
+            <div class="node"><b>モデルコース</b><small>tourism/courses.html</small></div>
+            <div class="node"><b>食・土産・文化体験</b><small>tourism/food-culture.html</small></div>
+            <div class="node"><b>市町観光リンク集</b><small>tourism/city-links.html</small></div>
+            <div class="node node--draft"><b>トラベルセンター</b><small>tourism/travel-center.html</small></div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>06</span><b>アクセシビリティ・バリアフリー</b><span>accessibility / 6ページ</span></div>
+          <div class="subgrid subgrid--three">
+            <div class="node node--key"><b>情報保障について</b><small>accessibility/information-support.html</small></div>
+            <div class="node"><b>会場バリアフリー情報</b><small>accessibility/venue-barrierfree.html</small></div>
+            <div class="node"><b>イベント別対応一覧</b><small>accessibility/event-support.html</small></div>
+            <div class="node"><b>参加・鑑賞時の配慮事項</b><small>accessibility/participation.html</small></div>
+            <div class="node"><b>相談窓口</b><small>accessibility/consultation.html</small></div>
+            <div class="node node--draft"><b>やさしい日本語ページ</b><small>accessibility/easy-japanese.html</small></div>
+          </div>
+          <div class="group-title"><span>13</span><b>会期後アーカイブ</b><span>archive / 6ページ</span></div>
+          <div class="subgrid subgrid--three">
+            <div class="node node--draft"><b>開催結果概要</b><small>archive/results.html</small></div>
+            <div class="node node--draft"><b>写真ギャラリー</b><small>archive/gallery.html</small></div>
+            <div class="node node--draft"><b>動画アーカイブ</b><small>archive/videos.html</small></div>
+            <div class="node node--draft"><b>成果報告書</b><small>archive/report.html</small></div>
+            <div class="node node--draft"><b>協賛企業・団体一覧</b><small>archive/sponsors.html</small></div>
+            <div class="node node--draft"><b>記録集PDF</b><small>archive/records.html</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top: 6px;">
+        <div class="stack">
+          <div class="group-title"><span>14</span><b>サイトポリシー</b><span>policy / 7ページ</span></div>
+          <div class="subgrid subgrid--three">
+            <div class="node"><b>個人情報の取扱い</b><small>policy/privacy.html</small></div>
+            <div class="node"><b>著作権について</b><small>policy/copyright.html</small></div>
+            <div class="node"><b>免責事項</b><small>policy/disclaimer.html</small></div>
+            <div class="node"><b>リンクについて</b><small>policy/links.html</small></div>
+            <div class="node"><b>SNSアカウント運用方針</b><small>policy/sns.html</small></div>
+            <div class="node"><b>SSL・暗号化通信について</b><small>policy/ssl.html</small></div>
+            <div class="node"><b>ユニバーサルデザインについて</b><small>policy/universal-design.html</small></div>
+          </div>
+        </div>
+
+        <div class="stack">
+          <div class="group-title"><span>一覧</span><b>ページ数内訳</b><span>HTML 114ページ</span></div>
+          <div class="inventory">
+            <div class="node"><b>about</b><small>14</small></div>
+            <div class="node"><b>events</b><small>17</small></div>
+            <div class="node"><b>recruitment</b><small>7</small></div>
+            <div class="node"><b>sponsors</b><small>7</small></div>
+            <div class="node"><b>access</b><small>7</small></div>
+            <div class="node"><b>tourism</b><small>6</small></div>
+            <div class="node"><b>accessibility</b><small>6</small></div>
+            <div class="node"><b>news</b><small>6</small></div>
+            <div class="node"><b>committee</b><small>7</small></div>
+            <div class="node"><b>pr</b><small>8</small></div>
+            <div class="node"><b>media</b><small>5</small></div>
+            <div class="node"><b>contact</b><small>4</small></div>
+            <div class="node"><b>common</b><small>5</small></div>
+            <div class="node"><b>policy</b><small>7</small></div>
+            <div class="node"><b>archive</b><small>6</small></div>
+            <div class="node"><b>bids</b><small>1</small></div>
+            <div class="node"><b>top</b><small>1</small></div>
+          </div>
+          <div class="section-note">運用方針：公開前は仮ページで完成イメージを示し、正式情報の確定後に本文、資料リンク、問い合わせ先、申込導線を差し替える。</div>
+        </div>
+      </div>
+
+      <div class="foot">4 / 4　アクセス・観光・アクセシビリティ・アーカイブ・ポリシー</div>
+    </section>
+  </body>
+</html>

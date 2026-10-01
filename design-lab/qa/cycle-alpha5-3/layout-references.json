@@ -1,0 +1,560 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 390,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-3/notebook-390.png",
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -4.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -4.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -12.0,
+        "width": 44.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -12.0,
+        "width": 44.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 320,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -8.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -8.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -16.0,
+        "width": 44.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -16.0,
+        "width": 44.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "participation.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "support.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1250,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1600,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 3400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 4300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "documents.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "site-map.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  }
+]

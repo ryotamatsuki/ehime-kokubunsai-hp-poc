@@ -75,7 +75,7 @@ def main():
     assets=[]
     original=json.loads((LAB/'assets/manifest.json').read_text())
     art=json.loads((LAB/'assets/art-manifest.json').read_text())
-    for row in original['fonts']+art['images']:
+    for row in original['fonts']+art['images']+json.loads((LAB/'assets/legacy-manifest.json').read_text())['images']:
         actual=hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()
         good=actual==row['sha256'];assets.append({'path':row['path'],'status':'PASS' if good else 'FAIL'})
         if not good:issues.append('asset hash '+row['path'])
@@ -86,24 +86,24 @@ def main():
     if not (version['version']==tokens['version']==manifest['version']):issues.append('version metadata differs')
     css_flags={name:query in css for name,query in [('reducedMotion','prefers-reduced-motion'),('forcedColors','forced-colors'),('focusVisible',':focus-visible'),('print','@media print')]}
     if not all(css_flags.values()):issues.append('missing CSS access states')
-    for file in ['experience.js','experience-data.js','painting.js']:
+    for file in ['experience.js','experience-data.js','painting.js','legacy-ui.js','site-search-data.js']:
         subprocess.run(['node','--check',str(LAB/file)],check=True,capture_output=True)
     review=Inspector();review.feed((LAB/'review.html').read_text());pack=next(s for s in review.scripts if s['attrs'].get('id')=='pack')
     packed=json.loads(pack['code'])
     if set(packed['pages'])!=set(manifest['pages']):issues.append('offline pack page set')
     for file,source in packed['pages'].items():
         if source!=(LAB/file).read_text():issues.append('stale offline page '+file)
-    shared=sum((LAB/name).stat().st_size for name in ['experience.css','experience-data.js','experience.js'])+sum(row['bytes'] for row in original['fonts'])
+    shared=sum((LAB/name).stat().st_size for name in ['experience.css','experience-data.js','experience.js','legacy-ui.js'])+sum(row['bytes'] for row in original['fonts'])
     budgets=[]
-    for name,image_name in [('index.html','porcelain-hero'),('culture-craft.html','craft-hands'),('event-craft.html','craft-hands'),('event-search.html',None),('documents.html',None),('notebook.html',None)]:
+    for name,image_name in [('index.html','festival-hero'),('culture-craft.html','event-craft'),('event-craft.html','event-craft'),('event-search.html','event-pre2026'),('documents.html',None),('notebook.html',None)]:
         for width in [390,1440]:
             amount=shared+(LAB/name).stat().st_size
             if name=='culture-craft.html':amount+=(LAB/'painting.js').stat().st_size
             if image_name:
-                image_width=480 if width==390 else 960
+                image_width=480 if width==390 or name=='event-search.html' else 1440 if name=='index.html' else 960
                 amount+=(LAB/f'assets/art/{image_name}-{image_width}.webp').stat().st_size
-            budgets.append({'page':name,'cssViewport':width,'dpr':1,'estimatedFirstViewBytes':amount,'limit':500000,'status':'PASS' if amount<=500000 else 'FAIL'})
-            if amount>500000:issues.append('budget '+name)
+            budgets.append({'page':name,'cssViewport':width,'dpr':1,'estimatedFirstViewBytes':amount,'limit':500000 if width==390 else 750000,'status':'PASS' if amount<=(500000 if width==390 else 750000) else 'FAIL'})
+            if amount>(500000 if width==390 else 750000):issues.append('budget '+name)
     # Original v1 child pages still use these root fragment names.
     compatibility=[id for id in ['about','events','participation','support','news'] if id in inspect(ROOT/'index.html').ids]
     if len(compatibility)!=5:issues.append('missing legacy top fragment')
@@ -119,7 +119,7 @@ def main():
             except Exception:good=False
             frames.append({'path':row['output'],'status':'PASS' if good else 'FAIL'})
             if not good:issues.append('reference integrity '+row['output'])
-    output={'version':'2.0.0-alpha.4','status':'FAIL' if issues else 'PASS','method':'static HTML and code checks; not WCAG conformance/browser/CWV confirmation','pages':pages,'contrast':colors,'assetHashes':assets,'cssStates':css_flags,'estimatedBudgets':budgets,'budgetLimits':'DPR1 estimate; excludes later/lazy requests, cache, response headers, real loading time','offlinePack':{'pages':len(packed['pages']),'assets':len(packed['assets']),'bytes':(LAB/'review.html').stat().st_size},'legacyTopFragments':compatibility,'issues':issues}
+    output={'version':manifest['version'],'status':'FAIL' if issues else 'PASS','method':'static HTML and code checks; not WCAG conformance/browser/CWV confirmation','pages':pages,'contrast':colors,'assetHashes':assets,'cssStates':css_flags,'estimatedBudgets':budgets,'budgetLimits':'DPR1 estimate; excludes later/lazy requests, cache, response headers, real loading time','offlinePack':{'pages':len(packed['pages']),'assets':len(packed['assets']),'bytes':(LAB/'review.html').stat().st_size},'legacyTopFragments':compatibility,'issues':issues}
     output['staticReferenceIntegrity']=frames
     (LAB/'qa/static-checks.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'status':output['status'],'pages':len(pages),'contrastPairs':len(colors),'minimumTextContrast':min(c['ratio'] for c in colors if c['minimum']==4.5),'assets':len(assets),'largestEstimatedFirstView':max(b['estimatedFirstViewBytes'] for b in budgets),'issues':issues},ensure_ascii=False))

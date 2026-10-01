@@ -1,0 +1,32 @@
+[
+  {
+    "file": "notebook.html",
+    "width": 1440,
+    "height": 3200,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-6/notebook-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 390,
+    "height": 3200,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-6/notebook-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 320,
+    "height": 3200,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-6/notebook-320.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  }
+]

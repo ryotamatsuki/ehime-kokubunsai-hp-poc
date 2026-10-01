@@ -1,0 +1,80 @@
+[
+  {
+    "file": "notebook.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 390,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": "design-lab/qa/cycle-alpha5-5/notebook-390.png",
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -16.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -16.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -28.0,
+        "width": 60.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -28.0,
+        "width": 60.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "notebook.html",
+    "width": 320,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [
+      {
+        "text": "削除",
+        "x": -20.0,
+        "width": 36.0
+      },
+      {
+        "text": "削除",
+        "x": -20.0,
+        "width": 36.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -32.0,
+        "width": 60.0
+      },
+      {
+        "tag": "button",
+        "class": "remove-note",
+        "x": -32.0,
+        "width": 60.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.4",
+  "version": "2.0.0-alpha.5",
   "method": "jsdom state and route logic; not browser/screen-reader confirmation",
   "passed": 25,
   "total": 25,

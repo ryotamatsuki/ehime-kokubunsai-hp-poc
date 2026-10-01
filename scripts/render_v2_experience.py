@@ -46,6 +46,7 @@ def render(file,width,height,folder,query='',label=''):
         image_width=(content_width-gap)*6/13
         image_height=image_width/.94
     css+=f'\n.opening-image>img{{height:{image_height}px;object-fit:cover}}'
+    css+=f'\n.festival-panorama>img{{height:{content_width/(1.25 if width<=700 else 2)}px;object-fit:cover}}'
     css+='\n@page{size:'+str(width)+'px 18000px;margin:0}body{margin:0}'
     source=source.replace('<link rel="stylesheet" href="experience.css">','<style>'+css+'</style>')
     stem=file.removesuffix('.html')+'-'+str(width)+(('-'+label) if label else '')
@@ -81,6 +82,8 @@ def main():
     if args.extended:
         cases += [('index.html',width,1900,'','') for width in [768,1024,1250,1600]]
         cases += [('culture-craft.html',1440,3400,'','full'),('culture-craft.html',320,4300,'','full'),('documents.html',1024,2500,'',''),('notebook.html',1024,2500,'?saved=craft,art','')]
+        for file in ['info-sponsors-partner-recruitment.html','info-tourism-courses.html','info-contact-form.html','info-common-search.html','site-map.html']:
+            cases += [(file,1440,2700,'',''),(file,390,3300,'',''),(file,320,3300,'','')]
     results=[render(file,width,height,folder,query,label) for file,width,height,query,label in cases]
     (folder/'layout-references.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'cycle':args.cycle,'references':len(results),'textOutsidePage':sum(len(r['textOutsidePage']) for r in results),'controlsOutsidePage':sum(len(r['controlsOutsidePage']) for r in results),'folder':str(folder)}))

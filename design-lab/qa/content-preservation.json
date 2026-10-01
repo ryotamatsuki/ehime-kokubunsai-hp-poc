@@ -1,0 +1,842 @@
+{
+  "version": "2.0.0-alpha.5",
+  "status": "PASS",
+  "method": "all visible source text chunks, source hashes, v1 event fields and generated asset linkage",
+  "v1SnapshotFiles": 161,
+  "v1SitePages": 114,
+  "preservedTextChunks": 10514,
+  "sourceTextChunks": 10514,
+  "v1Events": [
+    {
+      "title": "瀬戸内文化ステージ（仮）",
+      "status": "PASS"
+    },
+    {
+      "title": "砥部焼とことばの工房（仮）",
+      "status": "PASS"
+    },
+    {
+      "title": "宇和海の食文化交流（仮）",
+      "status": "PASS"
+    },
+    {
+      "title": "俳句とまち歩き（仮）",
+      "status": "PASS"
+    }
+  ],
+  "allEvents": 6,
+  "generatedImages": 7,
+  "japaneseFontCoverage": [
+    {
+      "font": "ehime-sans-regular.woff2",
+      "japaneseCharacters": 794,
+      "missingCharacters": 0
+    },
+    {
+      "font": "ehime-sans-bold.woff2",
+      "japaneseCharacters": 794,
+      "missingCharacters": 0
+    }
+  ],
+  "pages": [
+    {
+      "source": "about/catchphrase.html",
+      "target": "about/catchphrase.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/disability-arts-festival.html",
+      "target": "about/disability-arts-festival.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/downloads.html",
+      "target": "about/downloads.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/index.html",
+      "target": "about/index.html",
+      "sourceTextChunks": 87,
+      "retainedTextChunks": 87,
+      "status": "PASS"
+    },
+    {
+      "source": "about/kokubunsai.html",
+      "target": "about/kokubunsai.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/logo.html",
+      "target": "about/logo.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/mascot.html",
+      "target": "about/mascot.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/name.html",
+      "target": "about/name.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/organizers.html",
+      "target": "about/organizers.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/plan.html",
+      "target": "about/plan.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/policy.html",
+      "target": "about/policy.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/programs.html",
+      "target": "about/programs.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/schedule-venues.html",
+      "target": "about/schedule-venues.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "about/significance.html",
+      "target": "about/significance.html",
+      "sourceTextChunks": 89,
+      "retainedTextChunks": 89,
+      "status": "PASS"
+    },
+    {
+      "source": "access/barrierfree-transport.html",
+      "target": "access/barrierfree-transport.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "access/bus.html",
+      "target": "access/bus.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "access/car.html",
+      "target": "access/car.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "access/ferry.html",
+      "target": "access/ferry.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "access/flight.html",
+      "target": "access/flight.html",
+      "sourceTextChunks": 98,
+      "retainedTextChunks": 98,
+      "status": "PASS"
+    },
+    {
+      "source": "access/train.html",
+      "target": "access/train.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "access/venues.html",
+      "target": "access/venues.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/consultation.html",
+      "target": "accessibility/consultation.html",
+      "sourceTextChunks": 86,
+      "retainedTextChunks": 86,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/easy-japanese.html",
+      "target": "accessibility/easy-japanese.html",
+      "sourceTextChunks": 71,
+      "retainedTextChunks": 71,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/event-support.html",
+      "target": "accessibility/event-support.html",
+      "sourceTextChunks": 103,
+      "retainedTextChunks": 103,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/information-support.html",
+      "target": "accessibility/information-support.html",
+      "sourceTextChunks": 76,
+      "retainedTextChunks": 76,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/participation.html",
+      "target": "accessibility/participation.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "accessibility/venue-barrierfree.html",
+      "target": "accessibility/venue-barrierfree.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/gallery.html",
+      "target": "archive/gallery.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/records.html",
+      "target": "archive/records.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/report.html",
+      "target": "archive/report.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/results.html",
+      "target": "archive/results.html",
+      "sourceTextChunks": 76,
+      "retainedTextChunks": 76,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/sponsors.html",
+      "target": "archive/sponsors.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "archive/videos.html",
+      "target": "archive/videos.html",
+      "sourceTextChunks": 68,
+      "retainedTextChunks": 68,
+      "status": "PASS"
+    },
+    {
+      "source": "bids/index.html",
+      "target": "bids/index.html",
+      "sourceTextChunks": 71,
+      "retainedTextChunks": 71,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/budget.html",
+      "target": "committee/budget.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/committees.html",
+      "target": "committee/committees.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/concept-meeting.html",
+      "target": "committee/concept-meeting.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/concept.html",
+      "target": "committee/concept.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/general-assembly.html",
+      "target": "committee/general-assembly.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/implementation-plan.html",
+      "target": "committee/implementation-plan.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "committee/overview.html",
+      "target": "committee/overview.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "common/accessibility-tool.html",
+      "target": "common/accessibility-tool.html",
+      "sourceTextChunks": 69,
+      "retainedTextChunks": 69,
+      "status": "PASS"
+    },
+    {
+      "source": "common/important.html",
+      "target": "common/important.html",
+      "sourceTextChunks": 68,
+      "retainedTextChunks": 68,
+      "status": "PASS"
+    },
+    {
+      "source": "common/language.html",
+      "target": "common/language.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "common/search.html",
+      "target": "common/search.html",
+      "sourceTextChunks": 64,
+      "retainedTextChunks": 64,
+      "status": "PASS"
+    },
+    {
+      "source": "common/sns.html",
+      "target": "common/sns.html",
+      "sourceTextChunks": 71,
+      "retainedTextChunks": 71,
+      "status": "PASS"
+    },
+    {
+      "source": "contact/contacts.html",
+      "target": "contact/contacts.html",
+      "sourceTextChunks": 85,
+      "retainedTextChunks": 85,
+      "status": "PASS"
+    },
+    {
+      "source": "contact/faq.html",
+      "target": "contact/faq.html",
+      "sourceTextChunks": 72,
+      "retainedTextChunks": 72,
+      "status": "PASS"
+    },
+    {
+      "source": "contact/form.html",
+      "target": "contact/form.html",
+      "sourceTextChunks": 82,
+      "retainedTextChunks": 82,
+      "status": "PASS"
+    },
+    {
+      "source": "contact/notes.html",
+      "target": "contact/notes.html",
+      "sourceTextChunks": 76,
+      "retainedTextChunks": 76,
+      "status": "PASS"
+    },
+    {
+      "source": "events/barrierfree.html",
+      "target": "events/barrierfree.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/by-city.html",
+      "target": "events/by-city.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/by-genre.html",
+      "target": "events/by-genre.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/calendar-detail.html",
+      "target": "events/calendar-detail.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/calendar.html",
+      "target": "events/calendar.html",
+      "sourceTextChunks": 115,
+      "retainedTextChunks": 115,
+      "status": "PASS"
+    },
+    {
+      "source": "events/detail.html",
+      "target": "events/detail.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/disability-art.html",
+      "target": "events/disability-art.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/during.html",
+      "target": "events/during.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/event-contacts.html",
+      "target": "events/event-contacts.html",
+      "sourceTextChunks": 101,
+      "retainedTextChunks": 101,
+      "status": "PASS"
+    },
+    {
+      "source": "events/family.html",
+      "target": "events/family.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/free.html",
+      "target": "events/free.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/general-contact.html",
+      "target": "events/general-contact.html",
+      "sourceTextChunks": 101,
+      "retainedTextChunks": 101,
+      "status": "PASS"
+    },
+    {
+      "source": "events/latest.html",
+      "target": "events/latest.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/open-call-info.html",
+      "target": "events/open-call-info.html",
+      "sourceTextChunks": 92,
+      "retainedTextChunks": 92,
+      "status": "PASS"
+    },
+    {
+      "source": "events/open-call.html",
+      "target": "events/open-call.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/reservation.html",
+      "target": "events/reservation.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "events/search.html",
+      "target": "events/search.html",
+      "sourceTextChunks": 117,
+      "retainedTextChunks": 117,
+      "status": "PASS"
+    },
+    {
+      "source": "index.html",
+      "target": "festival-guide.html",
+      "sourceTextChunks": 118,
+      "retainedTextChunks": 118,
+      "status": "PASS"
+    },
+    {
+      "source": "media/contact.html",
+      "target": "media/contact.html",
+      "sourceTextChunks": 86,
+      "retainedTextChunks": 86,
+      "status": "PASS"
+    },
+    {
+      "source": "media/coverage.html",
+      "target": "media/coverage.html",
+      "sourceTextChunks": 85,
+      "retainedTextChunks": 85,
+      "status": "PASS"
+    },
+    {
+      "source": "media/logo-usage.html",
+      "target": "media/logo-usage.html",
+      "sourceTextChunks": 75,
+      "retainedTextChunks": 75,
+      "status": "PASS"
+    },
+    {
+      "source": "media/materials.html",
+      "target": "media/materials.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "media/press.html",
+      "target": "media/press.html",
+      "sourceTextChunks": 75,
+      "retainedTextChunks": 75,
+      "status": "PASS"
+    },
+    {
+      "source": "news/committee.html",
+      "target": "news/committee.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "news/detail.html",
+      "target": "news/detail.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "news/important.html",
+      "target": "news/important.html",
+      "sourceTextChunks": 69,
+      "retainedTextChunks": 69,
+      "status": "PASS"
+    },
+    {
+      "source": "news/index.html",
+      "target": "news/index.html",
+      "sourceTextChunks": 76,
+      "retainedTextChunks": 76,
+      "status": "PASS"
+    },
+    {
+      "source": "news/press.html",
+      "target": "news/press.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "news/recruitment.html",
+      "target": "news/recruitment.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/copyright.html",
+      "target": "policy/copyright.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/disclaimer.html",
+      "target": "policy/disclaimer.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/links.html",
+      "target": "policy/links.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/privacy.html",
+      "target": "policy/privacy.html",
+      "sourceTextChunks": 75,
+      "retainedTextChunks": 75,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/sns.html",
+      "target": "policy/sns.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/ssl.html",
+      "target": "policy/ssl.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "policy/universal-design.html",
+      "target": "policy/universal-design.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/ambassador.html",
+      "target": "pr/ambassador.html",
+      "sourceTextChunks": 80,
+      "retainedTextChunks": 80,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/cooperation.html",
+      "target": "pr/cooperation.html",
+      "sourceTextChunks": 80,
+      "retainedTextChunks": 80,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/downloads.html",
+      "target": "pr/downloads.html",
+      "sourceTextChunks": 80,
+      "retainedTextChunks": 80,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/index.html",
+      "target": "pr/index.html",
+      "sourceTextChunks": 78,
+      "retainedTextChunks": 78,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/sns-campaign.html",
+      "target": "pr/sns-campaign.html",
+      "sourceTextChunks": 74,
+      "retainedTextChunks": 74,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/video-accessible.html",
+      "target": "pr/video-accessible.html",
+      "sourceTextChunks": 70,
+      "retainedTextChunks": 70,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/video-standard.html",
+      "target": "pr/video-standard.html",
+      "sourceTextChunks": 70,
+      "retainedTextChunks": 70,
+      "status": "PASS"
+    },
+    {
+      "source": "pr/video.html",
+      "target": "pr/video.html",
+      "sourceTextChunks": 70,
+      "retainedTextChunks": 70,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/bids.html",
+      "target": "recruitment/bids.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/index.html",
+      "target": "recruitment/index.html",
+      "sourceTextChunks": 77,
+      "retainedTextChunks": 77,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/other-pref.html",
+      "target": "recruitment/other-pref.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/performers.html",
+      "target": "recruitment/performers.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/sponsors.html",
+      "target": "recruitment/sponsors.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/support-projects.html",
+      "target": "recruitment/support-projects.html",
+      "sourceTextChunks": 79,
+      "retainedTextChunks": 79,
+      "status": "PASS"
+    },
+    {
+      "source": "recruitment/volunteer.html",
+      "target": "recruitment/volunteer.html",
+      "sourceTextChunks": 87,
+      "retainedTextChunks": 87,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/donation-companies.html",
+      "target": "sponsors/donation-companies.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/index.html",
+      "target": "sponsors/index.html",
+      "sourceTextChunks": 149,
+      "retainedTextChunks": 149,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/interest-form.html",
+      "target": "sponsors/interest-form.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/interviews.html",
+      "target": "sponsors/interviews.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/partner-companies.html",
+      "target": "sponsors/partner-companies.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/partner-recruitment.html",
+      "target": "sponsors/partner-recruitment.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "sponsors/sponsor-companies.html",
+      "target": "sponsors/sponsor-companies.html",
+      "sourceTextChunks": 151,
+      "retainedTextChunks": 151,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/city-links.html",
+      "target": "tourism/city-links.html",
+      "sourceTextChunks": 102,
+      "retainedTextChunks": 102,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/courses.html",
+      "target": "tourism/courses.html",
+      "sourceTextChunks": 102,
+      "retainedTextChunks": 102,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/food-culture.html",
+      "target": "tourism/food-culture.html",
+      "sourceTextChunks": 102,
+      "retainedTextChunks": 102,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/lodging.html",
+      "target": "tourism/lodging.html",
+      "sourceTextChunks": 102,
+      "retainedTextChunks": 102,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/travel-center.html",
+      "target": "tourism/travel-center.html",
+      "sourceTextChunks": 102,
+      "retainedTextChunks": 102,
+      "status": "PASS"
+    },
+    {
+      "source": "tourism/trip.html",
+      "target": "tourism/trip.html",
+      "sourceTextChunks": 100,
+      "retainedTextChunks": 100,
+      "status": "PASS"
+    }
+  ],
+  "issues": []
+}

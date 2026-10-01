@@ -1,0 +1,55 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-1/index-1440.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-1/index-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha5-1/index-320.png",
+    "textOutsidePage": [
+      {
+        "text": "大会・募集・観光など、すべての案内",
+        "x": 37.0,
+        "width": 306.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "a",
+        "class": "button button--line",
+        "x": 37.0,
+        "width": 306.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  }
+]
