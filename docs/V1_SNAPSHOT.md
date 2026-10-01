@@ -17,8 +17,19 @@
 
 ## Recovery status
 
-GitHub上には、HTML 115ファイル、CSS、JavaScript、検索インデックス、生成スクリプト、仕様書、レビュー用README、SVGブランドマークを復元した。
+GitHub上にv1の復元一式を収録済み。
 
-ラスター画像38点はChatGPT Library上の元ZIPに存在するが、現在のGitHub connectorはLibraryのバイナリをそのままGitHubへ書き込めないため未収録。ファイル名、バイト数、SHA-256は `assets/ASSET_MANIFEST.tsv` に固定した。
+- HTML 115ファイル
+- CSS / JavaScript / 検索インデックス
+- HTML生成スクリプト
+- 仕様書・レビュー用README
+- ラスター画像38点
+- SVGブランドマーク1点
 
-`scripts/restore_v1_assets.py` は元ZIPから `assets/` を復元する補助スクリプトである。
+画像資産39点は `assets/` 配下に配置している。ラスター画像38点については、`assets/ASSET_MANIFEST.tsv` に記録した元ZIPのファイル名・バイト数とGitHub上のファイルが一致することを確認済み。
+
+`scripts/restore_v1_assets.py` は、元ZIPから画像資産を再展開し、マニフェストに基づいて整合性を確認するための補助スクリプトとして保持する。
+
+## Frozen revision
+
+v1の内容確定後、画像資産を含む完全版を `v1-frozen` で固定する。
