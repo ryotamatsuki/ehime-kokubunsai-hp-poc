@@ -94,6 +94,16 @@ def main():
             row={"direction":direction,"foreground":fg,"background":bg,"ratio":round(ratio,3),"minimum":minimum,"status":"PASS" if ratio>=minimum else "FAIL"}
             contrasts.append(row)
             if ratio<minimum: issues.append(f"contrast {direction} {fg}/{bg}: {ratio:.3f}")
+    concept_pairs=[("sea-text","sea",4.5),("sea-copy","sea",4.5),("sea-muted","sea",4.5),
+                   ("sea","lime",4.5),("cobalt","yellow",4.5),("cobalt","paper",4.5),
+                   ("cobalt","coral",4.5),("paper","cobalt",4.5),("white","blue",4.5),
+                   ("signal-focus","sea",3),("signal-focus","blue",3),("signal-focus","cobalt",3),
+                   ("focus","paper",3),("focus","yellow",3),("focus","coral",3)]
+    colors=dict(tokens["base"],white="#ffffff")
+    for fg,bg,minimum in concept_pairs:
+        ratio=contrast(colors[fg],colors[bg])
+        contrasts.append({"direction":"concept-reset","foreground":fg,"background":bg,"ratio":round(ratio,3),"minimum":minimum,"status":"PASS" if ratio>=minimum else "FAIL"})
+        if ratio<minimum: issues.append(f"concept contrast {fg}/{bg}: {ratio:.3f}")
     manifest=json.loads((LAB/"assets/manifest.json").read_text())
     hashes=[]
     for row in manifest["photos"]+manifest["fonts"]:
@@ -101,7 +111,7 @@ def main():
         good=hashlib.sha256(path.read_bytes()).hexdigest()==row["sha256"]
         hashes.append({"path":row["path"],"status":"PASS" if good else "FAIL"})
         if not good: issues.append("asset hash mismatch: "+row["path"])
-    css=(LAB/"theme.css").read_text()
+    css=(LAB/"theme.css").read_text()+"\n"+(LAB/"concepts.css").read_text()
     css_checks={
         "reduced_motion_override": "@media(prefers-reduced-motion:reduce)" in css and "animation:none!important" in css,
         "visible_focus_style": ":focus-visible" in css,
@@ -111,13 +121,14 @@ def main():
     }
     for name,good in css_checks.items():
         if not good: issues.append("CSS missing: "+name)
-    core_bytes=sum((LAB/f).stat().st_size for f in ["tokens.css","theme.css","ui.js","events-data.js"])
+    core_bytes=sum((LAB/f).stat().st_size for f in ["tokens.css","theme.css","concepts.css","ui.js","events-data.js"])
     fonts=sum(f["bytes"] for f in manifest["fonts"])
     budgets=[]
-    for name,hero,inset in [("home-a.html","hero-ehime-culture-festival","tobe-ceramics-workshop"),("home-b.html","family-culture-workshop","inclusive-art-gallery")]:
-        images=sum((LAB/f"assets/photos/{image}-480.webp").stat().st_size for image in [hero,inset])
+    first_view={"home-a.html":["tobe-ceramics-workshop","event-stage-lanterns","uchiko-ozu-townscape","inclusive-art-gallery"],"home-b.html":["event-stage-lanterns","family-culture-workshop"]}
+    for name,first_images in first_view.items():
+        images=sum((LAB/f"assets/photos/{image}-480.webp").stat().st_size for image in first_images)
         total=(LAB/name).stat().st_size+core_bytes+fonts+images+(ROOT/"assets/brand-mark.svg").stat().st_size
-        row={"page":name,"condition":"320–390 CSS px / DPR 1 / hero+inset 480w / uncompressed transfer upper estimate","bytes":total,"limit_bytes":500000,"status":"PASS" if total<=500000 else "FAIL"}
+        row={"page":name,"condition":"320–390 CSS px / DPR 1 / first-view image set at 480w / uncompressed asset estimate; excludes below-fold and subsequently selected images","first_view_images":first_images,"bytes":total,"limit_bytes":500000,"status":"PASS" if total<=500000 else "FAIL"}
         budgets.append(row)
         if total>500000: issues.append("mobile transfer budget: "+name)
     review=Inspector();review.feed((LAB/"review.html").read_text())

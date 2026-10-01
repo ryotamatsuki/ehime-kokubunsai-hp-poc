@@ -45,6 +45,76 @@
     });
   }
 
+  document.querySelectorAll("[data-js-only]").forEach(node => { node.hidden = false; });
+  const persistChoice = (key, value) => {
+    const params = query();
+    params.set(key, value);
+    if (direction === "poster") params.set("direction", "poster");
+    const qs = "?" + params.toString();
+    if (window.__INITIAL_QUERY__ !== undefined) window.__INITIAL_QUERY__ = qs;
+    else window.history.replaceState(null, "", window.location.pathname + qs);
+  };
+  const updatePhoto = (node, name, alt) => {
+    node.src = "assets/photos/" + name + "-960.webp";
+    node.srcset = [480, 960, 1440].map(width => "assets/photos/" + name + "-" + width + ".webp " + width + "w").join(", ");
+    node.alt = alt;
+  };
+  const cultureButtons = [...document.querySelectorAll("[data-culture]")];
+  if (cultureButtons.length) {
+    const cultures = {
+      craft: {number:"01", genre:"工芸", title:"手を動かす。\n会話が生まれる。", description:"土に触れ、自分の手で形をつくる。工芸を入り口に、人と土地の物語に出会います。"},
+      stage: {number:"02", genre:"舞台", title:"受け継いだ音が、\nいま、響きあう。", description:"地域の芸能と、新しい表現。舞台を囲む時間から、愛媛の文化に出会います。"},
+      literature: {number:"03", genre:"文学", title:"まちを歩く。\n自分の言葉に出会う。", description:"いつもの景色を、いつもと違う言葉で。文学とまち歩きを通して、土地の物語を見つけます。"},
+      food: {number:"04", genre:"食文化", title:"ひと皿の向こうに、\n土地の物語。", description:"食べる、話す、分かち合う。土地の味わいと、それを伝える人に出会います。"}
+    };
+    const activate = (key, announce = false, persist = true) => {
+      if (!cultures[key]) key = "craft";
+      const culture = cultures[key];
+      const event = (window.EHIME_LAB_EVENTS || []).find(item => item.id === key);
+      if (!event) return;
+      cultureButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.culture === key)));
+      updatePhoto(document.querySelector("[data-culture-photo]"), event.image, event.alt);
+      document.querySelector("[data-culture-label]").textContent = culture.number + " / " + culture.genre;
+      document.querySelector("[data-culture-title]").textContent = culture.title;
+      document.querySelector("[data-culture-description]").textContent = culture.description;
+      const search = document.querySelector("[data-culture-search]");
+      search.setAttribute("href", "event-search.html?" + new URLSearchParams({genre:culture.genre}));
+      search.firstChild.textContent = culture.genre + "の催しを探す ";
+      document.querySelector("[data-culture-detail]").setAttribute("href", "event-detail.html?id=" + key);
+      if (announce) document.querySelector("[data-culture-announcement]").textContent = culture.genre + "を選択しました。写真と案内を更新しました。";
+      if (persist) persistChoice("culture", key);
+    };
+    cultureButtons.forEach(button => button.addEventListener("click", () => activate(button.dataset.culture, true)));
+    const restore = () => activate(query().get("culture") || "craft", false, false);
+    window.addEventListener("popstate", restore);
+    restore();
+  }
+  const intentButtons = [...document.querySelectorAll("[data-intent]")];
+  if (intentButtons.length) {
+    const intents = {
+      watch: {kicker:"01 / DISCOVER", word:"観る", title:"その「観たい」が、\n旅のはじまり。", description:"舞台、工芸、文学、食文化。気になる表現から、あなたの体験を探してください。", image:"event-stage-lanterns", alt:"海辺の屋外ステージと、文化公演を楽しむ観客のイメージ", label:"イベントを探す", href:"event-search.html?direction=poster"},
+      make: {kicker:"02 / CREATE", word:"つくる", title:"あなたの表現を、\nここに持ちよろう。", description:"出演・出展、ボランティア、協賛。あなたらしい関わり方へ。募集内容と時期は、正式決定後にご案内します。", image:"family-culture-workshop", alt:"多世代が文化のワークショップを楽しむイメージ", label:"参加・募集の案内", href:"documents.html?direction=poster#participation"},
+      together: {kicker:"03 / TOGETHER", word:"ともに", title:"楽しみたい気持ちに、\n入口をひらく。", description:"障害のある人もない人も。会場や情報のバリアフリー、参加に必要な支援を確認できます。実際の対応内容は正式決定後に掲載します。", image:"inclusive-art-gallery", alt:"作品を囲み、芸術を楽しむ人々のイメージ", label:"参加の支援を確認", href:"event-detail.html?direction=poster#support"}
+    };
+    const activate = (key, announce = false, persist = true) => {
+      if (!intents[key]) key = "watch";
+      const intent = intents[key];
+      intentButtons.forEach(button => button.setAttribute("aria-pressed", String(button.dataset.intent === key)));
+      document.querySelector("[data-intent-panel]").dataset.intentPanel = key;
+      ["kicker", "word", "title", "description"].forEach(name => { document.querySelector("[data-intent-" + name + "]").textContent = intent[name]; });
+      updatePhoto(document.querySelector("[data-intent-photo]"), intent.image, intent.alt);
+      const link = document.querySelector("[data-intent-link]");
+      link.setAttribute("href", intent.href);
+      link.firstChild.textContent = intent.label + " ";
+      if (announce) document.querySelector("[data-intent-announcement]").textContent = intent.word + "を選択しました。写真と案内を更新しました。";
+      if (persist) persistChoice("intent", key);
+    };
+    intentButtons.forEach(button => button.addEventListener("click", () => activate(button.dataset.intent, true)));
+    const restore = () => activate(query().get("intent") || "watch", false, false);
+    window.addEventListener("popstate", restore);
+    restore();
+  }
+
   const form = document.querySelector("[data-event-filters]");
   if (form) {
     const controls = ["q", "city", "genre", "support"].map(name => document.getElementById("filter-" + name));

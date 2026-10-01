@@ -3,6 +3,7 @@
 from pathlib import Path
 import html
 import json
+from v2_concepts import build_homes as build_concept_homes, build_index as build_concept_index
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -79,9 +80,9 @@ def page(filename, title, main, direction="editorial", lab=False):
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)} | 愛媛大会（仮）</title>
 <meta name="description" content="令和10年度 国民文化祭・全国障害者芸術・文化祭 愛媛大会（仮）のデザイン検討用ページです。">
-<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#173b35">
+<meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#102c32">
 <script>document.documentElement.classList.add('js');if(new URLSearchParams(window.__INITIAL_QUERY__ || location.search).get('direction')==='poster') document.documentElement.dataset.direction='poster';</script>
-<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css">
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="concepts.css">
 <script src="events-data.js" defer></script><script src="ui.js" defer></script>
 </head><body>"""
     content = head + ("" if lab else header(direction)) + main + ("" if lab else footer(direction)) + "\n</body></html>\n"
@@ -98,68 +99,6 @@ def event_card(event, search=False):
     {'<a class="text-link" href="'+href+'">詳しく見る'+ARROW+'</a>' if search else ''}
   </div>
 </article>"""
-
-def stories():
-    items = [
-        ("CRAFT & PEOPLE", "手から生まれる、<br>土地のものがたり。", "砥部焼をはじめ、暮らしに息づく手しごと。", "tobe-ceramics-workshop", EVENTS[1]["alt"], "event-detail.html?id=craft"),
-        ("ART FOR EVERYONE", "その人だけの表現に、<br>出会う。", "障害のある人もない人も、表現を楽しむ場へ。", "inclusive-art-gallery", "明るいギャラリーで作品を鑑賞する人々のイメージ", "event-detail.html#support"),
-        ("STAGE & TRADITION", "受け継ぐ文化が、<br>いま、舞台になる。", "地域に根ざした芸能と、新しい表現の出会い。", "event-stage-lanterns", EVENTS[0]["alt"], "event-detail.html?id=stage"),
-    ]
-    cards = ""
-    for eyebrow, title, desc, image, alt, href in items:
-        cards += f'<article class="story-card"><a class="photo-link" href="{href}" aria-hidden="true" tabindex="-1">{photo(image, "", "(max-width: 759px) 90vw, 30vw")}</a><p class="eyebrow">{eyebrow}</p><h3><a href="{href}">{title}</a></h3><p>{desc}</p></article>'
-    return f"""
-<section class="section" id="about"><div class="wrap">
-  <div class="section-top"><div><p class="eyebrow eyebrow--accent">OUR CULTURE, OUR STORIES</p><h2 class="section-title">愛媛に息づく文化を、<br>一人ひとりの出会いへ。</h2></div>
-    <p class="section-intro">瀬戸内海、宇和海、石鎚山。土地の風景のなかで育まれてきた文化を、県内各地から発信します。</p></div>
-  <div class="story-grid">{cards}</div>
-</div></section>"""
-
-def rest_home(direction):
-    cards = "".join(event_card(event) for event in EVENTS)
-    return f"""
-{stories()}
-<section class="section section--wash"><div class="wrap">
-  <div class="section-top"><div><p class="eyebrow eyebrow--accent">FIND YOUR EXPERIENCE</p><h2 class="section-title">あなたの「好き」から、<br>文化に出会う。</h2></div><a class="text-link" href="event-search.html">すべてのイベントを探す{ARROW}</a></div>
-  <p class="small" style="margin-bottom:24px">以下は掲載イメージを示す架空の催しです。開催をお知らせする情報ではありません。</p>
-  <div class="event-grid">{cards}</div>
-</div></section>
-<section class="section" id="news"><div class="wrap split-section">
-  <div><p class="eyebrow eyebrow--accent">INFORMATION</p><h2 class="section-title">お知らせ</h2><p class="small" style="margin-top:16px">大会の準備、募集、<br>参加に関する情報をご案内します。</p></div>
-  <ul class="news-list"><li><a href="documents.html"><span class="news-label">準備中</span><span>大会の準備と実行委員会に関する情報</span>{ARROW}</a></li><li><a href="#join"><span class="news-label">募集案内</span><span>出演・参加、ボランティア、協賛について</span>{ARROW}</a></li><li><a href="event-detail.html#support"><span class="news-label">参加支援</span><span>安心して参加するためのバリアフリー情報</span>{ARROW}</a></li></ul>
-</div></section>
-<section class="wrap invitation" id="join"><div><p class="eyebrow">BE PART OF THE FESTIVAL</p><h2>観る人も、つくる人も。<br>みんなが文化の担い手に。</h2></div><div><p>出演・出展、ボランティア、協賛など、さまざまな参加の方法をご案内します。募集の内容と開始時期は、正式決定後に掲載します。</p>{button("参加・募集の案内", "documents.html#participation", "light")}</div></section>"""
-
-def build_homes():
-    a = f"""
-<main id="main">
-<section class="wrap hero-a" aria-labelledby="home-title">
-  <div class="hero-copy"><p class="eyebrow eyebrow--accent">EHIME CULTURE FESTIVAL · 2028</p><h1 id="home-title"><span>文化がひらく、</span><span>愛媛のこれから。</span></h1>
-    <p class="lead">出会い、ふれあい、ともにつくる。<br>愛媛に息づく文化を、全国へ。そして次の世代へ。<br>一人ひとりの表現が、ここでつながります。</p>
-    <div class="hero-actions">{button("イベントを探す", "event-search.html")}{button("大会について", "#about", "subtle")}</div>
-    <p class="hero-footnote"><span class="year">2028</span><span>令和10年度 愛媛県開催予定<br>名称・会期は未定</span></p>
-  </div>
-  <div class="hero-visual"><figure class="hero-main">{photo("hero-ehime-culture-festival", "海を望む会場に、工芸と舞台芸術を楽しむ人々が集うイメージ", "(max-width: 759px) 78vw, 40vw", True)}</figure>
-    <figure class="hero-inset">{photo("tobe-ceramics-workshop", EVENTS[1]["alt"], "(max-width: 759px) 40vw, 20vw")}</figure><span class="hero-caption" aria-hidden="true">A PLACE TO MEET. A CULTURE TO SHARE.</span><p class="image-disclaimer">写真はイメージです</p></div>
-</section>
-<nav class="wrap quick-paths" aria-label="目的から探す">
-  <a href="event-search.html"><span class="number">01</span><span><strong>観る・体験する</strong><small>日程、市町、ジャンルから探す</small></span>{ARROW}</a>
-  <a href="#join"><span class="number">02</span><span><strong>参加する・応援する</strong><small>出演、募集、協賛について</small></span>{ARROW}</a>
-  <a href="event-detail.html#support"><span class="number">03</span><span><strong>安心して楽しむ</strong><small>バリアフリー、参加の支援</small></span>{ARROW}</a>
-</nav>
-{rest_home("editorial")}
-</main>"""
-    page("home-a.html", "文化がひらく、愛媛のこれから。", a)
-    b = f"""
-<main id="main">
-<section class="poster-hero" aria-labelledby="home-title"><div class="wrap poster-grid">
-  <div class="poster-copy"><p class="eyebrow">EHIME CULTURE FESTIVAL · 2028</p><h1 id="home-title"><span>ひらけ、</span><span>文化の可能性。</span></h1><p class="lead">観る。つくる。ともに楽しむ。<br>愛媛の文化をつなぐ、一人ひとりの表現へ。<br>文化の祭典が、県内各地にひろがります。</p><div class="hero-actions">{button("イベントを探す","event-search.html?direction=poster")}{button("大会について","#about","subtle")}</div><p class="hero-footnote"><span>令和10年度 愛媛県開催予定 ／ 名称・会期は未定</span></p></div>
-  <div class="poster-photos"><figure class="poster-photo-1">{photo("family-culture-workshop","多世代が文化のワークショップを楽しむイメージ","(max-width: 759px) 78vw, 40vw",True)}</figure><figure class="poster-photo-2">{photo("inclusive-art-gallery","作品を囲み、芸術を楽しむ人々のイメージ","(max-width: 759px) 55vw, 25vw")}</figure><div class="poster-seal" aria-hidden="true"><strong>2028</strong><small>CULTURE FOR ALL</small></div></div>
-</div></section>
-<aside class="poster-ribbon"><div class="wrap"><strong>文化は、みんなのもの。</strong><span>障害のある人もない人も、ともに表現を楽しむ大会へ。</span><a href="event-detail.html?direction=poster#support">参加の支援を見る</a></div></aside>
-{rest_home("poster")}
-</main>"""
-    page("home-b.html", "ひらけ、文化の可能性。", b, "poster")
 
 def intro(eyebrow, title, desc, breadcrumb=None, note=True):
     crumb = breadcrumb or title
@@ -233,17 +172,6 @@ def build_components():
 </div></main>"""
     page("components.html", "共通部品", main)
 
-def build_index():
-    main = f"""
-<a class="skip" href="#main">本文へ移動</a><header class="lab-header"><div class="wrap"><p class="eyebrow eyebrow--accent">EHIME CULTURE FESTIVAL / V2 DESIGN LAB</p><h1>文化祭の表情を、2つの方向から。</h1><p>v2.0の共通設計を確かめるD2の試作です。A案は文化を伝える写真と余白、B案は祝祭感を生む文字と色を中心に組み立てています。</p></div></header>
-<main id="main"><section class="section"><div class="wrap lab-directions">
-<article class="lab-direction"><p class="eyebrow eyebrow--accent">DIRECTION A / EDITORIAL</p><h2>文化をひらく、<br>静かな力。</h2><p>やわらかな白、深い緑、温かな差し色。文化を担う人と作品を、写真と文字組で伝えます。</p><div class="lab-mood">{photo("hero-ehime-culture-festival","A案の写真イメージ","(max-width: 759px) 48vw, 25vw")}<div class="mood-type" aria-hidden="true">文化が<br>ひらく。</div></div>{button("A案のトップを見る","home-a.html")}<p class="small">共通設計の暫定推奨案。文化紹介と情報の探しやすさを揃える方向です。</p></article>
-<article class="lab-direction lab-direction--poster"><p class="eyebrow eyebrow--accent">DIRECTION B / POSTER</p><h2>祝祭を伝える、<br>文字と色。</h2><p>土のような温かな色、大きな見出し、写真の重なり。文化祭の参加感を強く打ち出します。</p><div class="lab-mood">{photo("family-culture-workshop","B案の写真イメージ","(max-width: 759px) 48vw, 25vw")}<div class="mood-type" aria-hidden="true">ひらけ、<br>文化。</div></div>{button("B案のトップを見る","home-b.html","accent")}<p class="small">表現の強さを比較する案。検索と資料ページには共通の操作部品を使います。</p></article>
-</div></section>
-<section class="section section--wash"><div class="wrap"><p class="eyebrow eyebrow--accent">PROTOTYPES</p><h2 class="section-title" style="margin-bottom:28px">トップ以外でも、使いやすく。</h2><div class="prototype-links"><a href="event-search.html">イベント検索<span>絞り込み、結果、0件、リセット</span></a><a href="event-detail.html?id=craft">イベント詳細<span>日時、会場、料金、支援の情報</span></a><a href="documents.html">実行委員会・資料<span>長い文章、資料の状態、ページ内目次</span></a><a href="components.html">共通部品<span>文字、色、入力、エラー、フォーカス</span></a></div></div></section>
-<section class="section"><div class="wrap"><p class="eyebrow eyebrow--accent">REVIEW SCOPE</p><h2 class="section-title" style="margin-bottom:28px">比較するポイント</h2><div class="lab-proofs"><section><h3>愛媛の文化が伝わるか</h3><p>写真、文字組、色が一つの表情になっているか。人や作品の魅力が届くか。</p></section><section><h3>必要な情報へ進めるか</h3><p>催しを探し、日時や支援の情報を確認するまでの流れ。資料ページの読みやすさ。</p></section><section><h3>スマホでも成立するか</h3><p>幅を変えて、文字の折り返し、写真の配置、タップ領域、メニューを確認できます。</p></section></div><p class="sample-note">D2は方向比較と共通部品の試作段階です。全ページ展開と最終品質ゲートの通過は、後続工程で確認します。</p></div></section></main>"""
-    page("index.html", "v2デザイン比較", main, lab=True)
-
 def build_tokens():
     tokens = json.loads((LAB / "tokens.json").read_text())
     fonts = '''
@@ -260,12 +188,12 @@ def build_tokens():
 def main():
     LAB.mkdir(exist_ok=True)
     build_tokens()
-    build_homes()
+    build_concept_homes(page, photo, EVENTS, ARROW, MENU)
     build_search()
     build_detail()
     build_documents()
     build_components()
-    build_index()
+    build_concept_index(page, ARROW)
     (LAB / "events-data.js").write_text("window.EHIME_LAB_EVENTS = " + json.dumps(EVENTS, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
     print("Built 7 D2 pages. Existing v1 pages are untouched.")
 

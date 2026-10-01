@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.2",
+  "version": "2.0.0-alpha.3",
   "photos": [
     {
       "path": "design-lab/assets/photos/hero-ehime-culture-festival-480.webp",
@@ -197,8 +197,8 @@
       "family": "Ehime Lab Sans",
       "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Regular.ttf",
       "source_sha256": "b840cd07a67d89cacca44249ae49aa99ee7640eb5ce623be8d8983d6aabac801",
-      "bytes": 108776,
-      "sha256": "0c2648ace3833737fd6ee3c1673c6f31e9e2e200c770876cc669140143e88dd0",
+      "bytes": 110056,
+      "sha256": "c6ad45f49b0f25dc38ed62479f2c52384bd4139630ee5970ad5945daed395f71",
       "license": "SIL Open Font License 1.1"
     },
     {
@@ -206,8 +206,8 @@
       "family": "Ehime Lab Sans",
       "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/zenkakugothicnew/ZenKakuGothicNew-Bold.ttf",
       "source_sha256": "0081cedabc4921982fcd061f845a005664ac7fb642af2dd34b4007bc63ccd235",
-      "bytes": 109992,
-      "sha256": "27c57bdbb45b8ba33620435dce4cfe646c050afd5f5a3b975f6b934f10f00ae5",
+      "bytes": 111312,
+      "sha256": "f8b0c89035ab5f0db32c002cd809d6707952740f12141e9852acbca62d3a0cf6",
       "license": "SIL Open Font License 1.1"
     },
     {
@@ -215,11 +215,11 @@
       "family": "Ehime Lab Latin",
       "source_url": "https://raw.githubusercontent.com/google/fonts/9710da1eacb3be272583c3224dcb70f9da6eadbb/ofl/manrope/Manrope[wght].ttf",
       "source_sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6",
-      "bytes": 16284,
-      "sha256": "084af446bb8cc94ac39551441e17483efa9957440843b2530f1e188b51a96ecd",
+      "bytes": 16128,
+      "sha256": "11f27c00a43070beb11bc14a4837521a3aab420cb06f804f695e699ac90ea5dc",
       "license": "SIL Open Font License 1.1"
     }
   ],
   "font_source_ref": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
-  "subset_character_count": 849
+  "subset_character_count": 859
 }

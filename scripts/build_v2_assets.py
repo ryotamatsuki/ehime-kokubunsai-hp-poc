@@ -4,6 +4,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+from io import BytesIO
 from urllib.request import urlopen
 from PIL import Image
 from fontTools.ttLib import TTFont
@@ -31,7 +32,7 @@ def build(font_dir):
     photo_dir.mkdir(parents=True, exist_ok=True)
     font_out.mkdir(parents=True, exist_ok=True)
     font_dir.mkdir(parents=True, exist_ok=True)
-    manifest = {"version": "2.0.0-alpha.2", "photos": [], "fonts": [], "font_source_ref": FONT_REF}
+    manifest = {"version": "2.0.0-alpha.3", "photos": [], "fonts": [], "font_source_ref": FONT_REF}
     for name in PHOTOS:
         source = ROOT / ("assets/" + name + ".jpg")
         im = Image.open(source).convert("RGB")
@@ -39,8 +40,12 @@ def build(font_dir):
         for width in [480, 960, 1440]:
             height = round(src_height * width / src_width)
             output = photo_dir / f"{name}-{width}.webp"
-            im.resize((width, height), Image.Resampling.LANCZOS).save(output, "WEBP", quality=78, method=6)
-            data = output.read_bytes()
+            buffer = BytesIO()
+            im.resize((width, height), Image.Resampling.LANCZOS).save(buffer, "WEBP", quality=78, method=6)
+            data = buffer.getvalue()
+            pending = output.with_suffix(".webp.pending")
+            pending.write_bytes(data)
+            pending.replace(output)
             manifest["photos"].append(dict(path=output.relative_to(ROOT).as_posix(), source=source.relative_to(ROOT).as_posix(), source_sha256=sha(source.read_bytes()), width=width, height=height, bytes=len(data), sha256=sha(data)))
     # Union of current v1 and D2 text. Characters added later use the system fallback.
     text = "".join(p.read_text(encoding="utf-8") for p in ROOT.rglob("*.html") if p.name != "review.html")

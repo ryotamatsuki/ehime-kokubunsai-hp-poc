@@ -1,6 +1,6 @@
-version=2.0.0-alpha.2
+version=2.0.0-alpha.3
 series=v2
-status=design-system-prototype
+status=design-concept-reset
 development_branch=main
 baseline_branch=v1-frozen
 baseline_commit=94df551e752129e45e7f21c3d38282d87c5690db

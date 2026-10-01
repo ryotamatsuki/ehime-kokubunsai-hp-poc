@@ -44,6 +44,26 @@
     {
       "name": "Offline bundle initializes each page and injects assets without external requests",
       "status": "PASS"
+    },
+    {
+      "name": "Culture choice updates photograph, text, genre route and selected event together",
+      "status": "PASS"
+    },
+    {
+      "name": "Culture URL restores a choice, unknown choices recover, and back navigation restores state",
+      "status": "PASS"
+    },
+    {
+      "name": "Participation intent changes to the matching task without losing focus or direction",
+      "status": "PASS"
+    },
+    {
+      "name": "Participation URL and offline query restore the correct route",
+      "status": "PASS"
+    },
+    {
+      "name": "Both concepts keep all task routes and core information without JavaScript",
+      "status": "PASS"
     }
   ],
   "status": "PASS"

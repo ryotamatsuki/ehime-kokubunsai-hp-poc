@@ -11,7 +11,7 @@ LAB = ROOT / "design-lab"
 def main():
     files = ["index.html","home-a.html","home-b.html","event-search.html","event-detail.html","documents.html","components.html"]
     pages = {f: (LAB / f).read_text(encoding="utf-8") for f in files}
-    css = (LAB / "tokens.css").read_text() + "\n" + (LAB / "theme.css").read_text()
+    css = (LAB / "tokens.css").read_text() + "\n" + (LAB / "theme.css").read_text() + "\n" + (LAB / "concepts.css").read_text()
     events_js = (LAB / "events-data.js").read_text()
     ui_js = (LAB / "ui.js").read_text()
     assets = {}
@@ -35,8 +35,8 @@ addEventListener('load',reportSize);document.fonts.ready.then(reportSize);
 """
     shell = """<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>愛媛大会 v2 D2 デザイン比較</title>
 <style>*{box-sizing:border-box}body{margin:0;background:#e3e8e1;color:#173b35;font-family:system-ui,sans-serif}.review-bar{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #c8d0c5;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.review-bar strong{font-size:14px;margin-right:12px}.review-bar button{min-height:40px;padding:8px 13px;background:#fff;border:1px solid #6c8078;border-radius:7px;font-size:12px;color:#173b35;cursor:pointer}.review-bar button[aria-pressed=true]{color:#fff;background:#173b35}.review-bar button:focus-visible{outline:3px solid #0069ba;outline-offset:3px}.review-size{display:flex;gap:7px;margin-left:auto}.review-caption{padding:12px 20px;font-size:12px;line-height:1.7;color:#52645f}.review-stage{padding:0 16px 24px;overflow:auto}iframe{display:block;width:100%;border:0;margin-inline:auto;background:#f7f4ed;box-shadow:0 2px 16px #173b3514}.review-title{display:none}@media(max-width:700px){.review-bar{padding:10px 12px;gap:7px}.review-bar strong{width:100%;margin:0}.review-bar button{font-size:11px;padding:7px 10px}.review-size{margin-left:0}.review-stage{padding-inline:0}.review-caption{padding:10px 12px}}</style></head><body>
-<header class="review-bar"><strong>愛媛大会 v2.0 / D2</strong><button data-page="index.html" aria-pressed="true">比較</button><button data-page="home-a.html" aria-pressed="false">A案</button><button data-page="home-b.html" aria-pressed="false">B案</button><button data-page="event-search.html" aria-pressed="false">検索</button><button data-page="event-detail.html" aria-pressed="false">詳細</button><button data-page="documents.html" aria-pressed="false">資料</button><button data-page="components.html" aria-pressed="false">共通部品</button><div class="review-size" aria-label="表示幅"><button data-width="fluid" aria-pressed="true">画面幅</button><button data-width="390" aria-pressed="false">スマホ390px</button><button data-width="320" aria-pressed="false">スマホ320px</button></div></header>
-<p class="review-caption">A案は写真と余白を生かす文化誌、B案は文字と色で伝えるポスターの方向です。ページと表示幅を切り替えて、操作も試せます。</p>
+<header class="review-bar"><strong>愛媛大会 v2 / D2再設計</strong><button data-page="index.html" aria-pressed="true">比較</button><button data-page="home-a.html" aria-pressed="false">新A・群島</button><button data-page="home-b.html" aria-pressed="false">新B・ポスター</button><button data-page="event-search.html" aria-pressed="false">検索</button><button data-page="event-detail.html" aria-pressed="false">詳細</button><button data-page="documents.html" aria-pressed="false">資料</button><button data-page="components.html" aria-pressed="false">共通部品</button><div class="review-size" aria-label="表示幅"><button data-width="fluid" aria-pressed="true">画面幅</button><button data-width="390" aria-pressed="false">スマホ390px</button><button data-width="320" aria-pressed="false">スマホ320px</button></div></header>
+<p class="review-caption">旧A・B案を構成から作り直しました。新Aは文化を選んで巡る群島、新Bは参加の目的で変わるポスター。下層ページの再設計は後続工程です。</p>
 <main class="review-stage"><iframe id="preview" title="愛媛大会 デザイン試作" style="height:1200px"></iframe></main>
 <noscript><p>この比較ファイルはJavaScriptを利用します。通常の各HTMLページでは、本文とリンクをJavaScriptなしでもご覧いただけます。</p></noscript>
 <script id="review-pack" type="application/json">__PACK__</script><script>
@@ -56,7 +56,7 @@ function loadPage(page,query='',hash=''){
  if(params.toString())currentQuery='?'+params.toString();
  let html=replaceAssets(pack.pages[page]);
  html=html.replace('<head>','<head><script>window.__INITIAL_QUERY__='+JSON.stringify(currentQuery)+';<\\/script>');
- html=html.replace('<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css">','<style>'+inlineCss+'</style>');
+ html=html.replace('<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="concepts.css">','<style>'+inlineCss+'</style>');
  html=html.replace('<script src="events-data.js" defer><\\/script>','<script>'+pack.events+'<\\/script>');
  html=html.replace('<script src="ui.js" defer><\\/script>','');
  const jump=hash?'addEventListener("load",()=>{document.getElementById('+JSON.stringify(hash.slice(1))+')?.scrollIntoView()});':'';

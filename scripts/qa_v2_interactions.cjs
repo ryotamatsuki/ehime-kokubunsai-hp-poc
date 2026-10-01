@@ -115,6 +115,67 @@ test("Offline bundle initializes each page and injects assets without external r
   dom.window.document.querySelector('[data-width="390"]').click();
   assert.equal(iframe.style.width,"390px");dom.window.close();
 });
+test("Culture choice updates photograph, text, genre route and selected event together",()=>{
+  const {document,window,dom}=environment("home-a.html");
+  const button=document.querySelector('[data-culture="food"]');button.focus();button.click();
+  assert.equal(button.getAttribute("aria-pressed"),"true");
+  assert.equal(document.querySelectorAll('[data-culture][aria-pressed="true"]').length,1);
+  assert.match(document.querySelector("[data-culture-photo]").src,/uwajima-sea-culture/);
+  assert.match(document.querySelector("[data-culture-title]").textContent,/ひと皿/);
+  const url=new URL(document.querySelector("[data-culture-search]").href);
+  assert.equal(url.searchParams.get("genre"),"食文化");
+  assert.match(document.querySelector("[data-culture-detail]").href,/id=food/);
+  assert.match(document.querySelector("[data-culture-announcement]").textContent,/食文化/);
+  assert.equal(document.activeElement,button);assert.match(window.location.search,/culture=food/);
+  const search=environment("event-search.html",url.search);
+  assert.equal(visible(search.document).length,1);assert.match(visible(search.document)[0].textContent,/宇和海/);
+  search.dom.window.close();dom.window.close();
+});
+test("Culture URL restores a choice, unknown choices recover, and back navigation restores state",()=>{
+  for(const [query,key] of [["?culture=literature","literature"],["?culture=unknown","craft"]]){
+    const {document,window,dom}=environment("home-a.html",query);
+    assert.equal(document.querySelector('[data-culture="'+key+'"]').getAttribute("aria-pressed"),"true");
+    window.history.replaceState(null,"","?culture=stage");window.dispatchEvent(new window.PopStateEvent("popstate"));
+    assert.equal(document.querySelector('[data-culture="stage"]').getAttribute("aria-pressed"),"true");
+    assert.match(document.querySelector("[data-culture-detail]").href,/id=stage/);dom.window.close();
+  }
+});
+test("Participation intent changes to the matching task without losing focus or direction",()=>{
+  const {document,window,dom}=environment("home-b.html");
+  for(const [key,path,fragment,image] of [["make","documents.html","#participation","family-culture-workshop"],["together","event-detail.html","#support","inclusive-art-gallery"],["watch","event-search.html","","event-stage-lanterns"]]){
+    const button=document.querySelector('[data-intent="'+key+'"]');button.focus();button.click();
+    const route=new URL(document.querySelector("[data-intent-link]").href);
+    assert.equal(route.pathname,"/"+path);assert.equal(route.hash,fragment);assert.equal(route.searchParams.get("direction"),"poster");
+    assert.match(document.querySelector("[data-intent-photo]").src,new RegExp(image));
+    assert.equal(document.querySelectorAll('[data-intent][aria-pressed="true"]').length,1);
+    assert.equal(document.activeElement,button);assert.match(window.location.search,new RegExp("intent="+key));
+    assert.ok(document.querySelector("[data-intent-announcement]").textContent.length>0);
+  }
+  dom.window.close();
+});
+test("Participation URL and offline query restore the correct route",()=>{
+  for(const key of ["together","unknown"]){
+    const {document,dom}=environment("home-b.html","?intent="+key);
+    assert.equal(document.querySelector('[data-intent="'+(key==="unknown"?"watch":key)+'"]').getAttribute("aria-pressed"),"true");dom.window.close();
+  }
+  const {document,window,dom}=environment("home-b.html");window.__INITIAL_QUERY__="?intent=make";
+  window.dispatchEvent(new window.PopStateEvent("popstate"));
+  assert.match(document.querySelector("[data-intent-link]").href,/#participation/);
+  document.querySelector('[data-intent="together"]').click();assert.match(window.__INITIAL_QUERY__,/intent=together/);dom.window.close();
+});
+test("Both concepts keep all task routes and core information without JavaScript",()=>{
+  for(const file of ["home-a.html","home-b.html"]){
+    const dom=new JSDOM(read(file));const doc=dom.window.document;
+    assert.equal(doc.querySelectorAll("[data-js-only]:not([hidden])").length,0);
+    for(const id of ["about","join","news"])assert.ok(doc.getElementById(id));
+    assert.ok(doc.querySelector('a[href*="event-search.html"]'));
+    assert.ok(doc.querySelector('a[href*="#support"]'));
+    assert.ok(doc.querySelector('a[href*="#participation"]'));
+    if(file==="home-a.html")assert.equal(doc.querySelectorAll(".culture-line").length,4);
+    else assert.equal(doc.querySelectorAll(".poster-path").length,3);
+    dom.window.close();
+  }
+});
 const report={scope:"jsdom logic regression; not browser layout, timing, screen reader or real key event certification",results,status:results.every(r=>r.status==="PASS")?"PASS":"FAIL"};
 fs.mkdirSync(path.join(lab,"qa"),{recursive:true});
 fs.writeFileSync(path.join(lab,"qa/interaction-checks.json"),JSON.stringify(report,null,2)+"\n");

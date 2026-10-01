@@ -31,7 +31,7 @@ def screen_css(css,width):
 
 def render(file,width,height,output):
     source=(LAB/file).read_text()
-    css=screen_css((LAB/"tokens.css").read_text()+"\n"+(LAB/"theme.css").read_text(),width)
+    css=screen_css((LAB/"tokens.css").read_text()+"\n"+(LAB/"theme.css").read_text()+"\n"+(LAB/"concepts.css").read_text(),width)
     # WeasyPrint is paged, so viewport units are resolved to this reference width.
     css=re.sub(r"(\d*\.?\d+)vw",lambda m:f"{float(m.group(1))*width/100}px",css)
     css+="\n@page{size:"+str(width)+"px 18000px;margin:0} body{margin:0}"
@@ -39,7 +39,7 @@ def render(file,width,height,output):
     css=css.replace("width:min(100% - var(--gutter)*2,var(--content-max))",
                     f"width:{min(width-2*max(20,min(width*.04,64)),1280)}px")
     css=css.replace("var(--gutter)",f"{max(20,min(width*.04,64))}px")
-    source=source.replace('<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css">',"<style>"+css+"</style>")
+    source=source.replace('<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="concepts.css">',"<style>"+css+"</style>")
     source=source.replace('loading="lazy"','loading="eager"')
     with tempfile.NamedTemporaryFile(suffix=".pdf") as temp:
         HTML(string=source,base_url=LAB.as_uri()+"/",media_type="screen").write_pdf(temp.name)

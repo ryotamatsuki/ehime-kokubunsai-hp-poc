@@ -32,21 +32,21 @@
     {
       "page": "design-lab/home-a.html",
       "h1": 1,
-      "images": 10,
+      "images": 9,
       "status": "PASS",
       "issues": []
     },
     {
       "page": "design-lab/home-b.html",
       "h1": 1,
-      "images": 10,
+      "images": 3,
       "status": "PASS",
       "issues": []
     },
     {
       "page": "design-lab/index.html",
       "h1": 1,
-      "images": 2,
+      "images": 0,
       "status": "PASS",
       "issues": []
     }
@@ -56,7 +56,7 @@
       "direction": "editorial",
       "foreground": "ink",
       "background": "page",
-      "ratio": 11.158,
+      "ratio": 12.937,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -64,7 +64,7 @@
       "direction": "editorial",
       "foreground": "muted",
       "background": "page",
-      "ratio": 5.712,
+      "ratio": 5.913,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -72,7 +72,7 @@
       "direction": "editorial",
       "foreground": "muted",
       "background": "wash",
-      "ratio": 5.224,
+      "ratio": 5.701,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -80,7 +80,7 @@
       "direction": "editorial",
       "foreground": "accent",
       "background": "page",
-      "ratio": 4.745,
+      "ratio": 8.496,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -88,7 +88,7 @@
       "direction": "editorial",
       "foreground": "white",
       "background": "ink",
-      "ratio": 12.256,
+      "ratio": 14.702,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -96,7 +96,7 @@
       "direction": "editorial",
       "foreground": "white",
       "background": "accent",
-      "ratio": 5.212,
+      "ratio": 9.656,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -104,7 +104,7 @@
       "direction": "editorial",
       "foreground": "control-line",
       "background": "surface",
-      "ratio": 4.203,
+      "ratio": 4.68,
       "minimum": 3,
       "status": "PASS"
     },
@@ -112,7 +112,7 @@
       "direction": "editorial",
       "foreground": "focus",
       "background": "page",
-      "ratio": 5.126,
+      "ratio": 6.236,
       "minimum": 3,
       "status": "PASS"
     },
@@ -120,7 +120,7 @@
       "direction": "poster",
       "foreground": "ink",
       "background": "page",
-      "ratio": 10.55,
+      "ratio": 12.323,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -128,7 +128,7 @@
       "direction": "poster",
       "foreground": "muted",
       "background": "page",
-      "ratio": 5.6,
+      "ratio": 7.735,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -136,7 +136,7 @@
       "direction": "poster",
       "foreground": "muted",
       "background": "wash",
-      "ratio": 4.936,
+      "ratio": 7.003,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -144,7 +144,7 @@
       "direction": "poster",
       "foreground": "accent",
       "background": "page",
-      "ratio": 5.723,
+      "ratio": 12.323,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -152,7 +152,7 @@
       "direction": "poster",
       "foreground": "white",
       "background": "ink",
-      "ratio": 11.821,
+      "ratio": 12.923,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -160,7 +160,7 @@
       "direction": "poster",
       "foreground": "white",
       "background": "accent",
-      "ratio": 6.412,
+      "ratio": 12.923,
       "minimum": 4.5,
       "status": "PASS"
     },
@@ -168,7 +168,7 @@
       "direction": "poster",
       "foreground": "control-line",
       "background": "surface",
-      "ratio": 4.203,
+      "ratio": 4.88,
       "minimum": 3,
       "status": "PASS"
     },
@@ -176,7 +176,127 @@
       "direction": "poster",
       "foreground": "focus",
       "background": "page",
-      "ratio": 5.025,
+      "ratio": 6.758,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "sea-text",
+      "background": "sea",
+      "ratio": 13.53,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "sea-copy",
+      "background": "sea",
+      "ratio": 11.294,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "sea-muted",
+      "background": "sea",
+      "ratio": 9.193,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "sea",
+      "background": "lime",
+      "ratio": 11.514,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "cobalt",
+      "background": "yellow",
+      "ratio": 10.248,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "cobalt",
+      "background": "paper",
+      "ratio": 12.323,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "cobalt",
+      "background": "coral",
+      "ratio": 6.513,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "paper",
+      "background": "cobalt",
+      "ratio": 12.323,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "white",
+      "background": "blue",
+      "ratio": 9.656,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "signal-focus",
+      "background": "sea",
+      "ratio": 11.654,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "signal-focus",
+      "background": "blue",
+      "ratio": 7.654,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "signal-focus",
+      "background": "cobalt",
+      "ratio": 10.244,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "focus",
+      "background": "paper",
+      "ratio": 6.758,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "focus",
+      "background": "yellow",
+      "ratio": 5.62,
+      "minimum": 3,
+      "status": "PASS"
+    },
+    {
+      "direction": "concept-reset",
+      "foreground": "focus",
+      "background": "coral",
+      "ratio": 3.572,
       "minimum": 3,
       "status": "PASS"
     }
@@ -289,15 +409,25 @@
   "mobile_asset_budgets": [
     {
       "page": "home-a.html",
-      "condition": "320–390 CSS px / DPR 1 / hero+inset 480w / uncompressed transfer upper estimate",
-      "bytes": 339937,
+      "condition": "320–390 CSS px / DPR 1 / first-view image set at 480w / uncompressed asset estimate; excludes below-fold and subsequently selected images",
+      "first_view_images": [
+        "tobe-ceramics-workshop",
+        "event-stage-lanterns",
+        "uchiko-ozu-townscape",
+        "inclusive-art-gallery"
+      ],
+      "bytes": 415258,
       "limit_bytes": 500000,
       "status": "PASS"
     },
     {
       "page": "home-b.html",
-      "condition": "320–390 CSS px / DPR 1 / hero+inset 480w / uncompressed transfer upper estimate",
-      "bytes": 330193,
+      "condition": "320–390 CSS px / DPR 1 / first-view image set at 480w / uncompressed asset estimate; excludes below-fold and subsequently selected images",
+      "first_view_images": [
+        "event-stage-lanterns",
+        "family-culture-workshop"
+      ],
+      "bytes": 360075,
       "limit_bytes": 500000,
       "status": "PASS"
     }
