@@ -23,12 +23,10 @@
 
 ## Raster asset note
 
-ChatGPT Library から GitHub connector へバイナリを直接転送できないため、ラスター画像38点はこの復元コミットには含めていません。SVGの `assets/brand-mark.svg` は収録済みです。
+ラスター画像38点はすべて `assets/` 配下に収録済みです。SVGの `assets/brand-mark.svg` と合わせ、v1の画像資産39点をGitHub上で保持しています。
 
-元ZIPの完全性を確認できるよう `assets/ASSET_MANIFEST.tsv` に元画像のサイズとSHA-256を保存しています。元ZIPを取得できれば、次のコマンドで正確なパスへ復元できます。
+`assets/ASSET_MANIFEST.tsv` には元ZIP内の画像ファイル名、サイズ、SHA-256を保存しています。GitHub上のラスター画像38点については、ファイル名とサイズが元マニフェストと一致することを確認済みです。
 
-```bash
-python scripts/restore_v1_assets.py /path/to/ehime-kokubunsai-hp.zip
-```
+`scripts/restore_v1_assets.py` は、元ZIPから画像資産を再展開・検証するための復元用補助スクリプトとして残しています。
 
 詳細は `docs/V1_SNAPSHOT.md` を参照してください。
