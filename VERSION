@@ -1,4 +1,8 @@
-v1
-source_archive=ehime-kokubunsai-hp(2).zip
-source_archive_sha256=e4e037bf836f240661cd479aacb3de3b241b067ff3a1f2cc767ec1eddd34ae26
-created=2026-04-26..2026-04-27
+version=2.0.0-alpha.1
+series=v2
+status=design-research
+development_branch=main
+baseline_branch=v1-frozen
+baseline_commit=94df551e752129e45e7f21c3d38282d87c5690db
+v1_source_archive=ehime-kokubunsai-hp(2).zip
+v1_source_archive_sha256=e4e037bf836f240661cd479aacb3de3b241b067ff3a1f2cc767ec1eddd34ae26
