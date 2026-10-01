@@ -1,398 +1,332 @@
 {
-  "scope": "D2 static checks; browser layout, screen reader, real keyboard, CWV and user testing are not certified",
+  "version": "2.0.0-alpha.4",
+  "status": "PASS",
+  "method": "static HTML and code checks; not WCAG conformance/browser/CWV confirmation",
   "pages": [
     {
-      "page": "design-lab/components.html",
-      "h1": 1,
-      "images": 1,
+      "file": "design-lab/index.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/documents.html",
-      "h1": 1,
-      "images": 1,
+      "file": "design-lab/culture-craft.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/event-detail.html",
-      "h1": 1,
-      "images": 2,
+      "file": "design-lab/culture-literature.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/event-search.html",
-      "h1": 1,
-      "images": 5,
+      "file": "design-lab/culture-food.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/home-a.html",
-      "h1": 1,
-      "images": 9,
+      "file": "design-lab/culture-art.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/home-b.html",
-      "h1": 1,
-      "images": 3,
+      "file": "design-lab/event-pre2026.html",
       "status": "PASS",
       "issues": []
     },
     {
-      "page": "design-lab/index.html",
-      "h1": 1,
-      "images": 0,
+      "file": "design-lab/event-craft.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-literature.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-food.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-art.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-search.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/event-detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/notebook.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/documents.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/participation.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/support.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/about.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/news.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/access.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/sponsors.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/privacy.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/components.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "culture/craft.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "culture/literature.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "culture/food.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "culture/art.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/search.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/pre2026.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/craft.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/literature.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/food.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/art.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "events/detail.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "culture/notebook.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "committee/overview.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "recruitment/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "accessibility/information-support.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "about/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "news/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "access/train.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "sponsors/index.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "policy/privacy.html",
       "status": "PASS",
       "issues": []
     }
   ],
-  "contrasts": [
+  "contrast": [
     {
-      "direction": "editorial",
       "foreground": "ink",
-      "background": "page",
-      "ratio": 12.937,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "muted",
-      "background": "page",
-      "ratio": 5.913,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "muted",
-      "background": "wash",
-      "ratio": 5.701,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "accent",
-      "background": "page",
-      "ratio": 8.496,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "white",
-      "background": "ink",
-      "ratio": 14.702,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "white",
-      "background": "accent",
-      "ratio": 9.656,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "control-line",
-      "background": "surface",
-      "ratio": 4.68,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "editorial",
-      "foreground": "focus",
-      "background": "page",
-      "ratio": 6.236,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "ink",
-      "background": "page",
-      "ratio": 12.323,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "muted",
-      "background": "page",
-      "ratio": 7.735,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "muted",
-      "background": "wash",
-      "ratio": 7.003,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "accent",
-      "background": "page",
-      "ratio": 12.323,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "white",
-      "background": "ink",
-      "ratio": 12.923,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "white",
-      "background": "accent",
-      "ratio": 12.923,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "control-line",
-      "background": "surface",
-      "ratio": 4.88,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "poster",
-      "foreground": "focus",
-      "background": "page",
-      "ratio": 6.758,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "sea-text",
-      "background": "sea",
-      "ratio": 13.53,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "sea-copy",
-      "background": "sea",
-      "ratio": 11.294,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "sea-muted",
-      "background": "sea",
-      "ratio": 9.193,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "sea",
-      "background": "lime",
-      "ratio": 11.514,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "cobalt",
-      "background": "yellow",
-      "ratio": 10.248,
-      "minimum": 4.5,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "cobalt",
       "background": "paper",
-      "ratio": 12.323,
+      "ratio": 14.887,
       "minimum": 4.5,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "cobalt",
-      "background": "coral",
-      "ratio": 6.513,
+      "foreground": "muted",
+      "background": "paper",
+      "ratio": 5.611,
       "minimum": 4.5,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
+      "foreground": "blue",
+      "background": "paper",
+      "ratio": 8.615,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "white",
+      "background": "blue",
+      "ratio": 9.481,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
       "foreground": "paper",
-      "background": "cobalt",
-      "ratio": 12.323,
+      "background": "ink",
+      "ratio": 14.887,
       "minimum": 4.5,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "white",
-      "background": "blue",
-      "ratio": 9.656,
+      "foreground": "ink",
+      "background": "green",
+      "ratio": 12.923,
       "minimum": 4.5,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "signal-focus",
-      "background": "sea",
-      "ratio": 11.654,
+      "foreground": "ink",
+      "background": "peach",
+      "ratio": 8.568,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "blue",
+      "background": "green",
+      "ratio": 7.478,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "blue",
+      "background": "blue-light",
+      "ratio": 7.639,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "ink",
+      "background": "blue-light",
+      "ratio": 13.2,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "muted",
+      "background": "source",
+      "ratio": 5.289,
+      "minimum": 4.5,
+      "status": "PASS"
+    },
+    {
+      "foreground": "strong-line",
+      "background": "white",
+      "ratio": 4.738,
       "minimum": 3,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "signal-focus",
-      "background": "blue",
-      "ratio": 7.654,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "signal-focus",
-      "background": "cobalt",
-      "ratio": 10.244,
-      "minimum": 3,
-      "status": "PASS"
-    },
-    {
-      "direction": "concept-reset",
-      "foreground": "focus",
+      "foreground": "strong-line",
       "background": "paper",
-      "ratio": 6.758,
+      "ratio": 4.306,
       "minimum": 3,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "focus",
-      "background": "yellow",
-      "ratio": 5.62,
+      "foreground": "blue",
+      "background": "paper",
+      "ratio": 8.615,
       "minimum": 3,
       "status": "PASS"
     },
     {
-      "direction": "concept-reset",
-      "foreground": "focus",
-      "background": "coral",
-      "ratio": 3.572,
-      "minimum": 3,
+      "foreground": "paper",
+      "background": "red",
+      "ratio": 5.517,
+      "minimum": 4.5,
       "status": "PASS"
     }
   ],
-  "css_checks": {
-    "reduced_motion_override": true,
-    "visible_focus_style": true,
-    "hidden_attribute_respected": true,
-    "minimum_control_height": true,
-    "mobile_layout_rule": true
-  },
-  "asset_hashes": [
-    {
-      "path": "design-lab/assets/photos/hero-ehime-culture-festival-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/hero-ehime-culture-festival-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/hero-ehime-culture-festival-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/tobe-ceramics-workshop-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/tobe-ceramics-workshop-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/tobe-ceramics-workshop-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/inclusive-art-gallery-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/inclusive-art-gallery-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/inclusive-art-gallery-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/event-stage-lanterns-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/event-stage-lanterns-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/event-stage-lanterns-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/family-culture-workshop-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/family-culture-workshop-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/family-culture-workshop-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uwajima-sea-culture-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uwajima-sea-culture-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uwajima-sea-culture-1440.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uchiko-ozu-townscape-480.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uchiko-ozu-townscape-960.webp",
-      "status": "PASS"
-    },
-    {
-      "path": "design-lab/assets/photos/uchiko-ozu-townscape-1440.webp",
-      "status": "PASS"
-    },
+  "assetHashes": [
     {
       "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
       "status": "PASS"
@@ -404,40 +338,294 @@
     {
       "path": "design-lab/assets/fonts/ehime-latin.woff2",
       "status": "PASS"
-    }
-  ],
-  "mobile_asset_budgets": [
+    },
     {
-      "page": "home-a.html",
-      "condition": "320–390 CSS px / DPR 1 / first-view image set at 480w / uncompressed asset estimate; excludes below-fold and subsequently selected images",
-      "first_view_images": [
-        "tobe-ceramics-workshop",
-        "event-stage-lanterns",
-        "uchiko-ozu-townscape",
-        "inclusive-art-gallery"
-      ],
-      "bytes": 415258,
-      "limit_bytes": 500000,
+      "path": "design-lab/assets/art/porcelain-hero-480.webp",
       "status": "PASS"
     },
     {
-      "page": "home-b.html",
-      "condition": "320–390 CSS px / DPR 1 / first-view image set at 480w / uncompressed asset estimate; excludes below-fold and subsequently selected images",
-      "first_view_images": [
-        "event-stage-lanterns",
-        "family-culture-workshop"
-      ],
-      "bytes": 360075,
-      "limit_bytes": 500000,
+      "path": "design-lab/assets/art/porcelain-hero-960.webp",
       "status": "PASS"
-    }
-  ],
-  "offline_review_scripts": [
+    },
     {
-      "script": 0,
+      "path": "design-lab/assets/art/porcelain-hero-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-1440.webp",
       "status": "PASS"
     }
   ],
-  "status": "PASS",
-  "issues": []
+  "cssStates": {
+    "reducedMotion": true,
+    "forcedColors": true,
+    "focusVisible": true,
+    "print": true
+  },
+  "estimatedBudgets": [
+    {
+      "page": "index.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 378963,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "index.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 459441,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "culture-craft.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 359212,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "culture-craft.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 387246,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "event-craft.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 349697,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "event-craft.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 377731,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "event-search.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 338831,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "event-search.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 338831,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "documents.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 332047,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "documents.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 332047,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "notebook.html",
+      "cssViewport": 390,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 332272,
+      "limit": 500000,
+      "status": "PASS"
+    },
+    {
+      "page": "notebook.html",
+      "cssViewport": 1440,
+      "dpr": 1,
+      "estimatedFirstViewBytes": 332272,
+      "limit": 500000,
+      "status": "PASS"
+    }
+  ],
+  "budgetLimits": "DPR1 estimate; excludes later/lazy requests, cache, response headers, real loading time",
+  "offlinePack": {
+    "pages": 22,
+    "assets": 9,
+    "bytes": 1292612
+  },
+  "legacyTopFragments": [
+    "about",
+    "events",
+    "participation",
+    "support",
+    "news"
+  ],
+  "issues": [],
+  "staticReferenceIntegrity": [
+    {
+      "path": "design-lab/qa/cycle-9/index-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-1440-full.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-craft-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-craft-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-craft-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-literature-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-literature-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-literature-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-search-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-search-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-search-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-craft-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-craft-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/event-craft-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/documents-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/documents-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/documents-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/notebook-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/notebook-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/notebook-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/participation-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/participation-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/participation-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/support-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/support-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/support-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-768.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-1024.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-1250.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/index-1600.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-craft-1440-full.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/culture-craft-320-full.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/documents-1024.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-9/notebook-1024.png",
+      "status": "PASS"
+    }
+  ]
 }

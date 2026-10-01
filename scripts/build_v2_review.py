@@ -1,85 +1,64 @@
 #!/usr/bin/env python3
-"""Bundle all D2 pages into one offline review file; no network is needed."""
+"""Build an offline review of the single v2 experience with its complete routes."""
 from pathlib import Path
 import base64
 import json
-import mimetypes
-
-ROOT = Path(__file__).resolve().parents[1]
-LAB = ROOT / "design-lab"
+ROOT=Path(__file__).resolve().parents[1]
+LAB=ROOT/'design-lab'
 
 def main():
-    files = ["index.html","home-a.html","home-b.html","event-search.html","event-detail.html","documents.html","components.html"]
-    pages = {f: (LAB / f).read_text(encoding="utf-8") for f in files}
-    css = (LAB / "tokens.css").read_text() + "\n" + (LAB / "theme.css").read_text() + "\n" + (LAB / "concepts.css").read_text()
-    events_js = (LAB / "events-data.js").read_text()
-    ui_js = (LAB / "ui.js").read_text()
-    assets = {}
-    for file in list((LAB / "assets/photos").glob("*.webp")) + list((LAB / "assets/fonts").glob("*.woff2")) + [ROOT / "assets/brand-mark.svg"]:
-        key = "../assets/brand-mark.svg" if file.name == "brand-mark.svg" else file.relative_to(LAB).as_posix()
-        mime = "font/woff2" if file.suffix == ".woff2" else mimetypes.guess_type(file.name)[0]
-        assets[key] = f"data:{mime};base64," + base64.b64encode(file.read_bytes()).decode()
-    pack = json.dumps(dict(pages=pages,css=css,events=events_js,ui=ui_js,assets=assets),ensure_ascii=False,separators=(",",":")).replace("</", "<\\/")
-    bridge = """
+    manifest=json.loads((LAB/'experience-manifest.json').read_text())
+    pages={f:(LAB/f).read_text() for f in manifest['pages']}
+    assets={}
+    for directory,mime,suffix in [('assets/art','image/webp','*.webp'),('assets/fonts','font/woff2','*.woff2')]:
+        for f in (LAB/directory).glob(suffix):
+            assets[f.relative_to(LAB).as_posix()]='data:'+mime+';base64,'+base64.b64encode(f.read_bytes()).decode()
+    pack={'pages':pages,'css':(LAB/'experience.css').read_text(),'data':(LAB/'experience-data.js').read_text(),'ui':(LAB/'experience.js').read_text(),'painting':(LAB/'painting.js').read_text(),'assets':assets}
+    bridge=r'''
 document.addEventListener('click',event=>{
- const anchor=event.target.closest('a[href]');if(!anchor)return;
- const href=anchor.getAttribute('href');if(href.startsWith('#'))return;
- const url=new URL(href,'https://design-lab.invalid/');
- if(url.origin!=='https://design-lab.invalid/')return;
- event.preventDefault();
- parent.postMessage({type:'ehime-review-nav',page:url.pathname.split('/').pop(),query:url.search,hash:url.hash},'*');
+ const a=event.target.closest('a[href]');if(!a)return;const href=a.getAttribute('href');
+ if(!href||href.startsWith('#')||href.startsWith('blob:')||a.hasAttribute('download'))return;
+ const url=new URL(href,'https://offline.invalid/');const page=url.pathname.split('/').pop();
+ if(window.__POC_PAGES__.includes(page)){event.preventDefault();window.parent.postMessage({type:'ehime-v2-nav',page,query:url.search,hash:url.hash,from:window.__POC_QUERY__},'*')}
+ else if(/^https?:/.test(href)){a.target='_blank';a.rel='noopener'}
 });
-const reportSize=()=>parent.postMessage({type:'ehime-review-height',height:Math.ceil(document.body.getBoundingClientRect().height)},'*');
-new ResizeObserver(reportSize).observe(document.body);
-addEventListener('load',reportSize);document.fonts.ready.then(reportSize);
-"""
-    shell = """<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>愛媛大会 v2 D2 デザイン比較</title>
-<style>*{box-sizing:border-box}body{margin:0;background:#e3e8e1;color:#173b35;font-family:system-ui,sans-serif}.review-bar{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #c8d0c5;padding:12px 20px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}.review-bar strong{font-size:14px;margin-right:12px}.review-bar button{min-height:40px;padding:8px 13px;background:#fff;border:1px solid #6c8078;border-radius:7px;font-size:12px;color:#173b35;cursor:pointer}.review-bar button[aria-pressed=true]{color:#fff;background:#173b35}.review-bar button:focus-visible{outline:3px solid #0069ba;outline-offset:3px}.review-size{display:flex;gap:7px;margin-left:auto}.review-caption{padding:12px 20px;font-size:12px;line-height:1.7;color:#52645f}.review-stage{padding:0 16px 24px;overflow:auto}iframe{display:block;width:100%;border:0;margin-inline:auto;background:#f7f4ed;box-shadow:0 2px 16px #173b3514}.review-title{display:none}@media(max-width:700px){.review-bar{padding:10px 12px;gap:7px}.review-bar strong{width:100%;margin:0}.review-bar button{font-size:11px;padding:7px 10px}.review-size{margin-left:0}.review-stage{padding-inline:0}.review-caption{padding:10px 12px}}</style></head><body>
-<header class="review-bar"><strong>愛媛大会 v2 / D2再設計</strong><button data-page="index.html" aria-pressed="true">比較</button><button data-page="home-a.html" aria-pressed="false">新A・群島</button><button data-page="home-b.html" aria-pressed="false">新B・ポスター</button><button data-page="event-search.html" aria-pressed="false">検索</button><button data-page="event-detail.html" aria-pressed="false">詳細</button><button data-page="documents.html" aria-pressed="false">資料</button><button data-page="components.html" aria-pressed="false">共通部品</button><div class="review-size" aria-label="表示幅"><button data-width="fluid" aria-pressed="true">画面幅</button><button data-width="390" aria-pressed="false">スマホ390px</button><button data-width="320" aria-pressed="false">スマホ320px</button></div></header>
-<p class="review-caption">旧A・B案を構成から作り直しました。新Aは文化を選んで巡る群島、新Bは参加の目的で変わるポスター。下層ページの再設計は後続工程です。</p>
-<main class="review-stage"><iframe id="preview" title="愛媛大会 デザイン試作" style="height:1200px"></iframe></main>
-<noscript><p>この比較ファイルはJavaScriptを利用します。通常の各HTMLページでは、本文とリンクをJavaScriptなしでもご覧いただけます。</p></noscript>
-<script id="review-pack" type="application/json">__PACK__</script><script>
-const pack=JSON.parse(document.getElementById('review-pack').textContent);
-const preview=document.getElementById('preview');
-let current='index.html';let currentQuery='';let lastDirection='editorial';
+const resize=()=>window.parent.postMessage({type:'ehime-v2-height',height:document.documentElement.scrollHeight},'*');
+if('ResizeObserver'in window)new ResizeObserver(resize).observe(document.body);addEventListener('load',resize);resize();
+'''
+    shell=r'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>愛媛を、ひらく。｜v2確認ファイル</title><style>
+*{box-sizing:border-box}body{margin:0;background:#e8e8e4;color:#151d36;font-family:system-ui,sans-serif}.review-bar{display:flex;align-items:center;gap:9px;padding:12px 20px;border-bottom:1px solid #b4b8bd;background:#f5f2ea;flex-wrap:wrap}.review-bar strong{font-size:13px;margin-right:15px}.review-bar button{min-height:40px;padding:9px 12px;font:inherit;font-size:11px;background:transparent;border:1px solid #6b7283;color:#151d36;cursor:pointer}.review-bar button[aria-pressed=true]{background:#183c9e;color:#fffdf8;border-color:#183c9e}.review-bar button:focus-visible{outline:3px solid #183c9e;outline-offset:3px}.review-bar button:disabled{opacity:.4;cursor:default}.review-width{display:flex;gap:7px;margin-left:auto}.review-caption{font-size:11px;line-height:1.8;padding:12px 20px;max-width:1200px;margin:0}.review-stage{overflow:auto;padding:0 16px 24px}iframe{display:block;border:0;margin:auto;width:100%;height:1200px;background:#f5f2ea}.review-state{font-size:10px;color:#596073}@media(max-width:700px){.review-bar{padding:10px 12px;gap:7px}.review-bar strong{width:100%;margin:0}.review-width{margin-left:0}.review-stage{padding-inline:0}.review-caption{padding:10px 12px}.review-bar button{padding:8px 10px}}
+</style></head><body><header class="review-bar"><strong>愛媛を、ひらく。 / v2.0 alpha.4</strong><button data-back disabled>戻る</button><button data-page="index.html" aria-pressed="true">トップ</button><button data-page="culture-craft.html" aria-pressed="false">文化</button><button data-page="event-search.html" aria-pressed="false">催し</button><button data-page="notebook.html" aria-pressed="false">文化帖</button><button data-page="documents.html" aria-pressed="false">資料</button><div class="review-width" aria-label="表示幅"><button data-width="fluid" aria-pressed="true">画面幅</button><button data-width="390" aria-pressed="false">390px</button><button data-width="320" aria-pressed="false">320px</button></div></header><p class="review-caption">一つのデザインで、文化の背景から催し、文化帖、参加の支援へ。画像・書体を同梱し、22ページをこのファイルだけで操作できます。文化帖の持ち出しも利用できます。 <span class="review-state" data-review-state>トップ</span></p><main class="review-stage"><iframe id="preview" title="愛媛大会 v2デザイン確認"></iframe></main><noscript><p>この確認ファイルはJavaScriptを利用します。通常配信の各ページでは、本文とリンクをJavaScriptなしでも読めます。</p></noscript><script id="pack" type="application/json">__PACK__</script><script>
+const pack=JSON.parse(document.getElementById('pack').textContent);const preview=document.getElementById('preview');
+let current='index.html',query='',hash='';const stack=[];let notebook=[],painting=[];
+try{notebook=JSON.parse(localStorage.getItem('ehime-v2-offline-notes')||'[]')}catch(_){}
+try{painting=JSON.parse(localStorage.getItem('ehime-v2-offline-painting')||'[]')}catch(_){}
 const bridge=__BRIDGE__;
-const replaceAssets=text=>{for(const [path,url] of Object.entries(pack.assets))text=text.split(path).join(url);return text};
-const inlineCss=replaceAssets(pack.css);
-function loadPage(page,query='',hash=''){
- if(!pack.pages[page])return;
- current=page;currentQuery=query;
- if(page==='home-a.html')lastDirection='editorial';
- else if(page==='home-b.html'||new URLSearchParams(query).get('direction')==='poster')lastDirection='poster';
- const params=new URLSearchParams(query);
- if(lastDirection==='poster'&&!['index.html','home-a.html','home-b.html'].includes(page))params.set('direction','poster');
- if(params.toString())currentQuery='?'+params.toString();
+const replaceAssets=text=>{for(const[name,url]of Object.entries(pack.assets))text=text.split(name).join(url);return text};const css=replaceAssets(pack.css);
+function loadPage(page,qs='',anchor='',remember=true){
+ if(!pack.pages[page])return;if(remember&&page!==current)stack.push({page:current,query,hash});
+ current=page;const params=new URLSearchParams(qs);params.set('saved',notebook.join(','));query=params.toString()?'?'+params.toString():'';hash=anchor;
  let html=replaceAssets(pack.pages[page]);
- html=html.replace('<head>','<head><script>window.__INITIAL_QUERY__='+JSON.stringify(currentQuery)+';<\\/script>');
- html=html.replace('<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="concepts.css">','<style>'+inlineCss+'</style>');
- html=html.replace('<script src="events-data.js" defer><\\/script>','<script>'+pack.events+'<\\/script>');
- html=html.replace('<script src="ui.js" defer><\\/script>','');
- const jump=hash?'addEventListener("load",()=>{document.getElementById('+JSON.stringify(hash.slice(1))+')?.scrollIntoView()});':'';
- html=html.replace('</body>','<script>'+pack.ui+bridge+jump+'<\\/script></body>');
- preview.srcdoc=html;
- document.querySelectorAll('[data-page]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.page===page)));
- window.scrollTo({top:0,behavior:'auto'});
+ const globals='window.__POC_OFFLINE__=true;window.__POC_QUERY__='+JSON.stringify(query)+';window.__POC_NOTEBOOK__='+JSON.stringify(notebook)+';window.__POC_PAINTING__='+JSON.stringify(painting)+';window.__POC_PAGES__='+JSON.stringify(Object.keys(pack.pages))+';';
+ html=html.replace('<head>','<head><script>'+globals+'<\/script>');html=html.replace('<link rel="stylesheet" href="experience.css">','<style>'+css+'</style>');
+ html=html.replace('<script src="experience-data.js" defer><\/script>','<script>'+pack.data+'<\/script>');html=html.replace('<script src="experience.js" defer><\/script>','');
+ const hasPainting=html.includes('<script src="painting.js" defer><\/script>');html=html.replace('<script src="painting.js" defer><\/script>','');
+ const jump=anchor?'addEventListener("load",()=>document.getElementById('+JSON.stringify(anchor.slice(1))+')?.scrollIntoView());':'';
+ html=html.replace('</body>','<script>'+pack.ui+(hasPainting?pack.painting:'')+bridge+jump+'<\/script></body>');preview.srcdoc=html;
+ document.querySelectorAll('[data-page]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.page===page)));document.querySelector('[data-back]').disabled=!stack.length;
+ document.querySelector('[data-review-state]').textContent=page;window.scrollTo({top:0,behavior:'auto'});
 }
-document.querySelectorAll('[data-page]').forEach(button=>button.addEventListener('click',()=>loadPage(button.dataset.page)));
-document.querySelectorAll('[data-width]').forEach(button=>button.addEventListener('click',()=>{
- preview.style.width=button.dataset.width==='fluid'?'100%':button.dataset.width+'px';
- document.querySelectorAll('[data-width]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
-}));
+document.querySelectorAll('[data-page]').forEach(b=>b.addEventListener('click',()=>loadPage(b.dataset.page)));
+document.querySelector('[data-back]').addEventListener('click',()=>{const p=stack.pop();if(p)loadPage(p.page,p.query,p.hash,false)});
+document.querySelectorAll('[data-width]').forEach(b=>b.addEventListener('click',()=>{preview.style.width=b.dataset.width==='fluid'?'100%':b.dataset.width+'px';document.querySelectorAll('[data-width]').forEach(item=>item.setAttribute('aria-pressed',String(item===b)))}));
 addEventListener('message',event=>{
- if(event.source!==preview.contentWindow)return;
- if(event.data.type==='ehime-review-nav')loadPage(event.data.page,event.data.query,event.data.hash);
- if(event.data.type==='ehime-review-height'&&Number.isFinite(event.data.height))preview.style.height=Math.max(400,event.data.height)+'px';
-});
-loadPage('index.html');
-</script></body></html>"""
-    shell = shell.replace("__PACK__", pack).replace("__BRIDGE__", json.dumps(bridge,ensure_ascii=False).replace("</","<\\/"))
-    (LAB / "review.html").write_text(shell,encoding="utf-8")
-    print(f"Built offline review.html: {(LAB/'review.html').stat().st_size} bytes.")
-
-if __name__ == "__main__":
-    main()
+ if(event.source!==preview.contentWindow||!event.data||typeof event.data!=='object')return;
+ if(event.data.type==='ehime-v2-nav'){query=event.data.from||query;loadPage(event.data.page,event.data.query,event.data.hash)}
+ if(event.data.type==='ehime-v2-height'&&Number.isFinite(event.data.height))preview.style.height=Math.max(400,Math.min(30000,event.data.height))+'px';
+ if(event.data.type==='ehime-v2-notebook'&&Array.isArray(event.data.ids)){notebook=event.data.ids;try{localStorage.setItem('ehime-v2-offline-notes',JSON.stringify(notebook))}catch(_){}}
+ if(event.data.type==='ehime-v2-painting'&&Array.isArray(event.data.lines)){painting=event.data.lines;try{localStorage.setItem('ehime-v2-offline-painting',JSON.stringify(painting))}catch(_){}}
+});loadPage('index.html','','',false);
+</script></body></html>'''
+    text=shell.replace('__PACK__',json.dumps(pack,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')).replace('__BRIDGE__',json.dumps(bridge,ensure_ascii=False).replace('</','<\\/'))
+    (LAB/'review.html').write_text(text)
+    print(json.dumps({'pages':len(pages),'bytes':len(text.encode()),'bundledAssets':len(assets)}))
+if __name__=='__main__':main()

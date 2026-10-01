@@ -1,70 +1,108 @@
 {
-  "scope": "jsdom logic regression; not browser layout, timing, screen reader or real key event certification",
+  "version": "2.0.0-alpha.4",
+  "method": "jsdom state and route logic; not browser/screen-reader confirmation",
+  "passed": 25,
+  "total": 25,
   "results": [
     {
-      "name": "Japanese keyword and city select identify the pottery sample",
+      "name": "Culture -> sample event -> save -> notebook is one consistent choice",
       "status": "PASS"
     },
     {
-      "name": "URL state restores genre and accessibility selection",
+      "name": "Save toggle updates accessible names, announces action, and never duplicates",
       "status": "PASS"
     },
     {
-      "name": "Unknown select values in a URL do not silently remove all results",
+      "name": "Shared selections deduplicate, drop unknown IDs, preserve ordering",
       "status": "PASS"
     },
     {
-      "name": "Reset restores four results and focuses the keyword input",
+      "name": "Delete focus moves to the next item and then the empty-state action",
       "status": "PASS"
     },
     {
-      "name": "Multiple keyword terms use a conjunctive search and input stays plain text",
+      "name": "Storage failure keeps URL choices and explains persistence limit",
       "status": "PASS"
     },
     {
-      "name": "Mobile disclosure opens, Escape closes, and focus returns to the trigger",
+      "name": "Japanese AND keyword and city filters select the intended sample",
       "status": "PASS"
     },
     {
-      "name": "Returning from mobile to desktop leaves the navigation visible",
+      "name": "Verified filter excludes samples; sample support is not an official guarantee",
       "status": "PASS"
     },
     {
-      "name": "Details stay consistent for each selected sample and unknown IDs",
+      "name": "URL support restores and reset retains notebook and input focus",
       "status": "PASS"
     },
     {
-      "name": "Poster direction persists through search and detail navigation",
+      "name": "Unknown URL selector recovers and HTML-like query remains inert",
       "status": "PASS"
     },
     {
-      "name": "No JavaScript HTML keeps four sample events and complete default details",
+      "name": "Back-forward URL restoration synchronizes filter and notebook",
       "status": "PASS"
     },
     {
-      "name": "Offline bundle initializes each page and injects assets without external requests",
+      "name": "Mobile menu opens; Escape returns focus; desktop resize restores navigation",
       "status": "PASS"
     },
     {
-      "name": "Culture choice updates photograph, text, genre route and selected event together",
+      "name": "Following mobile navigation closes disclosure without a modal focus trap",
       "status": "PASS"
     },
     {
-      "name": "Culture URL restores a choice, unknown choices recover, and back navigation restores state",
+      "name": "Reduced-motion setting suppresses save animation",
       "status": "PASS"
     },
     {
-      "name": "Participation intent changes to the matching task without losing focus or direction",
+      "name": "Offline pack retains notebook and hides unsupported share URL action",
       "status": "PASS"
     },
     {
-      "name": "Participation URL and offline query restore the correct route",
+      "name": "Clipboard failure presents a focused selectable link with the exact items",
       "status": "PASS"
     },
     {
-      "name": "Both concepts keep all task routes and core information without JavaScript",
+      "name": "SVG export contains selected events and statuses, excludes other events",
+      "status": "PASS"
+    },
+    {
+      "name": "No-JS pages expose cultural stories, all links, event facts, and source states",
+      "status": "PASS"
+    },
+    {
+      "name": "Actual pre-event is clearly closed, without an application form",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard painting presets add distinct strokes, undo and clear keep an accurate draft",
+      "status": "PASS"
+    },
+    {
+      "name": "Painting is opt-in for pointer input; cancel discards the unfinished line",
+      "status": "PASS"
+    },
+    {
+      "name": "A completed drawn line is persisted; Escape exits painting and returns focus",
+      "status": "PASS"
+    },
+    {
+      "name": "Painting has a bounded number of strokes and validates restored vector paths",
+      "status": "PASS"
+    },
+    {
+      "name": "Painting SVG export contains the authored strokes and mask, without scripts",
+      "status": "PASS"
+    },
+    {
+      "name": "Notebook cultural mark updates both geometry and its readable theme description",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline pack loads complete inline DOM, routes, assets, painting and notebook state",
       "status": "PASS"
     }
-  ],
-  "status": "PASS"
+  ]
 }

@@ -236,6 +236,9 @@ v2 implication:
 
 ## 5. Ehime v2 target expression
 
+この節までの方向比較はalpha.1〜alpha.3の履歴を含む。
+現在の適用結果は次節を正とする。
+
 キーワード:
 
 **Contemporary / Cultural / Editorial / Cinematic / Calm / Inclusive / Local / Trustworthy**
@@ -245,3 +248,21 @@ v2 implication:
 > 「瀬戸内の光と愛媛の文化の層を、現代的な編集デザインで見せる公式文化プラットフォーム」
 
 をv2の仮デザインコンセプトとする。
+
+## 6. alpha.4で何を実装したか
+
+2026-10-01に、制作チームが公開した解説と各賞の評価観点を再確認した。
+受賞サイトと似た色や動きを足すことだけでは、内容・構造・操作が一つの考え方で成立する品質に届かない。
+alpha.4は方向を「愛媛を、ひらく。」へ統合し、トップだけでなく文化・検索・催し・文化帖・支援・資料へ展開した。
+
+| 参照と一次資料 | 読み取った設計上の関係 | このPoCでの適用 | まだ足りない点 |
+| --- | --- | --- | --- |
+| [KOKUYO Vol.1](https://mount.jp/en/magazine/behind-kokuyo-vol1-2510/) / [Vol.5](https://mount.jp/en/magazine/behind-kokuyo-vol5-2510/) | 企業理解、言葉、イラスト、操作が同じ考え方から生まれる。ノートの立体表現も事業・歴史に結び付く | 土地の文化を4章に編集し、工芸の絵付けと、選択が表紙のしるしになる文化帖を実装 | 同等の制作量・立体表現ではない。現地の取材、作者の声、初見での理解の確認が不足 |
+| [Siena Film Foundation制作解説](https://www.awwwards.com/siena-film-foundation-case-study.html) | 土地の建築と映画という素材が、画面構成、文字、ナビゲーション、動きを支える | 白磁・藍・余白を編集規則にし、文化別の非対称入口、関連する文化へのリンク、資料ページの静かな構成へ展開 | 単一の工芸素材から全ジャンルを代表させない調整が必要。実ブラウザーでの動きと操作は未確認 |
+| [Pentagram Archive](https://www.pentagram.com/archive) | 多くの内容を選択・索引から巡り、作品そのものが中心になる | 検索の条件、確認済み／掲載例、URL復元、文化の章と催しの関連を一つのデータから生成 | 実際の大会の全催し・地域・115ページで分類と検索を検証していない |
+| [Webby審査基準](https://www.webbyawards.com/judging-criteria/) | Content、Structure & Navigation、Visual Design、Functionality、Interactivity、Innovation、Overall Experienceを総合して評価する | 内容の出典、常設の検索、保存と戻る、任意の制作、支援と資料を一体で扱う | 七つの観点への実装は、審査での評価や受賞水準の証明を意味しない |
+| [FWA 25年の説明](https://thefwa.com/FWA25/25.html) | 創造性、独創性、技術の完成度、革新が評価の核になる | 利用者が描く藍の線と持ち帰るSVGを、工芸の読み物から自然に始まる任意の体験にする | この機能だけで革新性やFWAの受賞水準を認定しない。制作の独自性と完成度をさらに検証する |
+
+この表は参照した考え方と実装の対応であり、各事例の現在の受賞名・受賞年を新たに認定するものではない。
+賞の表現技法を行政情報ページへ一律に移すこともしない。
+今回の自己レビューで直した欠点と、完成判定を保留している理由は `V2_SELF_REVIEW.md` に記録する。

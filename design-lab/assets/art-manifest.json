@@ -1,0 +1,60 @@
+{
+  "version": "2.0.0-alpha.4",
+  "method": "built-in image_gen; delivery encoding only",
+  "images": [
+    {
+      "path": "design-lab/assets/art/porcelain-hero-480.webp",
+      "source": "design-lab/assets/art-masters/porcelain-hero.png",
+      "source_sha256": "c9a890f68affdbb5ec10626203e3859215f7d87931b13ba56598e8b3e462ddae",
+      "width": 480,
+      "height": 600,
+      "bytes": 34500,
+      "sha256": "78687a715f0028984952646c0c7dc65aaf6197d87988ec33ab49c88a7d2b1063"
+    },
+    {
+      "path": "design-lab/assets/art/porcelain-hero-960.webp",
+      "source": "design-lab/assets/art-masters/porcelain-hero.png",
+      "source_sha256": "c9a890f68affdbb5ec10626203e3859215f7d87931b13ba56598e8b3e462ddae",
+      "width": 960,
+      "height": 1200,
+      "bytes": 114978,
+      "sha256": "976603a6c6460a1b51ac7ef883a9cc1fcba48653307a9d9ae50dd4c3c2e71653"
+    },
+    {
+      "path": "design-lab/assets/art/porcelain-hero-1440.webp",
+      "source": "design-lab/assets/art-masters/porcelain-hero.png",
+      "source_sha256": "c9a890f68affdbb5ec10626203e3859215f7d87931b13ba56598e8b3e462ddae",
+      "width": 1440,
+      "height": 1799,
+      "bytes": 199694,
+      "sha256": "2316f0b0d4869caf82f017f87002832eae687d28ee00f7076ebc6e910afa511f"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-480.webp",
+      "source": "design-lab/assets/art-masters/craft-hands.png",
+      "source_sha256": "ad1a70cc6410f431269b8b262ee3ea95c78dfc92006502ae549793960ed92914",
+      "width": 480,
+      "height": 320,
+      "bytes": 16318,
+      "sha256": "0757eb7d4387306eee575e83ce8d911f2e98fb4515c1c8289c4b263ee5bae92d"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-960.webp",
+      "source": "design-lab/assets/art-masters/craft-hands.png",
+      "source_sha256": "ad1a70cc6410f431269b8b262ee3ea95c78dfc92006502ae549793960ed92914",
+      "width": 960,
+      "height": 640,
+      "bytes": 44352,
+      "sha256": "2509b1b74e7b5e789b4ac0864917a4a5cc6ff10753057b7ec109c09462d16357"
+    },
+    {
+      "path": "design-lab/assets/art/craft-hands-1440.webp",
+      "source": "design-lab/assets/art-masters/craft-hands.png",
+      "source_sha256": "ad1a70cc6410f431269b8b262ee3ea95c78dfc92006502ae549793960ed92914",
+      "width": 1440,
+      "height": 960,
+      "bytes": 74456,
+      "sha256": "a2a1b01a6893825b1f7a00f5a9d51b73e37b376d7fb5edeffd0927ae79f97f84"
+    }
+  ]
+}

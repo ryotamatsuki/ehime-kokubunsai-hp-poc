@@ -32,7 +32,7 @@ def build(font_dir):
     photo_dir.mkdir(parents=True, exist_ok=True)
     font_out.mkdir(parents=True, exist_ok=True)
     font_dir.mkdir(parents=True, exist_ok=True)
-    manifest = {"version": "2.0.0-alpha.3", "photos": [], "fonts": [], "font_source_ref": FONT_REF}
+    manifest = {"version": "2.0.0-alpha.4", "photos": [], "fonts": [], "font_source_ref": FONT_REF}
     for name in PHOTOS:
         source = ROOT / ("assets/" + name + ".jpg")
         im = Image.open(source).convert("RGB")
