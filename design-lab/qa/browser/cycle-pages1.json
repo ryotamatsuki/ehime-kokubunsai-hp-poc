@@ -1,0 +1,3842 @@
+{
+  "version": "2.0.0-alpha.6",
+  "method": "Native Chrome with normal same-origin delivery, fonts and responsive images",
+  "records": [
+    {
+      "time": "2026-10-02T05:37:25.021Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/index.html?saved=&place=niihama",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "愛媛を、\nひらく。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "94px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 205.9,
+        "domContentLoaded": 284.6,
+        "load": 319.6
+      },
+      "resources": {
+        "requests": 14,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 459768,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 2.3
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 5.5
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 5.3
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 5.4
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 4.2
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 2.2
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 2
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": 324,
+        "element": "IMG",
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:55.837Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/index.html?saved=&place=niihama",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "愛媛を、\nひらく。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "64px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 4.7,
+        "domContentLoaded": 87,
+        "load": 447.1
+      },
+      "resources": {
+        "requests": 15,
+        "transferredBytes": 40756,
+        "encodedBodyBytes": 500224,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": 308,
+        "element": "IMG",
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:56.205Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/index.html?saved=&place=niihama",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "愛媛を、\nひらく。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "94px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.8,
+        "domContentLoaded": 44.4,
+        "load": 59.9
+      },
+      "resources": {
+        "requests": 14,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 459768,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:57.868Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/field-notes.html?saved=&place=niihama",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "文化を読む。\nことばを残す。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 1070.6,
+        "domContentLoaded": 1089.5,
+        "load": 1356.4
+      },
+      "resources": {
+        "requests": 14,
+        "transferredBytes": 10736,
+        "encodedBodyBytes": 337850,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 260.6
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:58.204Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/field-notes.html?saved=&place=niihama",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "文化を読む。\nことばを残す。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.3,
+        "domContentLoaded": 22.4,
+        "load": 31.9
+      },
+      "resources": {
+        "requests": 14,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 337850,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:58.942Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/literature.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "十七音の、余白。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 145.4,
+        "domContentLoaded": 163.1,
+        "load": 429.2
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 108200,
+        "encodedBodyBytes": 343134,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 221.3
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 249.4
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 207.6
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 218.8
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 197.6
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 211
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 254.5
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 235.6
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 230.4
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:37:59.282Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/literature.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "十七音の、余白。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 7,
+        "domContentLoaded": 24,
+        "load": 37.8
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 343134,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:00.334Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/craft.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "白磁に、藍を。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 273.6,
+        "domContentLoaded": 707.3,
+        "load": 748.8
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 36473,
+        "encodedBodyBytes": 374671,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:00.670Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/craft.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "白磁に、藍を。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.8,
+        "domContentLoaded": 21.9,
+        "load": 25.3
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 374671,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:01.128Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/events/search.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "催しを、探す。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 110,
+        "domContentLoaded": 127.8,
+        "load": 148.6
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 372022,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:01.473Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/events/search.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "催しを、探す。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 2,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 4.9,
+        "domContentLoaded": 20.7,
+        "load": 35.8
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 372022,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:02.520Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/events/stage.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "瀬戸内文化ステージ（仮）",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 285.1,
+        "domContentLoaded": 302.3,
+        "load": 744.2
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 102510,
+        "encodedBodyBytes": 441008,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:02.853Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/events/stage.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "瀬戸内文化ステージ（仮）",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.1,
+        "domContentLoaded": 21.3,
+        "load": 24.7
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 476378,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:03.309Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/notebook.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "わたしの、文化帖。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 124.7,
+        "domContentLoaded": 141.4,
+        "load": 152.6
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 343134,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:03.643Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/culture/notebook.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "わたしの、文化帖。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 6.2,
+        "domContentLoaded": 21,
+        "load": 31.2
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 343134,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:04.481Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/recruitment/index.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "文化をつくる、一人に。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 264.4,
+        "domContentLoaded": 278,
+        "load": 281.6
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 15660,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 243.7
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:04.821Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/recruitment/index.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "文化をつくる、一人に。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.8,
+        "domContentLoaded": 20.8,
+        "load": 24.2
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:05.258Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/sponsors/index.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "文化の未来を、ともに。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 94,
+        "domContentLoaded": 110.7,
+        "load": 129.1
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:05.604Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/sponsors/index.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "文化の未来を、ともに。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 1,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 6.2,
+        "domContentLoaded": 22.1,
+        "load": 38.6
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 83162,
+        "encodedBodyBytes": 437020,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:06.945Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/committee/overview.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "実行委員会と、資料。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 1003,
+        "domContentLoaded": 1019.6,
+        "load": 1023.4
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:07.288Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/committee/overview.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "実行委員会と、資料。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 4.5,
+        "domContentLoaded": 21.4,
+        "load": 25.3
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:07.725Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/access/train.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "文化に会いに、愛媛へ。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 102.1,
+        "domContentLoaded": 115.8,
+        "load": 130.1
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:08.092Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/access/train.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "文化に会いに、愛媛へ。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.1,
+        "domContentLoaded": 46.4,
+        "load": 52.6
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:08.690Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/accessibility/information-support.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "参加の支援を、確かめる。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 253.7,
+        "domContentLoaded": 269.9,
+        "load": 274.2
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:09.033Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/accessibility/information-support.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "参加の支援を、確かめる。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 4.9,
+        "domContentLoaded": 20.7,
+        "load": 25.1
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:09.506Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/contact/form.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "メールフォーム",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "34px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 131.4,
+        "domContentLoaded": 150.4,
+        "load": 164.8
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:09.854Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/contact/form.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "メールフォーム",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 6.8,
+        "domContentLoaded": 26.5,
+        "load": 39.5
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:10.567Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/common/search.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "サイト内検索",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "34px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 133.6,
+        "domContentLoaded": 384.9,
+        "load": 401.1
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 9106,
+        "encodedBodyBytes": 362964,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:10.919Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/common/search.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "サイト内検索",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.4,
+        "domContentLoaded": 27.5,
+        "load": 43.4
+      },
+      "resources": {
+        "requests": 23,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 362964,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:11.553Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/site-map.html?saved=",
+      "cssViewport": 373,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "18px"
+      },
+      "heading": {
+        "text": "文化祭の、すべての案内。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "36px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 663,
+      "textOutside": [
+        {
+          "text": "催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。",
+          "left": 20,
+          "right": 663.27
+        }
+      ],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 295.7,
+        "domContentLoaded": 314.3,
+        "load": 319.4
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    },
+    {
+      "time": "2026-10-02T05:38:11.889Z",
+      "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/site-map.html?saved=",
+      "cssViewport": 1423,
+      "devicePixelRatio": 1,
+      "bodyFont": {
+        "family": "\"Ehime Latin\", \"Ehime Sans\", \"Yu Gothic\", \"Hiragino Kaku Gothic ProN\", sans-serif",
+        "size": "20px"
+      },
+      "heading": {
+        "text": "文化祭の、すべての案内。",
+        "font": "\"Ehime Festival Display\", \"Ehime Sans\", sans-serif",
+        "size": "60.396px"
+      },
+      "hero": null,
+      "fontsStatus": "loaded",
+      "documentWidth": 1423,
+      "textOutside": [],
+      "controlsOutside": [],
+      "completedImages": 0,
+      "brokenImages": [],
+      "navigationMs": {
+        "response": 5.1,
+        "domContentLoaded": 20.7,
+        "load": 25.5
+      },
+      "resources": {
+        "requests": 22,
+        "transferredBytes": 0,
+        "encodedBodyBytes": 354158,
+        "fontRequests": [
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular.woff2",
+            "bytes": 66632,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+            "bytes": 10436,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+            "bytes": 8828,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+            "bytes": 10224,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+            "bytes": 10636,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+            "bytes": 12388,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+            "bytes": 11604,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+            "bytes": 10164,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-sans-bold.woff2",
+            "bytes": 31120,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-latin.woff2",
+            "bytes": 16204,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium.woff2",
+            "bytes": 35568,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+            "bytes": 9928,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+            "bytes": 11456,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+            "bytes": 13004,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+            "bytes": 14856,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+            "bytes": 15360,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+            "bytes": 17988,
+            "durationMs": 0
+          },
+          {
+            "url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+            "bytes": 13944,
+            "durationMs": 0
+          }
+        ]
+      },
+      "observedPaint": {
+        "lcpMs": null,
+        "element": null,
+        "cls": 0,
+        "longestObservedInteractionMs": null
+      },
+      "limits": "One unthrottled Chrome iframe run; cache may be reused, lazy images counted only if completed; paint values concern the embedded viewport. No field Core Web Vitals or screen-reader conformance claim."
+    }
+  ]
+}
