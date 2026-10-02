@@ -1,7 +1,7 @@
 {
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "baselineCommit": "94df551e752129e45e7f21c3d38282d87c5690db",
-  "policy": "All v1 main-body text remains visible in v2; changed headings, routes and image delivery preserve content. The homepage body is on the linked festival guide.",
+  "policy": "All v1 main-body text remains accessible in v2, including native disclosure sections. Examples and tools are promoted in nine reading compositions. The homepage body is on the linked festival guide.",
   "pages": [
     {
       "source": "about/catchphrase.html",

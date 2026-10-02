@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "direction": "hiraku",
   "pages": [
     "index.html",
@@ -27,6 +27,7 @@
     "components.html",
     "site-map.html",
     "festival-guide.html",
+    "culture-atlas.html",
     "info-about-catchphrase.html",
     "info-about-disability-arts-festival.html",
     "info-about-downloads.html",
@@ -157,6 +158,7 @@
     "event-stage.html": "events/stage.html",
     "site-map.html": "site-map.html",
     "festival-guide.html": "festival-guide.html",
+    "culture-atlas.html": "culture/field-notes.html",
     "info-about-catchphrase.html": "about/catchphrase.html",
     "info-about-disability-arts-festival.html": "about/disability-arts-festival.html",
     "info-about-downloads.html": "about/downloads.html",

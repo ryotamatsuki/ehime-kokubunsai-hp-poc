@@ -1,0 +1,45 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha6-2/index-390.png",
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "version": "2.0.0-alpha.6",
+  "method": "jsdom source, keyboard event, local storage, safe export and offline continuity checks; not browser confirmation",
+  "passed": 11,
+  "total": 11,
+  "results": [
+    {
+      "name": "Homepage reaches culture before all six compact event entries",
+      "status": "PASS"
+    },
+    {
+      "name": "Cultural tabs restore an explicit place and support Arrow, Home and End keys",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid place falls back and no-JS cultural records remain available",
+      "status": "PASS"
+    },
+    {
+      "name": "Each record photograph has original attribution, date and a reusable license",
+      "status": "PASS"
+    },
+    {
+      "name": "Observation survives a new page without turning entered markup into HTML",
+      "status": "PASS"
+    },
+    {
+      "name": "Empty observation does not save; storage failure remains usable and explained",
+      "status": "PASS"
+    },
+    {
+      "name": "Deleting observations moves focus and keeps the empty state readable",
+      "status": "PASS"
+    },
+    {
+      "name": "Kana workshop counts small kana, long vowels and sokuon; kanji does not produce a false count",
+      "status": "PASS"
+    },
+    {
+      "name": "Word export contains the authored poem, remains valid SVG and excludes outside scripts",
+      "status": "PASS"
+    },
+    {
+      "name": "Reading index opens the retained background instead of leaving its target concealed",
+      "status": "PASS"
+    },
+    {
+      "name": "Offline review carries observations and safely embeds script-like personal words",
+      "status": "PASS"
+    }
+  ]
+}

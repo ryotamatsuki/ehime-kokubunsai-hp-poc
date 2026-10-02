@@ -75,34 +75,36 @@ def main():
     assets=[]
     original=json.loads((LAB/'assets/manifest.json').read_text())
     art=json.loads((LAB/'assets/art-manifest.json').read_text())
-    for row in original['fonts']+art['images']+json.loads((LAB/'assets/legacy-manifest.json').read_text())['images']:
+    for row in original['fonts']+art['images']+json.loads((LAB/'assets/legacy-manifest.json').read_text())['images']+json.loads((LAB/'assets/culture-manifest.json').read_text())['images']:
         actual=hashlib.sha256((ROOT/row['path']).read_bytes()).hexdigest()
         good=actual==row['sha256'];assets.append({'path':row['path'],'status':'PASS' if good else 'FAIL'})
         if not good:issues.append('asset hash '+row['path'])
     css=(LAB/'experience.css').read_text()
-    actual_root=dict(re.findall(r'--([\w-]+):([^;]+);',re.search(r':root\{([^}]+)\}',css)[1]))
+    actual_root=dict(re.findall(r'--([\w-]+):([^;]+);',re.search(r':root\{([^}]+)\}',css)[1]+';'))
     if actual_root!=tokens['cssVariables']:issues.append('CSS differs from token source')
     version=dict(line.split('=',1) for line in (ROOT/'VERSION').read_text().splitlines() if '=' in line)
     if not (version['version']==tokens['version']==manifest['version']):issues.append('version metadata differs')
     css_flags={name:query in css for name,query in [('reducedMotion','prefers-reduced-motion'),('forcedColors','forced-colors'),('focusVisible',':focus-visible'),('print','@media print')]}
     if not all(css_flags.values()):issues.append('missing CSS access states')
-    for file in ['experience.js','experience-data.js','painting.js','legacy-ui.js','site-search-data.js']:
+    for file in ['experience.js','experience-data.js','painting.js','legacy-ui.js','site-search-data.js','culture-experience.js']:
         subprocess.run(['node','--check',str(LAB/file)],check=True,capture_output=True)
     review=Inspector();review.feed((LAB/'review.html').read_text());pack=next(s for s in review.scripts if s['attrs'].get('id')=='pack')
     packed=json.loads(pack['code'])
     if set(packed['pages'])!=set(manifest['pages']):issues.append('offline pack page set')
     for file,source in packed['pages'].items():
         if source!=(LAB/file).read_text():issues.append('stale offline page '+file)
-    shared=sum((LAB/name).stat().st_size for name in ['experience.css','experience-data.js','experience.js','legacy-ui.js'])+sum(row['bytes'] for row in original['fonts'])
+    shared=sum((LAB/name).stat().st_size for name in ['experience.css','experience-data.js','experience.js','legacy-ui.js'])
     budgets=[]
     for name,image_name in [('index.html','festival-hero'),('culture-craft.html','event-craft'),('event-craft.html','event-craft'),('event-search.html','event-pre2026'),('documents.html',None),('notebook.html',None)]:
         for width in [390,1440]:
-            amount=shared+(LAB/name).stat().st_size
+            usage=json.loads(subprocess.run(['node',str(ROOT/'scripts/font_usage_v2.cjs'),name,str(width)],check=True,capture_output=True,text=True).stdout)
+            amount=shared+(LAB/name).stat().st_size+usage['bytes']
             if name=='culture-craft.html':amount+=(LAB/'painting.js').stat().st_size
+            if name in ['index.html','notebook.html']:amount+=(LAB/'culture-experience.js').stat().st_size
             if image_name:
-                image_width=480 if width==390 or name=='event-search.html' else 1440 if name=='index.html' else 960
+                image_width=480 if width==390 or name=='event-search.html' else 960
                 amount+=(LAB/f'assets/art/{image_name}-{image_width}.webp').stat().st_size
-            budgets.append({'page':name,'cssViewport':width,'dpr':1,'estimatedFirstViewBytes':amount,'limit':500000 if width==390 else 750000,'status':'PASS' if amount<=(500000 if width==390 else 750000) else 'FAIL'})
+            budgets.append({'page':name,'cssViewport':width,'dpr':1,'estimatedFirstViewBytes':amount,'estimatedFontRequests':usage['fonts'],'fontSelectionMethod':usage['method'],'systemFallbackJapanese':usage['unknownJapanese'],'limit':500000 if width==390 else 750000,'status':'PASS' if amount<=(500000 if width==390 else 750000) else 'FAIL'})
             if amount>(500000 if width==390 else 750000):issues.append('budget '+name)
     # Original v1 child pages still use these root fragment names.
     compatibility=[id for id in ['about','events','participation','support','news'] if id in inspect(ROOT/'index.html').ids]

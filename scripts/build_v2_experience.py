@@ -6,6 +6,7 @@ import json
 import os
 import re
 import v2_preserve_content as preservation
+import v2_cultural_editorial as editorial
 
 ROOT = Path(__file__).resolve().parents[1]
 LAB = ROOT / "design-lab"
@@ -29,6 +30,7 @@ ROUTES = {
 ROUTES['event-stage.html']='events/stage.html'
 ROUTES['site-map.html']='site-map.html'
 ROUTES['festival-guide.html']='festival-guide.html'
+ROUTES['culture-atlas.html']='culture/field-notes.html'
 BASELINE_PAGES=preservation.inventory()
 ORIGINAL_TO_LAB={value:key for key,value in ROUTES.items()}
 PRESERVED_ROUTES={}
@@ -90,7 +92,7 @@ def plate(key, decorative=True):
 
 def header():
     return f'''<a class="skip-link" href="#main">本文へ移動</a>
-<div class="poc-banner"><div class="container"><span>DESIGN PoC / 2026.10.01</span><span>確認済み情報と、催しの掲載例を区別しています。</span></div></div>
+<div class="poc-banner"><div class="container"><span>個人制作によるデザインPoCです。</span><span>愛媛県及び大会実行委員会の公式サイトではありません。</span></div></div>
 <header class="masthead"><div class="container masthead-row">
 <a class="brand" href="{route('index.html')}" aria-label="愛顔えひめの文化祭2028 トップ"><span class="brand-name">愛顔<span class="brand-reading">えがお</span><span class="brand-name-rest">えひめの文化祭<span class="brand-year">2028</span></span></span><span class="brand-sub">第43回国民文化祭 · 第28回全国障害者芸術・文化祭</span></a>
 <nav class="main-navigation" id="main-navigation" aria-label="メインナビゲーション" data-navigation>
@@ -102,7 +104,7 @@ def header():
 def footer():
     return f'''<footer class="footer"><div class="container"><div class="footer-top"><div><p class="label">CULTURE BEGINS WITH YOU.</p><p class="footer-phrase">つくる人も。<br>観る人も。あなたも。</p></div><div class="footer-festival"><p>愛顔（えがお）えひめの文化祭2028</p><p class="footer-date"><span>2028</span> 10.22 — 12.03</p>{link('大会の概要','about.html')}</div></div>
 <nav class="footer-navigation" aria-label="フッター"><a href="{route('event-search.html')}">催しを探す</a><a href="{route('participation.html')}">参加・募集</a><a href="{route('sponsors.html')}">協賛</a><a href="{route('access.html')}">交通・アクセス</a><a href="{route('documents.html')}">実行委員会・資料</a><a href="{route('support.html')}">参加の支援</a><a href="{route('privacy.html')}">プライバシー</a><a href="{route('site-map.html')}">すべての案内</a><a href="{route(ORIGINAL_TO_LAB['common/search.html'])}">サイト内検索</a><a href="{route(ORIGINAL_TO_LAB['contact/contacts.html'])}">お問い合わせ</a><a href="https://www.pref.ehime.jp/soshiki/286/">県の担当窓口 ↗</a></nav>
-<div class="footer-bottom"><p>デザインPoC。主画像はAI生成、図形はオリジナルの編集ビジュアルです。実在の作品・会場の記録ではありません。</p><p>EHIME CULTURE 2028</p></div></div></footer><div class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-global-status></div>'''
+<div class="footer-bottom"><div><p>個人制作によるデザインPoCです。愛媛県及び大会実行委員会の公式サイトではありません。</p><p>催しの画像はAI生成。文化紹介の記録写真には撮影者・撮影時期・利用条件を掲載しています。</p></div><p>EHIME CULTURE 2028</p></div></div></footer><div class="sr-only" role="status" aria-live="polite" aria-atomic="true" data-global-status></div>'''
 
 def breadcrumb(title, parent=None):
     extra = f'<a href="{route(parent[1])}">{esc(parent[0])}</a><span aria-hidden="true">/</span>' if parent else ""
@@ -127,17 +129,21 @@ def culture_tile(c):
     artwork = image('event-'+c['id'],EVENTS[c['id']]['imageAlt'],'(max-width: 700px) 100vw, 50vw')
     return f'''<a class="culture-tile culture-tile--{c['id']}" href="{route('culture-'+c['id']+'.html')}"><div class="culture-tile-image">{artwork}<span class="tile-number">{c['number']}</span></div><div class="culture-tile-caption"><div><span class="label">{c['english']}</span><h3>{c['title']}</h3><p>{c['place']} / {c['word']}</p></div><span class="round-arrow">{ARROW}</span></div></a>'''
 
+def event_peek(e):
+    return '<article class="event-peek" data-id="'+e['id']+'"><a class="event-peek-art" href="'+route(e['page'])+'" aria-hidden="true" tabindex="-1">'+image(e['image'],'','(max-width:700px) 28vw, 11vw')+'</a><div><p class="event-peek-place">'+e['city']+' / '+e['genre']+'</p><h3>'+link(e['title'],e['page'])+'</h3><p class="event-peek-date">'+e['date']+'</p>'+sample_tag(e)+'</div></article>'
+
 def painting_studio():
     return '''<section class="painting-studio" data-paint-studio hidden><div class="container painting-grid"><div class="painting-copy"><p class="label">A SMALL DIGITAL WORKSHOP</p><h2>あなたの藍を、<br>一筆。</h2><p>白磁と藍に着想を得た、デジタルの絵付け。<br>図形を重ねるか、自分で線を描いてみてください。</p><p class="painting-note">砥部焼の製作工程を再現するものではありません。つくった図形は、このブラウザー内に保存します。</p><div class="paint-presets" aria-label="絵付けに加える図形"><button type="button" data-paint-preset="circle">円をひらく</button><button type="button" data-paint-preset="wave">波を重ねる</button><button type="button" data-paint-preset="line">線を引く</button></div><div class="paint-actions"><button type="button" data-paint-mode aria-pressed="false">自分で描く</button><button type="button" data-paint-undo>一筆戻す</button><button type="button" data-paint-clear>消す</button></div><button class="button button--primary" data-paint-export type="button">絵付けを持ちかえる<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button><p class="sr-only" data-paint-status role="status" aria-live="polite" aria-atomic="true"></p></div><div class="painting-canvas"><svg data-paint-board viewBox="0 0 600 540" aria-label="デジタル絵付けのプレビュー。図形の追加ボタンで、円・波・線を重ねられます。" role="img"><defs><radialGradient id="porcelain"><stop offset="0" stop-color="#fffdf8"/><stop offset=".84" stop-color="#efebe1"/><stop offset="1" stop-color="#dbd5c8"/></radialGradient><clipPath id="bowl-mask"><circle cx="300" cy="263" r="206"/></clipPath></defs><rect width="600" height="540" fill="#e9e4d8"/><ellipse cx="309" cy="298" rx="224" ry="220" fill="#d0c8b7"/><circle cx="300" cy="263" r="222" fill="#fffdf8"/><circle cx="300" cy="263" r="206" fill="url(#porcelain)"/><circle cx="300" cy="263" r="178" fill="none" stroke="#ddd6c8" stroke-width="1"/><g data-paint-lines clip-path="url(#bowl-mask)" fill="none" stroke-linecap="round" stroke-linejoin="round"></g><text x="31" y="516" fill="#183c9e" font-family="sans-serif" font-size="11" letter-spacing="2">YOUR BLUE / YOUR EXPRESSION</text></svg><p data-paint-instruction>図形を加えるボタンはキーボードでも操作できます。「自分で描く」を選ぶと、器の中に線を描けます。</p></div></div></section>'''
 
 def home():
     festival=DATA['festival']
     guide=link('大会・募集・観光など、すべての案内','site-map.html','','button button--line')
-    return f'''<main id="main"><section class="container festival-opening"><p class="label">EHIME CULTURE FESTIVAL / 2028</p><h1>愛媛の文化を、<span>全国へ。</span></h1><div class="festival-opening-meta"><div><p class="festival-name">愛顔（えがお）えひめの文化祭2028</p><p class="festival-lead">観る。つくる。出会う。<br>舞台も、作品も、ことばも、食も。県内各地で文化が集います。</p></div><div class="festival-date"><p>2028 <strong>10.22</strong> — <strong>12.03</strong></p><p>第43回国民文化祭 · 第28回全国障害者芸術・文化祭</p><div class="opening-actions">{link('催しを探す','event-search.html','','button button--primary')}{link('参加・募集','participation.html','','button button--line')}</div></div></div><figure class="festival-panorama">{image('festival-hero','舞台、作品、体験を楽しむ多世代の人々と瀬戸内の海を描いた文化祭全体のAI生成イメージ。実際の会場写真ではありません。','100vw',True)}<figcaption><span>観る人も、つくる人も。この土地の文化の一人に。</span><span>AI生成イメージ</span></figcaption></figure></section>
+    opening=f'''<section class="container festival-opening"><div class="festival-opening-copy"><p class="label">EHIME / CULTURE / 2028</p><h1><span>愛媛を、</span><span>ひらく。</span></h1><p class="festival-lead">観る。つくる。出会う。<br>文化の担い手は、あなた。</p><p class="festival-name">愛顔（えがお）えひめの文化祭2028</p><div class="festival-date"><p><span>2028</span><strong>10.22</strong><span>—</span><strong>12.03</strong></p><p>第43回国民文化祭<br>第28回全国障害者芸術・文化祭</p></div><div class="opening-actions">{link('催しを探す','event-search.html','','button button--primary')}{link('参加・募集','participation.html','','button button--line')}</div><a class="opening-discover" href="#discover">土地の文化を、たどる{ARROW}</a></div><figure class="festival-panorama">{image('festival-hero','舞台、作品、体験を楽しむ多世代の人々と瀬戸内の海を描いた文化祭全体のAI生成イメージ。実際の会場写真ではありません。','(max-width:700px) 100vw, 58vw',True)}<figcaption><span>舞台も、作品も、ことばも、食も。</span><span>文化祭のAI生成イメージ</span></figcaption></figure></section>'''
+    return '<main id="main">'+opening+editorial.atlas(route,asset,link)+f'''
+<section class="container discovery genre-discovery"><div class="section-heading"><div><p class="label">MANY WAYS INTO CULTURE</p><h2>好きな入口から。</h2></div>{link('文化祭の全体案内','festival-guide.html')}</div><div class="culture-wall">{''.join(culture_tile(c) for c in [CULTURES['literature'],CULTURES['food'],CULTURES['art'],CULTURES['craft']])}</div><p class="art-credit">各画像はAI生成のイメージです。実在の催し・作品の記録ではありません。</p></section>
+<section class="container featured featured--compact" id="events"><div class="section-heading"><div><p class="label">FROM CULTURE TO EXPERIENCE</p><h2>次は、会場で。</h2></div>{link('6件すべての催しを探す','event-search.html')}</div><p class="small section-note">確認済み1件と架空の掲載例5件。元v1の全4仮イベントを含みます。各画像はAI生成です。</p><div class="event-peek-grid">{''.join(event_peek(e) for e in DATA['events'])}</div></section>
 <section class="container editorial-intro" id="about"><div><p class="label">MANY CULTURES. ONE FESTIVAL.</p><p class="editorial-index">愛媛から、全国へ。</p></div><h2>このまちの表現が、<br>誰かとの出会いになる。</h2><div class="reading"><p>晴れの舞台に響く音。作品の前で交わすことば。つくり手と囲む食卓。文化祭をつくるのは、さまざまな地域と、ひとりひとりの表現です。</p><p>国民文化祭と全国障害者芸術・文化祭を一体的に開催する43日間。観る、つくる、支える。あなたらしい関わり方から、愛媛の文化へ。</p>{link('大会の概要','about.html')}{link('文化祭の全体案内','festival-guide.html')}</div></section>
-<section class="container featured" id="events"><div class="section-heading"><div><p class="label">FIND YOUR NEXT EXPERIENCE</p><h2>どんな文化に、会おう。</h2></div>{link('すべての催しを探す','event-search.html')}</div><p class="small section-note">確認済みの催しと、架空の掲載例を区別してご案内します。</p>{''.join(event_row(e) for e in DATA['events'])}</section>
-<section class="container discovery" id="discover"><div class="section-heading"><div><p class="label">GET TO KNOW THE CULTURE</p><h2>催しの向こうの、文化。</h2></div><p>ことば、味わい、表現、手仕事。<br>さまざまな入口から、土地の背景へ。</p></div><div class="culture-wall">{''.join(culture_tile(c) for c in [CULTURES['literature'],CULTURES['food'],CULTURES['art'],CULTURES['craft']])}</div><p class="art-credit">各画像はAI生成のイメージです。実在の催し・作品の記録ではありません。</p></section>
-<section class="notebook-invitation"><div class="container notebook-invitation-grid"><div class="notebook-motif" aria-hidden="true"><span>MY</span><span>CULTURE</span><span>NOTES<span class="motif-dot">●</span></span><div class="motif-rule"></div><span class="label">EHIME / 2028</span></div><div><p class="label">MAKE IT YOURS</p><h2>気になる文化を、<br>一冊に。</h2><p>催しの案内から「文化帖に追加」。<br>集めた催しを見返し、一覧を持ちかえられます。</p>{link('わたしの文化帖を開く','notebook.html','','button button--primary')}</div></div></section>
+<section class="notebook-invitation"><div class="container notebook-invitation-grid"><div class="notebook-motif" aria-hidden="true"><span>MY</span><span>CULTURE</span><span>NOTES<span class="motif-dot">●</span></span><div class="motif-rule"></div><span class="label">EHIME / 2028</span></div><div><p class="label">MAKE IT YOURS</p><h2>気になる文化を、<br>一冊に。</h2><p>文化の記録から残した、自分のことば。<br>行ってみたい催しと一緒に、文化帖で見返せます。</p>{link('わたしの文化帖を開く','notebook.html','','button button--primary')}</div></div></section>
 <section class="participation-band" id="participation"><span id="support" aria-hidden="true"></span><div class="container participation-band-grid"><p class="label">OPEN TO EVERYONE</p><h2>楽しみたい気持ちに、<br>入口をひらく。</h2><div><p>出演、出展、ボランティア、応援事業、協賛。文化をつくる関わり方を、募集案内から探せます。参加に必要な支援も、催しの情報と一緒に確認できます。</p>{link('参加・募集の案内','participation.html','','button button--line')}{link('参加の支援','support.html','','button button--line')}</div></div></section>
 <section class="container news-preview" id="news"><div class="section-heading"><div><p class="label">UPDATES</p><h2>開催に向けた動き。</h2></div>{link('お知らせ一覧','news.html')}</div>{news_rows()}</section><section class="container site-guide-invitation"><p class="label">EVERY PART OF THE FESTIVAL</p><h2>準備も、旅も、記録も。</h2><p>実行委員会の資料、協賛、募集、交通、観光、広報、お問い合わせ。文化祭に関わる情報へ進めます。</p>{guide}{link('文化祭の全体案内','festival-guide.html')}</section></main>'''
 
@@ -219,10 +225,23 @@ def write(filename, title, builder, site=False):
         main=main.replace('</main>','<div class="container retained-heading"><p class="label">INFORMATION & EXAMPLES</p><h2>掲載内容と、表示例。</h2></div>'+preserved(original,True)+'</main>')
     if filename == 'culture-craft.html':
         main = main.replace('<section class="container culture-events">',painting_studio()+'<section class="container culture-events">')
+    if filename.startswith('culture-') and filename != 'culture-atlas.html':
+        main = main.replace('<main id="main">','<main id="main" class="culture-page culture-page--'+filename.removeprefix('culture-').removesuffix('.html')+'">',1)
+        if filename=='culture-literature.html':
+            main=re.sub(r'<section class="container culture-feature">.*?</section>','',main,count=1,flags=re.S)
+            main=main.replace('<section class="container culture-events">',editorial.word_workshop()+'<section class="container culture-events">')
+            main=main.replace('<section class="container story-grid">','<div class="container literature-record"><figure>'+editorial.photo('matsuyama',asset)+'<figcaption>'+editorial.credit('matsuyama')+'</figcaption></figure><div><p class="label">LITERATURE IN EVERYDAY LIFE</p><h2>路面電車にも、ことばの入口。</h2><p>1968年に始まった松山の俳句ポスト。市の2026年8月の発表では、市内82か所に設置されています。</p><p class="small">写真は2008年の記録です。現在の車内設備を示すものではありません。</p>'+link('松山の文化背景を読む','culture-atlas.html','?place=matsuyama')+'</div></div><section class="container story-grid">',1)
+        if filename=='culture-food.html':
+            main=main.replace('<section class="container story-grid">','<div class="container food-question"><p class="label">THE SAME NAME, DIFFERENT TABLES.</p><h2>同じ「鯛めし」。<br>違う、土地の食べ方。</h2><p>ひとつの名前だけでは、愛媛の食文化は語れません。料理の違いから、地域の暮らしに目を向けます。</p></div><section class="container story-grid">',1)
+    if filename=='notebook.html':
+        main=main.replace('</main>',editorial.field_journal()+'</main>')
+    if filename=='privacy.html':
+        main=main.replace('<h3>デジタル絵付け</h3>','<h3>観察したことばと、かなの作例</h3><p>文化の記録から残した観察メモと、五・七・五の作例を、このブラウザー内に保存します。観察メモは文化帖で削除できます。作例は「作例に戻す」で置き換えられます。これらのことばは文化帖の共有URLに含めず、外部へ送信しません。</p><h3>デジタル絵付け</h3>')
     routes = {name: route(name) for name in ROUTES}
     search_script = f'<script src="{asset("site-search-data.js")}" defer></script>' if ROUTES[filename]=='common/search.html' else ''
     paint_script = f'<script src="{asset("painting.js")}" defer></script>' if filename=='culture-craft.html' else ''
-    body = f'''<!doctype html><html lang="ja" data-experience="hiraku" data-page="{filename}" data-asset-base="{asset('')}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)} | 愛顔えひめの文化祭2028・デザインPoC</title><meta name="description" content="愛媛を、ひらく。愛顔えひめの文化祭2028のデザインPoC。文化の背景、催し、参加の支援を一つの体験につなぎます。"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f2ea"><link rel="stylesheet" href="{asset('experience.css')}"><script>window.EHIME_V2_ROUTES={json.dumps(routes,ensure_ascii=False,separators=(',',':'))};</script><script src="{asset('experience-data.js')}" defer></script><script src="{asset('experience.js')}" defer></script>{search_script}<script src="{asset('legacy-ui.js')}" defer></script>{paint_script}</head><body>{header()}{main}{footer()}</body></html>\n'''
+    culture_script = f'<script src="{asset("culture-experience.js")}" defer></script>' if filename in ['index.html','culture-atlas.html','culture-literature.html','notebook.html'] else ''
+    body = f'''<!doctype html><html lang="ja" data-experience="hiraku" data-page="{filename}" data-asset-base="{asset('')}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{esc(title)} | 愛顔えひめの文化祭2028・デザインPoC</title><meta name="description" content="愛媛を、ひらく。愛顔えひめの文化祭2028のデザインPoC。文化の背景、催し、参加の支援を一つの体験につなぎます。"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f2ea"><link rel="stylesheet" href="{asset('experience.css')}"><script>window.EHIME_V2_ROUTES={json.dumps(routes,ensure_ascii=False,separators=(',',':'))};</script><script src="{asset('experience-data.js')}" defer></script><script src="{asset('experience.js')}" defer></script>{search_script}<script src="{asset('legacy-ui.js')}" defer></script>{paint_script}{culture_script}</head><body>{header()}{main}{footer()}</body></html>\n'''
     destination = ROOT / ROUTES[filename] if site else LAB / filename
     destination.parent.mkdir(parents=True,exist_ok=True)
     destination.write_text('\n'.join(line.rstrip() for line in body.splitlines())+'\n')
@@ -247,7 +266,7 @@ def main():
         ('about.html','大会について',about),
     ]
     pages += [(kind+'.html',title,lambda kind=kind:simple_page(kind)) for kind,title in [('news','お知らせ'),('access','交通・アクセス'),('sponsors','協賛'),('privacy','データの扱い'),('components','共通部品')]]
-    pages += [('site-map.html','文化祭のすべての案内',sitemap),('festival-guide.html','文化祭の全体案内',lambda:preserved_page('index.html'))]
+    pages += [('site-map.html','文化祭のすべての案内',sitemap),('festival-guide.html','文化祭の全体案内',lambda:preserved_page('index.html')),('culture-atlas.html','土地の時間に、出会う。',lambda:'<main id="main">'+intro('EHIME / CULTURAL RECORDS','文化を読む。<br>ことばを残す。','東予、中予、南予の公開資料と記録写真から、土地の文化に出会います。')+editorial.atlas(route,asset,link,True)+'</main>')]
     pages += [(ORIGINAL_TO_LAB[original],row['title'],lambda original=original:preserved_page(original)) for original,row in BASELINE_PAGES.items() if ORIGINAL_TO_LAB[original].startswith('info-')]
     for name,title,builder in pages:
         write(name,title,builder)
@@ -258,7 +277,11 @@ def main():
         row['page']=ORIGINAL_TO_LAB.get(row['url'],'festival-guide.html')
         row['text']=row.get('summary','')+' '+ ' '.join(row.get('tags',[]))
     (LAB/'site-search-data.js').write_text('window.EHIME_V2_SITE_INDEX='+json.dumps(search_index,ensure_ascii=False,separators=(',',':'))+';\n')
-    (LAB/'experience-data.js').write_text('window.EHIME_V2_DATA='+json.dumps(DATA,ensure_ascii=False,separators=(',',':'))+';\n')
+    DATA['fieldnotes']=[dict(r,photo=editorial.PHOTOS[r['id']]) for r in editorial.FIELDS]
+    (LAB/'content.json').write_text(json.dumps(DATA,ensure_ascii=False,indent=2)+'\n')
+    runtime=dict(DATA)
+    runtime['fieldnotes']=[{key:r[key] for key in ['id','place','subject','source']}|{'photo':{key:r['photo'][key] for key in ['title','author','date','license','licenseUrl','source','width','height']}} for r in DATA['fieldnotes']]
+    (LAB/'experience-data.js').write_text('window.EHIME_V2_DATA='+json.dumps(runtime,ensure_ascii=False,separators=(',',':'))+';\n')
     manifest = {'version':DATA['version'],'direction':'hiraku','pages':[name for name,_,_ in pages],'canonicalRoutes':ROUTES,'legacyV1Pages':'All original site main-body content retained in the v2 reading system','preservedRoutes':PRESERVED_ROUTES,'v1Frozen':'94df551e752129e45e7f21c3d38282d87c5690db'}
     (LAB/'experience-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     retained=preservation.report(ROUTES,PRESERVED_ROUTES,DATA['events'])

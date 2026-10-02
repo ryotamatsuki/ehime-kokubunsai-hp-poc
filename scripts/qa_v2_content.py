@@ -62,13 +62,21 @@ def main():
         characters.update(ord(c) for c in ''.join(body.itertext()) if '\u3000'<=c<='\u9fff')
     font_coverage=[]
     for name in ['ehime-sans-regular.woff2','ehime-sans-bold.woff2']:
-        missing=characters-set(TTFont(LAB/'assets/fonts'/name).getBestCmap())
+        coverage=set(TTFont(LAB/'assets/fonts'/name).getBestCmap())
+        for piece in (LAB/'assets/fonts').glob(name.replace('.woff2','-extended-*.woff2')):coverage.update(TTFont(piece).getBestCmap())
+        missing=characters-coverage
         font_coverage.append({'font':name,'japaneseCharacters':len(characters),'missingCharacters':len(missing)})
         if missing:issues.append('missing font characters: '+name+' '+''.join(chr(c) for c in sorted(missing)))
-    report={'version':data['version'],'status':'FAIL' if issues else 'PASS','method':'all visible source text chunks, source hashes, v1 event fields and generated asset linkage',
+    identities={}
+    for piece in (LAB/'assets/fonts').glob('*.woff2'):
+        names=TTFont(piece)['name']
+        identity=next(n.toUnicode() for n in names.names if n.nameID==6)
+        if identity in identities:issues.append('duplicate font PostScript identity: '+piece.name)
+        identities[identity]=piece.name
+    report={'version':data['version'],'status':'FAIL' if issues else 'PASS','method':'all source text chunks accessible through page content and native disclosures, source hashes, v1 event fields and generated asset linkage',
             'v1SnapshotFiles':len(baseline['files']),'v1SitePages':len(pages),'preservedTextChunks':sum(p['retainedTextChunks'] for p in pages),
             'sourceTextChunks':sum(p['sourceTextChunks'] for p in pages),'v1Events':events,'allEvents':len(data['events']),
-            'generatedImages':len(generated['images']),'japaneseFontCoverage':font_coverage,'pages':pages,'issues':issues}
+            'generatedImages':len(generated['images']),'japaneseFontCoverage':font_coverage,'uniqueFontIdentities':len(identities),'pages':pages,'issues':issues}
     (LAB/'qa/content-preservation.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k not in ['pages','v1Events']},ensure_ascii=False))
     if issues:raise SystemExit(1)

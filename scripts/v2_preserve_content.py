@@ -21,6 +21,47 @@ GROUPS = {
     'policy':'利用方針', 'bids':'入札・契約',
 }
 
+ARCHETYPES = {
+    'about':'editorial','archive':'editorial','pr':'editorial',
+    'recruitment':'participation','sponsors':'partner',
+    'tourism':'journey','access':'journey',
+    'committee':'record','bids':'record','policy':'record',
+    'news':'bulletin','media':'bulletin','contact':'contact',
+    'accessibility':'support','common':'support','events':'events',
+}
+
+def reading_composition(main, source_rel, prefix, embedded):
+    """Promote the actual examples/tools; keep every other source section accessible."""
+    if source_rel=='index.html':
+        return ''.join(ET.tostring(node,encoding='unicode',method='html') for node in main), 'festival'
+    group=source_rel.split('/')[0];kind=ARCHETYPES.get(group,'editorial')
+    sections=list(main);hero=sections[0]
+    hero.set('class',hero.get('class','')+' reading-hero reading-hero--'+kind)
+    toc=[]
+    for i,node in enumerate(sections[1:],1):
+        if not node.get('id'):node.set('id',prefix+'section-'+str(i))
+        heading=next((n for n in node.iter() if n.tag in ['h2','h3']),None)
+        label=text(heading) if heading is not None else '案内 '+str(i)
+        toc.append('<a href="#'+html.escape(node.get('id'))+'" data-open-reading>'+html.escape(label)+'</a>')
+    primary_indices=[5,3,4]
+    if kind in ['journey','editorial']:primary_indices=[2,5,3,4]
+    primary=[]
+    for i in primary_indices:
+        if i<len(sections):
+            node=sections[i];node.set('class',node.get('class','')+' reading-primary reading-primary--'+str(i))
+            primary.append(ET.tostring(node,encoding='unicode',method='html'))
+    appendix=[]
+    for i,node in enumerate(sections[1:],1):
+        if i in primary_indices:continue
+        heading=next((n for n in node.iter() if n.tag in ['h2','h3']),None)
+        label=text(heading) if heading is not None else '関連の案内'
+        appendix.append('<details class="reading-disclosure"><summary>'+html.escape(label)+'</summary>'+ET.tostring(node,encoding='unicode',method='html')+'</details>')
+    index='<nav class="reading-index" aria-label="このページの項目"><p>この案内を読む</p>'+''.join(toc)+'</nav>'
+    body=(ET.tostring(hero,encoding='unicode',method='html')+
+          '<div class="container reading-layout reading-layout--'+kind+'">'+index+
+          '<div class="reading-body">'+''.join(primary)+'<div class="reading-appendix">'+''.join(appendix)+'</div></div></div>')
+    return body,kind
+
 def parse_file(path):
     return tinyhtml5.parse(path.read_text(encoding='utf-8'),namespace_html_elements=False)
 
@@ -113,10 +154,10 @@ def render(source_rel,route,asset,canonical_to_lab,events,embedded=False):
         label.text='サイト内検索' if 'data-search-input' in node.attrib else node.get('aria-label') or node.get('placeholder') or '入力欄'
         parent.insert(list(parent).index(node),label)
         labelled.add(node.get('id'))
-    body=''.join(ET.tostring(node,encoding='unicode',method='html') for node in main)
-    return ('<section class="legacy-content'+(' legacy-content--embedded' if embedded else '')+'" id="'+html.escape(main_id)+'" data-content-source="'+html.escape(source_rel)+'">'
-            '<div class="container legacy-context"><p>本欄には、未確定の掲載案・表示例を含みます。大会の正式名称・会期は大会概要でご確認ください。</p>'
-            '<a class="text-link" href="'+route(canonical_to_lab['about/index.html'])+'">大会概要を確認</a></div>'+body+'</section>')
+    body,kind=reading_composition(main,source_rel,prefix,embedded)
+    return ('<section class="legacy-content legacy-content--'+kind+(' legacy-content--embedded' if embedded else '')+'" id="'+html.escape(main_id)+'" data-content-source="'+html.escape(source_rel)+'" data-reading-archetype="'+kind+'">'+body+
+            '<div class="container legacy-context"><p>未確定の掲載案・表示例を含みます。正式名称・会期は大会概要でご確認ください。</p>'
+            '<a class="text-link" href="'+route(canonical_to_lab['about/index.html'])+'">大会概要を確認</a></div></section>')
 
 def report(routes,preserved_routes,events):
     pages=inventory();records=[]
@@ -126,6 +167,6 @@ def report(routes,preserved_routes,events):
                         'sourceBodyCharacters':len(row['text'])})
     event_rows=[{'title':e['title'],'dateISO':e.get('dateISO'),'city':e['city'],'genre':e['genre'],
                  'fee':e['fee'],'supports':e['supports'],'target':routes[e['page']],'image':e['image']} for e in events if e.get('legacy')]
-    return {'version':'2.0.0-alpha.5','baselineCommit':'94df551e752129e45e7f21c3d38282d87c5690db',
-            'policy':'All v1 main-body text remains visible in v2; changed headings, routes and image delivery preserve content. The homepage body is on the linked festival guide.',
+    return {'version':'2.0.0-alpha.6','baselineCommit':'94df551e752129e45e7f21c3d38282d87c5690db',
+            'policy':'All v1 main-body text remains accessible in v2, including native disclosure sections. Examples and tools are promoted in nine reading compositions. The homepage body is on the linked festival guide.',
             'pages':records,'events':event_rows}

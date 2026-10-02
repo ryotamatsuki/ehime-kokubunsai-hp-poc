@@ -7,6 +7,9 @@ import logging
 import re
 import subprocess
 import tempfile
+from concurrent.futures import ProcessPoolExecutor
+import tinyhtml5
+import xml.etree.ElementTree as ET
 from io import BytesIO
 import fitz
 import tinycss2
@@ -31,13 +34,23 @@ def screen_css(text,width):
 
 def render(file,width,height,folder,query='',label=''):
     with tempfile.NamedTemporaryFile(suffix='.html') as domfile:
-        subprocess.run(['node',str(ROOT/'scripts/snapshot_v2_dom.cjs'),file,str(width),domfile.name,query],check=True,capture_output=True)
+        subprocess.run(['node',str(ROOT/'scripts/snapshot_v2_dom.cjs'),file,str(width),domfile.name,query,'observations' if label=='observations' else ''],check=True,capture_output=True)
         source=Path(domfile.name).read_text()
     css=screen_css((LAB/'experience.css').read_text(),width)
+    font_manifest=json.loads((LAB/'assets/manifest.json').read_text())
+    if font_manifest.get('referenceFonts'):
+        css=re.sub(r'@font-face\s*\{[^}]*\}','',css)
+        css='\n'.join('@font-face{font-family:"'+f['cssFamily']+'";src:url("'+(ROOT/f['path']).as_uri()+'");font-weight:'+f['weight']+';font-style:normal}' for f in font_manifest['referenceFonts'])+'\n'+css
     gutter=16 if width<=360 else 20 if width<=700 else 32 if width<=1250 else 48
     css=css.replace('width:calc(100% - var(--gutter)*2)',f'width:{min(width-2*gutter,1344)}px')
     # WeasyPrint ignores aspect-ratio: substitute the native layout's image frame.
     content_width=min(width-2*gutter,1344)
+    # Resolve record-photo aspect ratios, which WeasyPrint otherwise ignores.
+    gaps=re.findall(r'\.field-panel\{[^}]*\bgap:(\d+)px',css)
+    gap=int(gaps[-1]) if gaps else 48
+    record_width=content_width if width<=850 else (content_width-gap)/2
+    record_ratio=1.6 if 700<width<=850 else 1.25
+    css+=f'\n.field-photo img{{height:{record_width/record_ratio}px}}'
     if width<=700:
         image_width=content_width
         image_height=image_width/1.19
@@ -46,7 +59,22 @@ def render(file,width,height,folder,query='',label=''):
         image_width=(content_width-gap)*6/13
         image_height=image_width/.94
     css+=f'\n.opening-image>img{{height:{image_height}px;object-fit:cover}}'
-    css+=f'\n.festival-panorama>img{{height:{content_width/(1.25 if width<=700 else 2)}px;object-fit:cover}}'
+    if width<=700:
+        panorama_width=content_width;panorama_ratio=1.36
+        # WeasyPrint does not implement display:contents; flatten only this reference DOM.
+        dom=tinyhtml5.parse(source,namespace_html_elements=False)
+        opening=next((n for n in dom.iter() if 'festival-opening' in n.get('class','').split()),None)
+        if opening is not None:
+            copy=next((n for n in opening if n.get('class')=='festival-opening-copy'),None)
+            if copy is not None:
+                children=list(copy);opening.remove(copy)
+                for i,n in enumerate(children):opening.insert(i,n)
+                source=ET.tostring(dom,encoding='unicode',method='html')
+                css+='\n.festival-opening>.label{order:0}'
+    else:
+        gap=48 if width>1250 else 32 if width>1050 else 28
+        panorama_width=(content_width-gap)*7/12;panorama_ratio=1.25 if width>1250 else 1.16 if width>1050 else 1
+    css+=f'\n.festival-panorama>img{{height:{panorama_width/panorama_ratio}px;object-fit:cover}}'
     css+='\n@page{size:'+str(width)+'px 18000px;margin:0}body{margin:0}'
     source=source.replace('<link rel="stylesheet" href="experience.css">','<style>'+css+'</style>')
     stem=file.removesuffix('.html')+'-'+str(width)+(('-'+label) if label else '')
@@ -68,10 +96,10 @@ def render(file,width,height,folder,query='',label=''):
         if frame.size!=(width,height):raise ValueError('Unexpected reference dimensions')
     temporary=output.with_suffix('.png.pending')
     temporary.write_bytes(data);temporary.replace(output)
-    return {'file':file,'width':width,'height':height,'query':query,'output':output.relative_to(ROOT).as_posix(),'textOutsidePage':geometry,'controlsOutsidePage':control_geometry,'renderer':'WeasyPrint 70 with jsdom-enhanced DOM, not a browser'}
+    return {'file':file,'width':width,'height':height,'query':query,'fixture':'authored reference examples' if label=='observations' else '', 'output':output.relative_to(ROOT).as_posix(),'textOutsidePage':geometry,'controlsOutsidePage':control_geometry,'renderer':'WeasyPrint 70 with jsdom-enhanced DOM, not a browser'}
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--cycle',default='1');parser.add_argument('--all',action='store_true');parser.add_argument('--extended',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--cycle',default='1');parser.add_argument('--all',action='store_true');parser.add_argument('--extended',action='store_true');parser.add_argument('--jobs',type=int,default=3);args=parser.parse_args()
     logging.getLogger('weasyprint').setLevel(logging.ERROR)
     folder=LAB/'qa'/('cycle-'+args.cycle);folder.mkdir(parents=True,exist_ok=True)
     cases=[('index.html',1440,1100,'',''),('index.html',390,1700,'',''),('index.html',320,1700,'',''),('index.html',1440,6400,'','full')]
@@ -84,7 +112,19 @@ def main():
         cases += [('culture-craft.html',1440,3400,'','full'),('culture-craft.html',320,4300,'','full'),('documents.html',1024,2500,'',''),('notebook.html',1024,2500,'?saved=craft,art','')]
         for file in ['info-sponsors-partner-recruitment.html','info-tourism-courses.html','info-contact-form.html','info-common-search.html','site-map.html']:
             cases += [(file,1440,2700,'',''),(file,390,3300,'',''),(file,320,3300,'','')]
-    results=[render(file,width,height,folder,query,label) for file,width,height,query,label in cases]
+        for file in ['culture-atlas.html','culture-food.html','culture-art.html','info-about-kokubunsai.html','info-recruitment-performers.html','info-committee-general-assembly.html','info-news-important.html','info-accessibility-event-support.html','privacy.html']:
+            cases += [(file,1440,3300,'',''),(file,390,3900,'',''),(file,320,4300,'','')]
+        for place in ['matsuyama','uchiko','uwajima']:
+            cases += [('culture-atlas.html',1440,3300,'?place='+place,place),('culture-atlas.html',320,4300,'?place='+place,place)]
+        cases += [('notebook.html',width,height,'?saved=craft,art','observations') for width,height in [(1440,3500),(390,4600),(320,5000)]]
+    results=[]
+    for file,_,_,_,_ in cases:
+        if not (LAB/file).is_file():raise FileNotFoundError(file)
+    with ProcessPoolExecutor(max_workers=max(1,args.jobs)) as pool:
+        pending=[pool.submit(render,file,width,height,folder,query,label) for file,width,height,query,label in cases]
+        for task in pending:
+            results.append(task.result())
+            (folder/'layout-references.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
     (folder/'layout-references.json').write_text(json.dumps(results,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps({'cycle':args.cycle,'references':len(results),'textOutsidePage':sum(len(r['textOutsidePage']) for r in results),'controlsOutsidePage':sum(len(r['controlsOutsidePage']) for r in results),'folder':str(folder)}))
 if __name__=='__main__':main()

@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "status": "PASS",
   "method": "static HTML and code checks; not WCAG conformance/browser/CWV confirmation",
   "pages": [
@@ -125,6 +125,11 @@
     },
     {
       "file": "design-lab/festival-guide.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
+      "file": "design-lab/culture-atlas.html",
       "status": "PASS",
       "issues": []
     },
@@ -764,6 +769,11 @@
       "issues": []
     },
     {
+      "file": "culture/field-notes.html",
+      "status": "PASS",
+      "issues": []
+    },
+    {
       "file": "about/catchphrase.html",
       "status": "PASS",
       "issues": []
@@ -1392,11 +1402,119 @@
       "status": "PASS"
     },
     {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+      "status": "PASS"
+    },
+    {
       "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
       "status": "PASS"
     },
     {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-1.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-2.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-3.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-4.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-5.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-6.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-7.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-8.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-9.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-10.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-11.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-sans-bold-extended-12.woff2",
+      "status": "PASS"
+    },
+    {
       "path": "design-lab/assets/fonts/ehime-latin.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-5.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
       "status": "PASS"
     },
     {
@@ -1722,6 +1840,54 @@
     {
       "path": "design-lab/assets/legacy/volunteer-information-desk-jpg-1440.webp",
       "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/niihama-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/niihama-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/niihama-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-1440.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-480.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-960.webp",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-1440.webp",
+      "status": "PASS"
     }
   ],
   "cssStates": {
@@ -1735,7 +1901,39 @@
       "page": "index.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 427055,
+      "estimatedFirstViewBytes": 429794,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+          "bytes": 31120
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1743,7 +1941,39 @@
       "page": "index.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 631799,
+      "estimatedFirstViewBytes": 521692,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+          "bytes": 31120
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     },
@@ -1751,7 +1981,75 @@
       "page": "culture-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 412192,
+      "estimatedFirstViewBytes": 480788,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+          "bytes": 11456
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+          "bytes": 13944
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1759,7 +2057,75 @@
       "page": "culture-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 461178,
+      "estimatedFirstViewBytes": 529774,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+          "bytes": 11456
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-7.woff2",
+          "bytes": 13944
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     },
@@ -1767,7 +2133,75 @@
       "page": "event-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 402325,
+      "estimatedFirstViewBytes": 489452,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+          "bytes": 31120
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold-extended-9.woff2",
+          "bytes": 12852
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1775,7 +2209,75 @@
       "page": "event-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 451311,
+      "estimatedFirstViewBytes": 538438,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold.woff2",
+          "bytes": 31120
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-bold-extended-9.woff2",
+          "bytes": 12852
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     },
@@ -1783,7 +2285,63 @@
       "page": "event-search.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 424607,
+      "estimatedFirstViewBytes": 456920,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1791,7 +2349,63 @@
       "page": "event-search.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 424607,
+      "estimatedFirstViewBytes": 456920,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     },
@@ -1799,7 +2413,67 @@
       "page": "documents.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 380333,
+      "estimatedFirstViewBytes": 425707,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1807,7 +2481,67 @@
       "page": "documents.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 380333,
+      "estimatedFirstViewBytes": 425707,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-2.woff2",
+          "bytes": 8828
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-4.woff2",
+          "bytes": 10636
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-7.woff2",
+          "bytes": 10164
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-3.woff2",
+          "bytes": 13004
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     },
@@ -1815,7 +2549,55 @@
       "page": "notebook.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 367749,
+      "estimatedFirstViewBytes": 391702,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+          "bytes": 11456
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 500000,
       "status": "PASS"
     },
@@ -1823,16 +2605,64 @@
       "page": "notebook.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 367749,
+      "estimatedFirstViewBytes": 391702,
+      "estimatedFontRequests": [
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
+          "bytes": 66632
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-1.woff2",
+          "bytes": 10436
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-3.woff2",
+          "bytes": 10224
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-5.woff2",
+          "bytes": 12388
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-sans-regular-extended-6.woff2",
+          "bytes": 11604
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-latin.woff2",
+          "bytes": 16204
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium.woff2",
+          "bytes": 35568
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-1.woff2",
+          "bytes": 9928
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-2.woff2",
+          "bytes": 11456
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-4.woff2",
+          "bytes": 14856
+        },
+        {
+          "path": "design-lab/assets/fonts/ehime-display-medium-extended-6.woff2",
+          "bytes": 17988
+        }
+      ],
+      "fontSelectionMethod": "jsdom CSS and Unicode-range selection estimate, not network/browser measurement",
+      "systemFallbackJapanese": "",
       "limit": 750000,
       "status": "PASS"
     }
   ],
   "budgetLimits": "DPR1 estimate; excludes later/lazy requests, cache, response headers, real loading time",
   "offlinePack": {
-    "pages": 128,
-    "assets": 84,
-    "bytes": 12938577
+    "pages": 129,
+    "assets": 123,
+    "bytes": 14956538
   },
   "legacyTopFragments": [
     "about",
@@ -1844,207 +2674,351 @@
   "issues": [],
   "staticReferenceIntegrity": [
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-1440-full.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-1440-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-craft-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-craft-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-craft-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-literature-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-literature-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-literature-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-literature-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-search-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-search-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-search-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-search-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-search-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-search-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-craft-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-craft-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-craft-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-craft-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/event-craft-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/event-craft-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/documents-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/documents-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/documents-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/documents-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/documents-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/documents-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/participation-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/participation-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/participation-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/support-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/participation-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/support-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/participation-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/support-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/participation-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-768.png",
+      "path": "design-lab/qa/cycle-alpha6-final/support-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-1024.png",
+      "path": "design-lab/qa/cycle-alpha6-final/support-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-1250.png",
+      "path": "design-lab/qa/cycle-alpha6-final/support-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/index-1600.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-768.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-1440-full.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/culture-craft-320-full.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-1250.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/documents-1024.png",
+      "path": "design-lab/qa/cycle-alpha6-final/index-1600.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/notebook-1024.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-craft-1440-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/culture-craft-320-full.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/documents-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-sponsors-partner-recruitment-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-1024.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-sponsors-partner-recruitment-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-sponsors-partner-recruitment-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-tourism-courses-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-sponsors-partner-recruitment-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-tourism-courses-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-tourism-courses-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-contact-form-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-tourism-courses-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-contact-form-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-contact-form-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/info-common-search-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-contact-form-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/site-map-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-common-search-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/site-map-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-common-search-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-4/site-map-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/info-common-search-320.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-6/notebook-1440.png",
+      "path": "design-lab/qa/cycle-alpha6-final/site-map-1440.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-6/notebook-390.png",
+      "path": "design-lab/qa/cycle-alpha6-final/site-map-390.png",
       "status": "PASS"
     },
     {
-      "path": "design-lab/qa/cycle-alpha5-6/notebook-320.png",
+      "path": "design-lab/qa/cycle-alpha6-final/site-map-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-food-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-food-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-food-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-art-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-art-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-art-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-about-kokubunsai-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-about-kokubunsai-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-about-kokubunsai-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-recruitment-performers-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-recruitment-performers-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-recruitment-performers-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-committee-general-assembly-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-committee-general-assembly-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-committee-general-assembly-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-news-important-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-news-important-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-news-important-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-accessibility-event-support-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-accessibility-event-support-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/info-accessibility-event-support-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/privacy-1440.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/privacy-390.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/privacy-320.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-1440-matsuyama.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-320-matsuyama.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-1440-uchiko.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-320-uchiko.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-1440-uwajima.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/culture-atlas-320-uwajima.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-1440-observations.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-390-observations.png",
+      "status": "PASS"
+    },
+    {
+      "path": "design-lab/qa/cycle-alpha6-final/notebook-320-observations.png",
       "status": "PASS"
     }
   ]

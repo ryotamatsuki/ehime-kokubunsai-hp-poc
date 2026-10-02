@@ -1,7 +1,7 @@
 {
-  "version": "2.0.0-alpha.5",
+  "version": "2.0.0-alpha.6",
   "status": "PASS",
-  "method": "all visible source text chunks, source hashes, v1 event fields and generated asset linkage",
+  "method": "all source text chunks accessible through page content and native disclosures, source hashes, v1 event fields and generated asset linkage",
   "v1SnapshotFiles": 161,
   "v1SitePages": 114,
   "preservedTextChunks": 10514,
@@ -29,15 +29,16 @@
   "japaneseFontCoverage": [
     {
       "font": "ehime-sans-regular.woff2",
-      "japaneseCharacters": 794,
+      "japaneseCharacters": 840,
       "missingCharacters": 0
     },
     {
       "font": "ehime-sans-bold.woff2",
-      "japaneseCharacters": 794,
+      "japaneseCharacters": 840,
       "missingCharacters": 0
     }
   ],
+  "uniqueFontIdentities": 30,
   "pages": [
     {
       "source": "about/catchphrase.html",

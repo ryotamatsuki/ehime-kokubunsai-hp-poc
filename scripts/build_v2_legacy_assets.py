@@ -19,6 +19,6 @@ def main():
             file=out/(source.stem+'-'+source.suffix.lstrip('.')+'-'+str(width)+'.webp');data=buf.getvalue();file.write_bytes(data)
             records.append({'source':source.relative_to(ROOT).as_posix(),'path':file.relative_to(ROOT).as_posix(),
                             'width':width,'height':height,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
-    (ROOT/'design-lab/assets/legacy-manifest.json').write_text(json.dumps({'version':'2.0.0-alpha.5','method':'delivery resize and encoding; original imagery retained','images':records},indent=2)+'\n')
+    (ROOT/'design-lab/assets/legacy-manifest.json').write_text(json.dumps({'version':json.loads((ROOT/'design-lab/content.json').read_text())['version'],'method':'delivery resize and encoding; original imagery retained','images':records},indent=2)+'\n')
     print(json.dumps({'sourceImages':len(referenced),'deliveryImages':len(records),'bytes':sum(r['bytes'] for r in records)}))
 if __name__=='__main__':main()

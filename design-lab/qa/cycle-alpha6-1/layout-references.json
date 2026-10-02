@@ -1,0 +1,142 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha6-1/index-1440.png",
+    "textOutsidePage": [
+      {
+        "text": "祭礼",
+        "x": 1484.0,
+        "width": 32.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "",
+        "x": 1056.0,
+        "width": 480.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [
+      {
+        "text": "県民総合文化祭 総合フェスティバル2026",
+        "x": 134.0,
+        "width": 304.19
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "",
+        "x": 20.0,
+        "width": 440.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 195.0,
+        "width": 440.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 20.0,
+        "width": 440.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 195.0,
+        "width": 440.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha6-1/index-320.png",
+    "textOutsidePage": [
+      {
+        "text": "県民総合文化祭 総合フェスティバル2026",
+        "x": 116.0,
+        "width": 303.99
+      },
+      {
+        "text": "砥部焼とことばの工房（仮）",
+        "x": 116.0,
+        "width": 210.46
+      },
+      {
+        "text": "それぞれの色、ひらかれた展示室",
+        "x": 116.0,
+        "width": 242.84
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "",
+        "x": 16.0,
+        "width": 420.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 160.0,
+        "width": 420.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 16.0,
+        "width": 420.0
+      },
+      {
+        "tag": "button",
+        "class": "",
+        "x": 160.0,
+        "width": 420.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [
+      {
+        "text": "祭礼",
+        "x": 1484.0,
+        "width": 32.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "",
+        "x": 1056.0,
+        "width": 480.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  }
+]

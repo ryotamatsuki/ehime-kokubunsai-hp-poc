@@ -1,0 +1,125 @@
+{
+  "version": "2.0.0-alpha.6",
+  "images": [
+    {
+      "path": "design-lab/assets/culture/niihama-480.webp",
+      "width": 480,
+      "height": 348,
+      "bytes": 35960,
+      "sha256": "f4b87e920bbd340d21b5df6421d1e85e6fb1b7e79c31e6c4e8356c763f61fcc2",
+      "source": "design-lab/assets/culture-originals/niihama.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/niihama-960.webp",
+      "width": 960,
+      "height": 697,
+      "bytes": 100216,
+      "sha256": "f6f1c29deb7a5d4ebeaec85e292a263d4dc231e7f80f190b05f389d31352951d",
+      "source": "design-lab/assets/culture-originals/niihama.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/niihama-1440.webp",
+      "width": 1440,
+      "height": 1045,
+      "bytes": 171120,
+      "sha256": "3766d57f23e5b680ca462a91122bed04047712ed9299419d1402f96c21d5671d",
+      "source": "design-lab/assets/culture-originals/niihama.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-480.webp",
+      "width": 480,
+      "height": 319,
+      "bytes": 25280,
+      "sha256": "2e6df90d073a1115e09ba5d165c11ea71a378ad64d74f1637fd0498dac34c2b5",
+      "source": "design-lab/assets/culture-originals/uchiko.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-960.webp",
+      "width": 960,
+      "height": 638,
+      "bytes": 66194,
+      "sha256": "2bd8d5c245386044e4d584d327d6cb82bc7ef3393327a7197d87c805f8df542a",
+      "source": "design-lab/assets/culture-originals/uchiko.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uchiko-1440.webp",
+      "width": 1440,
+      "height": 958,
+      "bytes": 112836,
+      "sha256": "c8333040469932d44692ab0680e1bdc3cb3fdadd0eadb22dc004ee3368c38d39",
+      "source": "design-lab/assets/culture-originals/uchiko.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-480.webp",
+      "width": 480,
+      "height": 640,
+      "bytes": 24556,
+      "sha256": "d356a491a0bd0209839f63f1fb7f16072225183b8968695b3cf547f11b75311c",
+      "source": "design-lab/assets/culture-originals/matsuyama.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-960.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 63056,
+      "sha256": "90af9c7835b3cac9d9fe9fa461c08ea88c085acf24bbad3be253156bf5e66fa4",
+      "source": "design-lab/assets/culture-originals/matsuyama.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/matsuyama-1440.webp",
+      "width": 900,
+      "height": 1200,
+      "bytes": 63056,
+      "sha256": "90af9c7835b3cac9d9fe9fa461c08ea88c085acf24bbad3be253156bf5e66fa4",
+      "source": "design-lab/assets/culture-originals/matsuyama.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-480.webp",
+      "width": 480,
+      "height": 737,
+      "bytes": 37608,
+      "sha256": "7d7c00cdbb1e0dd12c9df7773e4317774fec081e8fafb31623cdac90004a4268",
+      "source": "design-lab/assets/culture-originals/uwajima.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-960.webp",
+      "width": 960,
+      "height": 1473,
+      "bytes": 116224,
+      "sha256": "97db80da5e564b4fb216822dcb13ed4034eaf9bffd4fd7e6eef4695fca58f9dd",
+      "source": "design-lab/assets/culture-originals/uwajima.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "path": "design-lab/assets/culture/uwajima-1440.webp",
+      "width": 1440,
+      "height": 2210,
+      "bytes": 227474,
+      "sha256": "4f61f027616ad25a933ab0db864ba35a4f752a59aa97e6ced51217e919db70d0",
+      "source": "design-lab/assets/culture-originals/uwajima.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  ]
+}

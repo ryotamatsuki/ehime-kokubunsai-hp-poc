@@ -1,0 +1,705 @@
+[
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 1100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 320,
+    "height": 1700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "height": 6400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-literature.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha6-3/culture-literature-320.png",
+    "textOutsidePage": [
+      {
+        "text": "ひらがな・カタカナで、五・七・五をつづり",
+        "x": 16.0,
+        "width": 360.0
+      },
+      {
+        "text": "小さい「ゃ・ゅ・ょ」などは前の音と合わせ、",
+        "x": 16.0,
+        "width": 336.0
+      },
+      {
+        "text": "「っ・ん・ー」は一音として数えます。かな以外",
+        "x": 16.0,
+        "width": 352.0
+      },
+      {
+        "text": "を含むときは、読みを入力してください。音数は",
+        "x": 16.0,
+        "width": 352.0
+      },
+      {
+        "text": "あき",
+        "x": 271.35,
+        "width": 86.4
+      },
+      {
+        "text": "のそ",
+        "x": 271.35,
+        "width": 86.4
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "input",
+        "class": "",
+        "x": 16.0,
+        "width": 360.0
+      },
+      {
+        "tag": "input",
+        "class": "",
+        "x": 29.0,
+        "width": 334.0
+      },
+      {
+        "tag": "input",
+        "class": "",
+        "x": 16.0,
+        "width": 360.0
+      },
+      {
+        "tag": "input",
+        "class": "",
+        "x": 29.0,
+        "width": 334.0
+      },
+      {
+        "tag": "input",
+        "class": "",
+        "x": 16.0,
+        "width": 360.0
+      },
+      {
+        "tag": "input",
+        "class": "",
+        "x": 29.0,
+        "width": 334.0
+      },
+      {
+        "tag": "button",
+        "class": "button button--primary",
+        "x": 16.0,
+        "width": 360.0
+      },
+      {
+        "tag": "button",
+        "class": "reset-button",
+        "x": 16.0,
+        "width": 360.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "event-search.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "event-search.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "event-search.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "event-craft.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "event-craft.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "event-craft.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "documents.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "documents.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "documents.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "notebook.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "notebook.html",
+    "width": 390,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "notebook.html",
+    "width": 320,
+    "height": 2700,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "participation.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "participation.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "participation.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "support.html",
+    "width": 1440,
+    "height": 2100,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "support.html",
+    "width": 390,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "support.html",
+    "width": 320,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 768,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 1024,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "index.html",
+    "width": 1250,
+    "height": 1900,
+    "query": "",
+    "output": "design-lab/qa/cycle-alpha6-3/index-1250.png",
+    "textOutsidePage": [
+      {
+        "text": "こ",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "と",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "ば",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "を",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "文",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "化",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "帖",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "に",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "残",
+        "x": 1239.0,
+        "width": 18.0
+      },
+      {
+        "text": "す",
+        "x": 1239.0,
+        "width": 18.0
+      }
+    ],
+    "controlsOutsidePage": [
+      {
+        "tag": "button",
+        "class": "button button--primary",
+        "x": 1218.0,
+        "width": 42.0
+      },
+      {
+        "tag": "button",
+        "class": "button button--primary",
+        "x": 1239.0,
+        "width": 18.0
+      }
+    ],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser"
+  },
+  {
+    "file": "index.html",
+    "width": 1600,
+    "height": 1900,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 1440,
+    "height": 3400,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "culture-craft.html",
+    "width": 320,
+    "height": 4300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "documents.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "notebook.html",
+    "width": 1024,
+    "height": 2500,
+    "query": "?saved=craft,art",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-sponsors-partner-recruitment.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-tourism-courses.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-contact-form.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "info-common-search.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "site-map.html",
+    "width": 1440,
+    "height": 2700,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "site-map.html",
+    "width": 390,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  },
+  {
+    "file": "site-map.html",
+    "width": 320,
+    "height": 3300,
+    "query": "",
+    "output": null,
+    "textOutsidePage": [],
+    "controlsOutsidePage": [],
+    "renderer": "WeasyPrint 70 with jsdom-enhanced DOM, not a browser",
+    "imageRetention": "Measurement retained; intermediate image omitted. Final references are in cycle-alpha6-final."
+  }
+]

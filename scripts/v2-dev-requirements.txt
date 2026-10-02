@@ -4,3 +4,4 @@ brotli==1.2.0
 WeasyPrint==70.0
 PyMuPDF==1.26.6
 tinycss2==1.5.1
+tinyhtml5==2.1.0

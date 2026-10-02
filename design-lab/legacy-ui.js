@@ -2,6 +2,13 @@
 (() => {
   'use strict';
   const routes=window.EHIME_V2_ROUTES||{};
+  const revealReading=id=>{
+    const node=document.getElementById(id);if(!node)return;
+    for(let parent=node.parentElement;parent;parent=parent.parentElement){if(parent.tagName==='DETAILS')parent.open=true;}
+  };
+  document.querySelectorAll('[data-open-reading]').forEach(anchor=>anchor.addEventListener('click',()=>revealReading(anchor.hash.slice(1))));
+  addEventListener('hashchange',()=>revealReading(decodeURIComponent(location.hash.slice(1))));
+  if(location.hash)revealReading(decodeURIComponent(location.hash.slice(1)));
   document.querySelectorAll('[data-local-demo-form]').forEach(form=>{
     form.querySelectorAll('[data-local-demo-submit]').forEach(button=>button.disabled=false);
     form.addEventListener('submit',event=>{

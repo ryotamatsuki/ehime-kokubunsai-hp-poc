@@ -12,7 +12,7 @@ LAB = ROOT / 'design-lab'
 def main():
     out = LAB / 'assets/art'
     out.mkdir(parents=True,exist_ok=True)
-    manifest = {'version':'2.0.0-alpha.5','method':'built-in image_gen; delivery encoding only','images':[]}
+    manifest = {'version':json.loads((ROOT/'design-lab/content.json').read_text())['version'],'method':'built-in image_gen; delivery encoding only','images':[]}
     for name in ['porcelain-hero','craft-hands']+[r['id'] for r in json.loads((LAB/'assets/event-image-prompts.json').read_text())['images']]:
         source = LAB / ('assets/art-masters/'+name+'.png')
         image = Image.open(source).convert('RGB')
