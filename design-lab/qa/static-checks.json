@@ -1901,7 +1901,7 @@
       "page": "index.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 430049,
+      "estimatedFirstViewBytes": 430008,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -1941,7 +1941,7 @@
       "page": "index.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 521947,
+      "estimatedFirstViewBytes": 521906,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -1981,7 +1981,7 @@
       "page": "culture-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 481043,
+      "estimatedFirstViewBytes": 481002,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2057,7 +2057,7 @@
       "page": "culture-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 530029,
+      "estimatedFirstViewBytes": 529988,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2133,7 +2133,7 @@
       "page": "event-craft.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 489707,
+      "estimatedFirstViewBytes": 489666,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2209,7 +2209,7 @@
       "page": "event-craft.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 538693,
+      "estimatedFirstViewBytes": 538652,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2285,7 +2285,7 @@
       "page": "event-search.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 457175,
+      "estimatedFirstViewBytes": 457134,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2349,7 +2349,7 @@
       "page": "event-search.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 457175,
+      "estimatedFirstViewBytes": 457134,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2413,7 +2413,7 @@
       "page": "documents.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 425962,
+      "estimatedFirstViewBytes": 425921,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2481,7 +2481,7 @@
       "page": "documents.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 425962,
+      "estimatedFirstViewBytes": 425921,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2549,7 +2549,7 @@
       "page": "notebook.html",
       "cssViewport": 390,
       "dpr": 1,
-      "estimatedFirstViewBytes": 391957,
+      "estimatedFirstViewBytes": 391916,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2605,7 +2605,7 @@
       "page": "notebook.html",
       "cssViewport": 1440,
       "dpr": 1,
-      "estimatedFirstViewBytes": 391957,
+      "estimatedFirstViewBytes": 391916,
       "estimatedFontRequests": [
         {
           "path": "design-lab/assets/fonts/ehime-sans-regular.woff2",
@@ -2662,7 +2662,7 @@
   "offlinePack": {
     "pages": 129,
     "assets": 123,
-    "bytes": 14958733
+    "bytes": 14958692
   },
   "legacyTopFragments": [
     "about",
