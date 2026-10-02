@@ -75,8 +75,14 @@ v1-frozenは `94df551e752129e45e7f21c3d38282d87c5690db` のまま固定します
 
 静的HTML、全本文の保持、画像・書体、操作ロジックを検査し、静的参考画像のレビューを繰り返しています。
 WeasyPrintの参考画像とjsdomの操作検査は、実ブラウザーの表示・読み上げ・実機・Core Web Vitalsの確認とは区別しています。
-実ブラウザーのローカルプレビューが `ERR_BLOCKED_BY_CLIENT` で拒否されるため、最終品質ゲートと総合点は保留しています。
+GitHub Pagesの通常配信をChromeで確認し、主要15ページ×320/390/1440pxの45表示で本文・操作の横はみ出し0、読み込み済み画像のエラー0を確認しました。
+文化のキーボード切替、観察の保存・削除、催しの検索・保存、五・七・五の入力、スマホメニューのEscapeとフォーカス復帰、v1比較のページ対応も実ブラウザーで確認しています。
+実機、200%拡大、読み上げ、通信制限とフィールド性能、新規の現地取材・第三者評価は残るため、最終品質ゲートと総合点は保留しています。
 配点と完成条件を下げず、2.0.0の完成版として固定しません。
+
+公開入口: https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/
+公開した比較画面: https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/compare.html
+配信方法と検証条件は `docs/V2_GITHUB_PAGES.md`、実ブラウザー記録は `design-lab/qa/browser/` にあります。
 
 ## 再生成と検査
 

@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0-alpha.6",
+  "source_commit": "bbf9fb0c3f7a2e2a8f340d39c58c98c022200050",
+  "source_tree": "f2239e7b0bcc4b69f230af261dafbecdaff3e300",
+  "method": "Chrome, same-origin iframe loading normal GitHub Pages HTML, CSS, fonts and images; DPR 1; no throttling; cache reuse possible",
+  "records": 46,
+  "suite_records": 45,
+  "suite_pages": 15,
+  "css_widths": [
+    320,
+    390,
+    1440
+  ],
+  "status": "PASS within stated scope",
+  "text_outside": 0,
+  "controls_outside": 0,
+  "completed_image_errors": 0,
+  "all_fonts_loaded": true,
+  "all_unofficial_notices_visible": true,
+  "final_report": "final-pages.json",
+  "report_sha256": "50af924aa3a5dda0697f9f12c444a471994c8687a1cfef34d3e154e5c584d1f0",
+  "previous_failed_cycles": [
+    "cycle-pages1.json",
+    "cycle-pages2.json"
+  ],
+  "limits": [
+    "CSS widths in Chrome iframe, not physical mobile devices",
+    "Lazy images counted only after completing load",
+    "No screen-reader, 200% zoom, reduced-motion, device rotation or full manual WCAG claim",
+    "Single unthrottled browser run, not field Core Web Vitals or full INP verification",
+    "New field reporting and interviews not performed",
+    "Native file download completion not confirmed"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "version": "2.0.0-alpha.6",
+  "date": "2026-10-02",
+  "method": "Native Chrome user interactions through the browser UI; observations summarized from the session",
+  "site_url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/index.html?saved=&place=niihama",
+  "comparison_url": "https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/compare.html",
+  "checks": [
+    {
+      "id": "published-first-view",
+      "status": "verified",
+      "observed": {
+        "body_font_size": "20px",
+        "h1_size": "94px",
+        "h1_family": "Ehime Festival Display, Ehime Sans, sans-serif",
+        "hero_top_px": 200.234375,
+        "hero_loaded": true,
+        "fonts_status": "loaded"
+      },
+      "screenshot": "final-desktop.jpg"
+    },
+    {
+      "id": "culture-keyboard",
+      "status": "verified",
+      "steps": [
+        "Select Uchiko record",
+        "ArrowRight selects and focuses Uwajima",
+        "Museum photograph and its actual context displayed"
+      ]
+    },
+    {
+      "id": "observation-save-delete",
+      "status": "verified",
+      "steps": [
+        "Enter synthetic QA observation",
+        "Save to cultural notebook",
+        "Navigate to notebook and observe exact text",
+        "Delete only the synthetic observation",
+        "Empty journal message visible and focus restored"
+      ]
+    },
+    {
+      "id": "event-filter",
+      "status": "verified",
+      "steps": [
+        "Select Tobe town in city filter",
+        "One matching result and city query shown"
+      ]
+    },
+    {
+      "id": "event-notebook",
+      "status": "verified",
+      "steps": [
+        "Save craft event",
+        "One saved item and status shown",
+        "Open cultural notebook and inspect event image, details and example booking state",
+        "Remove only the synthetic selection and observe zero saved events"
+      ]
+    },
+    {
+      "id": "haiku-input",
+      "status": "verified",
+      "input": [
+        "あきのうみ",
+        "ひかりひろって",
+        "しまをみる"
+      ],
+      "observed_counts": [
+        5,
+        7,
+        5
+      ],
+      "preview_writing_mode": "vertical-rl",
+      "cleanup": "Reset to default sample via reset button"
+    },
+    {
+      "id": "mobile-menu-escape",
+      "status": "verified",
+      "css_width": 390,
+      "observed": {
+        "open_button_label": "閉じる",
+        "escape_expanded": "false",
+        "focus_restored_to_menu_button": true
+      }
+    },
+    {
+      "id": "v1-v2-comparison",
+      "status": "verified",
+      "steps": [
+        "Published top comparison shows both versions",
+        "Select Event control",
+        "v1 heading is 検索結果一覧 and v2 heading is 催しを、探す。",
+        "Return comparison to Top"
+      ]
+    }
+  ],
+  "not_verified": [
+    "Native SVG or JSON file download completion",
+    "Screen-reader, 200% zoom, reduced-motion, physical device and constrained network tests"
+  ],
+  "test_data": "Synthetic note, craft selection and poem input only; created note and selection were removed and poem reset"
+}
