@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "node scripts/sync-events.mjs && node scripts/migrate-pages.mjs",
+    "sync": "node scripts/sync-events.mjs && node scripts/sync-fonts.mjs && node scripts/migrate-pages.mjs",
     "predev": "npm run sync",
     "dev": "astro dev",
     "prebuild": "npm run sync",
