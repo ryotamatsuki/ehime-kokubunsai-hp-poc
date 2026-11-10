@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/SiteLayout.astro';
+import LegacyPage from '../components/LegacyPage';
+import migrated from '../data/legacy-pages.json';
+
+type Migrated = {file:string;route:string;title:string;html:string;routeMap:Record<string,string>;originalPageName:string};
+export function getStaticPaths() {
+  const {pages} = migrated as {pages:Migrated[]};
+  return pages.map(entry=>({params:{page:entry.route},props:{entry}}));
+}
+interface Props { entry: Migrated }
+const {entry} = Astro.props;
+---
+<Layout title={entry.title} legacy={true} legacyPageName={entry.originalPageName} legacyRoutes={entry.routeMap}>
+  <LegacyPage title={entry.title} source={entry.file} html={entry.html} />
+</Layout>
