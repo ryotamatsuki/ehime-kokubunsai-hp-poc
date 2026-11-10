@@ -4,7 +4,7 @@ import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const dir = resolve(fileURLToPath(new URL('.', import.meta.url)), '../..');
-const raw = readFileSync(resolve(dir, 'design-lab/experience-data.js'), 'utf8');
+const raw = readFileSync(resolve(dir, 'design-lab/experience-data.js'), 'utf8').trim();
 const m = raw.match(/^window\.EHIME_V2_DATA\s*=\s*(\{[\s\S]*\})\s*;?$/);
 test('Source data is parseable and original listings are preserved', () => {
   assert.ok(m, 'Format must be reviewed if upstream data changes');
