@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "npm run sync && astro check",
-    "test": "npm run sync && node --test tests/*.test.mjs"
+    "test": "npm run sync && node --test tests/*.test.mjs",
+    "qa:build": "node scripts/qa-built.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
