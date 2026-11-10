@@ -37,7 +37,12 @@ const base='http://127.0.0.1:8787'+prefix.replace(/\/$/,'');
 const pages=[
   ['home','/','/react-pilot/'],
   ['event-search','/events/search.html','/react-pilot/events/'],
-  ['event-detail','/events/stage.html','/react-pilot/events/stage/']
+  ['event-detail','/events/stage.html','/react-pilot/events/stage/'],
+  ['about','/about/index.html','/react-pilot/about/'],
+  ['access','/access/train.html','/react-pilot/access/train/'],
+  ['recruitment','/recruitment/index.html','/react-pilot/recruitment/'],
+  ['accessibility','/accessibility/information-support.html','/react-pilot/accessibility/information-support/'],
+  ['notebook','/culture/notebook.html','/react-pilot/culture/notebook/']
 ];
 const viewports=[{width:1440,height:900},{width:390,height:844},{width:320,height:720}];
 let browser;
@@ -56,6 +61,7 @@ try {
       }catch(e){await route.abort()}
     });
     for(const [name,v2Path,pilotPath] of pages) {
+      if(vp.width===320&&!['home','event-search','event-detail'].includes(name))continue;
       for(const [version,pathname] of [['v2',v2Path],['react',pilotPath]]) {
         const page=await context.newPage();
         const failures=[];
@@ -84,6 +90,14 @@ try {
       results.push({name:'interaction-filter',version:'react',viewport:390,filtered,countText});
       await page.getByLabel('キーワード').fill('存在しない催し名');
       results.push({name:'interaction-empty',version:'react',viewport:390,empty:await page.getByText('該当する催しはありません。').isVisible()});
+      await page.getByLabel('キーワード').fill('');
+      const support = page.getByLabel('参加の支援');
+      await support.selectOption('手話通訳');
+      results.push({name:'interaction-support-filter',version:'react',viewport:390,count:await page.locator('.event-card').count()});
+      await support.selectOption('');
+      await page.getByRole('button',{name:/文化帖へ保存/}).first().click();
+      const notebookIds=await page.evaluate(()=>JSON.parse(localStorage.getItem('ehime-v2-culture-notes')||'[]'));
+      results.push({name:'interaction-notebook-save',version:'react',viewport:390,ids:notebookIds});
       await page.close();
     }
     await context.close();
