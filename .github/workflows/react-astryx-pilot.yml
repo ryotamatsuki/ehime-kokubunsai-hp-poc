@@ -10,6 +10,10 @@ on:
       - '.github/workflows/react-astryx-pilot.yml'
   workflow_dispatch:
 
+concurrency:
+  group: react-pilot-ci-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
@@ -32,6 +36,8 @@ jobs:
         run: npm run check
       - name: Build static pilot
         run: npm run build
+      - name: Audit all 128 generated routes and internal links
+        run: npm run qa:build
       - name: Upload preview artifact (no Pages deployment)
         uses: actions/upload-artifact@v4
         with:
