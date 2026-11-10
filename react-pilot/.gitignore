@@ -3,3 +3,5 @@ dist/
 .astro/
 src/data/events.json
 .DS_Store
+
+public/ehime-fonts.css
