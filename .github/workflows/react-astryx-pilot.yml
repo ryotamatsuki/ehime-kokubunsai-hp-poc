@@ -1,0 +1,42 @@
+name: React Astryx pilot CI
+
+on:
+  push:
+    branches: [feature/react-astryx-pilot]
+  pull_request:
+    paths:
+      - 'react-pilot/**'
+      - 'design-lab/experience-data.js'
+      - '.github/workflows/react-astryx-pilot.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: react-pilot
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: react-pilot/package.json
+      - name: Install
+        run: npm install --no-audit --no-fund
+      - name: Test original event data
+        run: npm run test
+      - name: Type and Astro check
+        run: npm run check
+      - name: Build static pilot
+        run: npm run build
+      - name: Upload preview artifact (no Pages deployment)
+        uses: actions/upload-artifact@v4
+        with:
+          name: react-astryx-pilot-dist
+          path: react-pilot/dist/
+          if-no-files-found: error
