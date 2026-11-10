@@ -6,6 +6,10 @@ on:
       - 'react-pilot/**'
       - '.github/workflows/react-astryx-visual.yml'
   workflow_dispatch:
+concurrency:
+  group: react-pilot-browser-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 jobs:
