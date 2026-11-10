@@ -1,0 +1,14 @@
+---
+import Layout from '../../layouts/SiteLayout.astro';
+import EventDetail from '../../components/EventDetail';
+import catalog from '../../data/events.json';
+import type { FestivalEvent } from '../../types';
+export function getStaticPaths() {
+  return (catalog as FestivalEvent[]).map(event => ({params:{id:event.id}, props:{event}}));
+}
+interface Props {event: FestivalEvent}
+const {event} = Astro.props;
+---
+<Layout title={event.title} description={event.description}>
+  <EventDetail event={event} client:load />
+</Layout>
