@@ -55,7 +55,10 @@ for(const page of pages){
   const file=relative(root,page).split(sep).join('/');
   const raw=readFileSync(page,'utf8');
   const main=raw.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i);
-  if(!main)throw new Error('Missing <main> in '+file);
+  if(!main){
+    if(file==='homepage_structure_document.html') continue; // ancillary design document, not a public route
+    throw new Error('Missing <main> in '+file);
+  }
   const title=(raw.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1]||file)
     .replace(/\s*\|\s*愛顔えひめの文化祭2028.*$/,'').trim();
   const route=originalToPilot(file);
