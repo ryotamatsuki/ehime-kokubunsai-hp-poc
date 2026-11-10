@@ -48,7 +48,7 @@ try {
   for(const vp of viewports) {
     const context=await browser.newContext({viewport:vp,deviceScaleFactor:1,reducedMotion:'reduce'});
     await context.route('https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/**',async route=>{
-      const u=new URL(route.request().url);
+      const u=new URL(route.request().url());
       const pathname=u.pathname;
       const local=getFile(pathname);
       try{
