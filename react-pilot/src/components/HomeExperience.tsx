@@ -11,7 +11,7 @@ export default function HomeExperience() {
         <p className="body-muted">土地の歴史に触れ、表現に出会い、誰もが文化をつくる側になる。愛媛県全体を舞台にした文化祭へ。</p>
         <div className="hero-actions">
           <a className="link-button primary" href={pilotRoot + '/events/'}>催しを探す <span aria-hidden="true">↗</span></a>
-          <a className="link-button outline" href={legacyRoot + '/recruitment/index.html'}>参加・募集 <span aria-hidden="true">↗</span></a>
+          <a className="link-button outline" href={pilotRoot + '/recruitment/'}>参加・募集 <span aria-hidden="true">↗</span></a>
         </div>
         <p className="festival-date"><strong>2028.10.22 — 12.03</strong><br/>第43回国民文化祭・第28回全国障害者芸術・文化祭</p>
       </div>
@@ -28,10 +28,10 @@ export default function HomeExperience() {
       <a className="feature-card pale-blue" href={pilotRoot + '/events/'}>
         <span className="eyebrow">01 / FIND</span><strong>催しを探す。</strong><p>開催状態や地域、ジャンルから探せます。仮の掲載例は明確に区別します。</p><span className="feature-arrow" aria-hidden="true">↗</span>
       </a>
-      <a className="feature-card pale-peach" href={legacyRoot + '/culture/field-notes.html'}>
+      <a className="feature-card pale-peach" href={pilotRoot + '/culture/field-notes/'}>
         <span className="eyebrow">02 / EXPLORE</span><strong>文化に出会う。</strong><p>愛媛の地域に根づく祭り、文学、芸術の背景をたどります。</p><span className="feature-arrow" aria-hidden="true">↗</span>
       </a>
-      <a className="feature-card pale-green" href={legacyRoot + '/accessibility/information-support.html'}>
+      <a className="feature-card pale-green" href={pilotRoot + '/accessibility/information-support/'}>
         <span className="eyebrow">03 / JOIN</span><strong>誰もが参加する。</strong><p>情報保障や会場の支援を確認し、安心して参加する入口へ。</p><span className="feature-arrow" aria-hidden="true">↗</span>
       </a>
     </section>
