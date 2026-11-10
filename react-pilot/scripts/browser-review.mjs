@@ -67,7 +67,12 @@ try {
         const failures=[];
         page.on('pageerror',err=>failures.push(err.message));
         const response=await page.goto(base+pathname,{waitUntil:'networkidle',timeout:45000});
-        await page.evaluate(()=>document.fonts.ready);
+        await page.evaluate(async()=>{
+          await document.fonts.ready;
+          const images=[...document.images];
+          for(const img of images) img.loading='eager';
+          await Promise.all(images.map(img=>img.decode().catch(()=>null)));
+        });
         await page.screenshot({path:join(out,name+'-'+version+'-'+vp.width+'.png'),fullPage:true,animations:'disabled'});
         const stats=await page.evaluate(()=>({
           title:document.title,h1:document.querySelector('h1')?.innerText||'',
@@ -98,6 +103,10 @@ try {
       await page.getByRole('button',{name:/文化帖へ保存/}).first().click();
       const notebookIds=await page.evaluate(()=>JSON.parse(localStorage.getItem('ehime-v2-culture-notes')||'[]'));
       results.push({name:'interaction-notebook-save',version:'react',viewport:390,ids:notebookIds});
+      await page.goto(base+'/react-pilot/culture/notebook/',{waitUntil:'networkidle'});
+      const count=await page.locator('[data-notebook-count]').innerText();
+      const entryText=await page.locator('[data-notebook-list]').innerText();
+      results.push({name:'interaction-notebook-restore',version:'react',viewport:390,count,containsSavedEvent:entryText.includes('県民総合文化祭')});
       await page.close();
     }
     await context.close();
@@ -106,6 +115,10 @@ try {
   console.log('BROWSER_REVIEW_REPORT_BEGIN');
   console.log(JSON.stringify(results,null,2));
   console.log('BROWSER_REVIEW_REPORT_END');
-  const fatal=results.filter(r=>r.http && (r.http!==200||r.docWidth>r.viewportWidth||r.jsErrors.length));
+  const fatal=results.filter(r=>r.http && (r.http!==200||r.docWidth>r.viewportWidth||r.jsErrors.length||r.brokenImages?.length));
+  const notebook=results.find(r=>r.name==='interaction-notebook-restore');
+  if(!notebook||notebook.count!=='1'||!notebook.containsSavedEvent){console.error('Migrated notebook restore failed:',JSON.stringify(notebook));process.exitCode=1}
+  const support=results.find(r=>r.name==='interaction-support-filter');
+  if(!support||support.count!==2){console.error('Support filtering regression:',JSON.stringify(support));process.exitCode=1}
   if(fatal.length) {console.error('Browser review found failures:',JSON.stringify(fatal));process.exitCode=1}
 } finally {if(browser) await browser.close();await new Promise(resolve=>server.close(resolve))}
