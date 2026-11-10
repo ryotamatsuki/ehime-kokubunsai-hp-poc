@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
 import { createServer } from 'node:http';
 import { readFile, stat, mkdir, writeFile } from 'node:fs/promises';
-import { resolve, extname, join, normalize } from 'node:path';
+import { resolve, extname, join } from 'node:path';
 
 const repoRoot = resolve(import.meta.dirname, '../..');
 const pilotRoot = resolve(repoRoot, 'react-pilot/dist');
@@ -17,8 +17,8 @@ function getFile(pathname) {
   if (p.startsWith('ehime-kokubunsai-hp-poc/')) p=p.slice(prefix.length-1);
   let root=repoRoot;
   if (p.startsWith('react-pilot/')) {root=pilotRoot;p=p.slice('react-pilot/'.length)}
-  if (p.endsWith('/')) p+='index.html';
-  if (!extname(p)) p+='/index.html';
+  if (!p || p.endsWith('/')) p+='index.html';
+  else if (!extname(p)) p+='/index.html';
   const file=resolve(root,p);
   return file.startsWith(root+'/') ? file : null;
 }
@@ -34,7 +34,6 @@ const server=createServer(async(req,res)=>{
 });
 await new Promise(resolve=>server.listen(8787,'127.0.0.1',resolve));
 const base='http://127.0.0.1:8787'+prefix.replace(/\/$/,'');
-const errors=[];
 const pages=[
   ['home','/','/react-pilot/'],
   ['event-search','/events/search.html','/react-pilot/events/'],
