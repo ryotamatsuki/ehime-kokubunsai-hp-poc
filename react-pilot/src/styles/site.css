@@ -227,3 +227,15 @@ button,input,select{font:inherit}
 }
 @media(max-width:340px){.culture-grid{grid-template-columns:1fr}.culture-card{min-height:175px}.atlas-choice strong{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.culture-card,.home-event-image img{transition:none}}
+
+
+/* Legibility refinements observed in Chromium at desktop and 390px. */
+.react-migrated-page .notebook-cover,
+.react-migrated-page .notebook-cover h2,
+.react-migrated-page .notebook-cover .label,
+.react-migrated-page .notebook-cover .notebook-themes,
+.react-migrated-page .notebook-cover .notebook-count,
+.react-migrated-page .notebook-cover .notebook-count strong,
+.react-migrated-page .notebook-cover .small{color:#fffdf8}
+.react-migrated-page .notebook-cover .notebook-pattern{color:#182d4b}
+.react-migrated-page .participation-print small{color:#f5f7ff}
