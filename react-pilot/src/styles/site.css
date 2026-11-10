@@ -140,3 +140,90 @@ button,input,select{font:inherit}
   .event-card-footer{align-items:stretch}
   .save-control{text-align:center}
 }
+
+
+/* Cultural editorial extension — original Ehime materials, Astryx-enabled shell */
+.hero-discover{display:inline-flex;gap:19px;align-items:center;color:#233f82;text-underline-offset:7px;font-weight:700;font-size:15px}
+.atlas-section{background:#fffdf8;padding-block:clamp(46px,6.5vw,100px)}
+.atlas-intro,.section-intro{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:end;margin-bottom:34px}
+.atlas-intro h2,.section-intro h2,.participate-intro h2{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-weight:500;font-size:clamp(32px,4.4vw,58px);letter-spacing:.004em;line-height:1.42;margin:13px 0}
+.atlas-intro>p,.section-intro>p{color:#505b6b;max-width:640px;font-size:19px;line-height:2}
+.atlas-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #bec7d3;border-bottom:0}
+.atlas-choice{appearance:none;border:0;border-right:1px solid #bec7d3;border-bottom:1px solid #bec7d3;background:#f9faf7;text-align:left;cursor:pointer;padding:19px 18px;color:#1d2f4c;min-height:112px}
+.atlas-choice:last-child{border-right:0}
+.atlas-choice small{display:block;font-size:12px;color:#59667b;letter-spacing:.025em;margin-bottom:8px}
+.atlas-choice strong{font-size:20px;line-height:1.4;display:block;font-weight:700}
+.atlas-choice:hover{background:#eff2fa}
+.atlas-choice[aria-pressed=true]{background:#183c9e;color:white}
+.atlas-choice[aria-pressed=true] small{color:#e0e8fb}
+.atlas-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,1fr);gap:5%;align-items:center}
+.atlas-photo{margin:0;min-width:0}
+.atlas-photo img{width:100%;height:clamp(300px,36vw,530px);object-fit:cover;display:block;background:#e0e4e9}
+.atlas-photo figcaption{font-size:12px;color:#526174;line-height:1.8;padding-top:12px;overflow-wrap:anywhere}
+.atlas-caption h3{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(28px,3.6vw,46px);font-weight:500;margin:12px 0 22px;line-height:1.45}
+.atlas-caption p:not(.eyebrow){font-size:18px;line-height:2;color:#4c596a;margin-bottom:34px}
+.text-action{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:360px;padding:12px 0;border-bottom:1px solid #aeb9cb;text-decoration:none;color:#1b4389;font-weight:750;font-size:15px;min-height:50px}
+.text-action:hover{color:#0e2a63;border-bottom-color:#183c9e}
+.culture-index{padding-block:clamp(46px,6.5vw,94px)}
+.culture-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.culture-card{min-height:305px;position:relative;display:flex;flex-direction:column;text-decoration:none;padding:28px 24px 22px;background:#e1eafa;border:1px solid #aab9cf;transition:transform .16s ease,box-shadow .16s ease}
+.culture-card-1{background:#f7ecdf;border-color:#decfbb}
+.culture-card-2{background:#dfece4;border-color:#b6c9bd}
+.culture-card-3{background:#e9e7ee;border-color:#c4c2cb}
+.culture-card:hover{transform:translateY(-3px);box-shadow:0 18px 35px #26334817}
+.culture-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;color:#50607b}
+.culture-card h3{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(25px,2.5vw,34px);font-weight:500;line-height:1.5;letter-spacing:0;margin:37px 0 10px}
+.culture-card p{font-size:16px;color:#465669;line-height:1.85;margin:0}
+.culture-arrow{margin-top:auto;align-self:flex-end;font-size:24px}
+.event-section{background:#ebece9;padding-block:clamp(55px,7vw,96px)}
+.home-events-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.home-event-card{background:#fffdfa;min-width:0;border:1px solid #dbdfdd;overflow:hidden}
+.home-event-image{display:block;aspect-ratio:3/2;overflow:hidden}
+.home-event-image img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease}
+.home-event-image:hover img{transform:scale(1.04)}
+.home-event-content{padding:22px}
+.home-event-content h3{font-size:20px;line-height:1.55;margin:17px 0 10px;font-weight:750}
+.home-event-content h3 a{text-decoration:none}
+.home-event-content h3 a:hover{text-decoration:underline}
+.home-event-content p{font-size:15px;margin:0 0 14px;color:#35445a}
+.home-event-content small{display:block;font-size:12px;line-height:1.6;color:#5c6475}
+.all-events-link{text-align:center;margin-top:36px}
+.participate-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;padding-block:clamp(65px,8vw,116px)}
+.participate-intro p:not(.eyebrow){font-size:19px;max-width:410px;color:#596576;line-height:2}
+.participate-links{display:flex;flex-direction:column;border-top:1px solid #bfc6ca}
+.participate-links a{text-decoration:none;display:grid;grid-template-columns:1fr auto;column-gap:14px;padding:22px 10px 25px;border-bottom:1px solid #bfc6ca;min-height:130px}
+.participate-links a:hover{background:#ebeff6}
+.participate-links a span{font-size:11px;letter-spacing:.12em;color:#315ba0;grid-column:1}
+.participate-links a strong{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-weight:500;font-size:27px;margin:7px 0;grid-column:1}
+.participate-links a small{font-size:14px;color:#4e5d70;grid-column:1}
+.participate-links a b{grid-row:1/4;grid-column:2;align-self:center;font-size:24px;font-weight:500}
+.note-panel .text-action{margin-top:8px}
+@media(max-width:1080px){
+ .culture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .culture-card{min-height:235px}
+ .home-events-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:740px){
+ .atlas-intro,.section-intro{grid-template-columns:1fr;gap:0;margin-bottom:22px}
+ .atlas-intro>p,.section-intro>p{font-size:16px}
+ .atlas-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .atlas-choice{min-height:98px;padding:14px 12px}
+ .atlas-choice:nth-child(2){border-right:0}
+ .atlas-choice strong{font-size:16px}
+ .atlas-layout{grid-template-columns:1fr;gap:15px}
+ .atlas-photo img{height:auto;max-height:430px;aspect-ratio:4/3}
+ .atlas-caption h3{font-size:34px;margin-bottom:10px}
+ .atlas-caption p:not(.eyebrow){font-size:16px;margin-bottom:10px}
+ .culture-grid{gap:9px}
+ .culture-card{padding:20px 14px;min-height:240px}
+ .culture-card h3{font-size:24px;margin:26px 0 7px}
+ .culture-card p{font-size:14px}
+ .culture-meta{font-size:10px}
+ .home-events-grid{grid-template-columns:1fr;gap:16px}
+ .home-event-content{padding:17px}
+ .participate-section{grid-template-columns:1fr;gap:20px}
+ .participate-intro p:not(.eyebrow){font-size:16px}
+ .participate-links a strong{font-size:24px}
+}
+@media(max-width:340px){.culture-grid{grid-template-columns:1fr}.culture-card{min-height:175px}.atlas-choice strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.culture-card,.home-event-image img{transition:none}}
