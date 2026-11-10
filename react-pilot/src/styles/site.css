@@ -2,7 +2,7 @@
 @import '@astryxdesign/core/astryx.css';
 @import '@astryxdesign/theme-stone/theme.css';
 
-:root{font-family:"Zen Kaku Gothic New","Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;--ehime-paper:#f5f2ea;--ehime-ink:#151d36;--ehime-blue:#183c9e;--ehime-line:#d8d8d3;--ehime-muted:#596073;color:var(--ehime-ink);background:var(--ehime-paper);font-synthesis:none}
+:root{font-family:"Ehime Latin","Ehime Sans","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;--ehime-paper:#f5f2ea;--ehime-ink:#151d36;--ehime-blue:#183c9e;--ehime-line:#d8d8d3;--ehime-muted:#596073;color:var(--ehime-ink);background:var(--ehime-paper);font-synthesis:none}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--ehime-paper);color:var(--ehime-ink);line-height:1.8;min-width:280px}
@@ -33,7 +33,7 @@ button,input,select{font:inherit}
 .information-bar a{font-weight:700;white-space:nowrap}
 .hero{min-height:610px;display:grid;grid-template-columns:5fr 7fr;align-items:stretch;gap:4%;padding-block:66px 80px}
 .hero-content{align-self:center}
-.hero h1{font-family:"Zen Maru Gothic","Yu Gothic",sans-serif;font-size:clamp(56px,6.6vw,108px);line-height:1.23;letter-spacing:-.075em;font-weight:800;margin:20px 0 24px}
+.hero h1{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(56px,6.6vw,108px);line-height:1.23;letter-spacing:-.075em;font-weight:800;margin:20px 0 24px}
 .hero h1 span{color:var(--ehime-blue)}
 .hero-lead{font-size:clamp(20px,2vw,27px);font-weight:750;line-height:1.75;margin:0 0 17px}
 .body-muted{color:var(--ehime-muted);font-size:clamp(16px,1.45vw,19px);max-width:620px}
