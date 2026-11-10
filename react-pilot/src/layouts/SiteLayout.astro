@@ -1,12 +1,12 @@
 ---
 import '../styles/site.css';
-interface Props { title: string; description?: string; }
-const {title, description = '愛顔えひめの文化祭2028のReact＋Astryx移行試験版です。'} = Astro.props;
+interface Props { title: string; description?: string; legacy?: boolean; legacyRoutes?: Record<string,string>; legacyPageName?: string; }
+const {title, description = '愛顔えひめの文化祭2028のReact＋Astryx移行試験版です。',legacy=false,legacyRoutes={},legacyPageName=''} = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const original = 'https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc';
 ---
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-experience={legacy ? "hiraku" : undefined} data-page={legacyPageName} data-asset-base={legacy ? original + "/design-lab" : undefined}>
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -14,6 +14,7 @@ const original = 'https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc';
   <meta name="robots" content="noindex,nofollow" />
   <meta name="theme-color" content="#f5f2ea" />
   <title>{title} | 愛顔えひめの文化祭2028・React試験版</title>
+  {legacy && <link rel="stylesheet" href={original + "/design-lab/experience.css"} />}
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -21,12 +22,18 @@ const original = 'https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc';
   <header class="site-header">
     <div class="section-shell header-inner">
       <a href={base + '/'} class="brand">愛顔えひめの文化祭 <span>2028</span><small>国民文化祭・全国障害者芸術・文化祭</small></a>
-      <nav aria-label="主な案内" class="desktop-nav"><a href={base + '/'}>トップ</a><a href={base + '/events/'}>催しを探す</a><a href={original + '/recruitment/index.html'}>参加・募集</a><a href={original + '/accessibility/information-support.html'}>参加の支援</a></nav>
-      <details class="mobile-nav"><summary>メニュー</summary><nav aria-label="スマートフォンの案内"><a href={base + '/'}>トップ</a><a href={base + '/events/'}>催しを探す</a><a href={original + '/recruitment/index.html'}>参加・募集</a><a href={original + '/accessibility/information-support.html'}>参加の支援</a></nav></details>
+      <nav aria-label="主な案内" class="desktop-nav"><a href={base + '/'}>トップ</a><a href={base + '/events/'}>催しを探す</a><a href={base + '/recruitment/'}>参加・募集</a><a href={base + '/accessibility/information-support/'}>参加の支援</a></nav>
+      <details class="mobile-nav"><summary>メニュー</summary><nav aria-label="スマートフォンの案内"><a href={base + '/'}>トップ</a><a href={base + '/events/'}>催しを探す</a><a href={base + '/recruitment/'}>参加・募集</a><a href={base + '/accessibility/information-support/'}>参加の支援</a></nav></details>
     </div>
   </header>
-  <aside class="information-bar"><div class="section-shell"><strong>INFORMATION</strong><p>本大会は2028年開催。個別の催しは順次発表されます。</p><a href={original + '/news/index.html'}>お知らせ ↗</a></div></aside>
+  <aside class="information-bar"><div class="section-shell"><strong>INFORMATION</strong><p>本大会は2028年開催。個別の催しは順次発表されます。</p><a href={base + '/news/'}>お知らせ ↗</a></div></aside>
   <main id="main"><slot /></main>
-  <footer class="site-footer"><div class="section-shell footer-inner"><div><p class="eyebrow">EHIME CULTURE 2028</p><strong>文化を、みんなのものに。</strong></div><nav aria-label="フッター"><a href={base + '/events/'}>催し一覧</a><a href={original + '/site-map.html'}>全案内</a><a href={original + '/policy/privacy.html'}>プライバシー</a><a href={original + '/'}>現行v2へ ↗</a></nav></div><p class="footer-disclaimer">試験版の掲載例は架空の催しです。実際の申込はできません。</p></footer>
+  <footer class="site-footer"><div class="section-shell footer-inner"><div><p class="eyebrow">EHIME CULTURE 2028</p><strong>文化を、みんなのものに。</strong></div><nav aria-label="フッター"><a href={base + '/events/'}>催し一覧</a><a href={base + '/site-map/'}>全案内</a><a href={base + '/policy/privacy/'}>プライバシー</a><a href={original + '/'}>現行v2へ ↗</a></nav></div><p class="footer-disclaimer">試験版の掲載例は架空の催しです。実際の申込はできません。</p></footer>
+  {legacy && <script is:inline define:vars={{legacyRoutes}}>window.EHIME_V2_ROUTES = legacyRoutes;</script>}
+  {legacy && <script is:inline src={original + '/design-lab/experience-data.js'} defer></script>}
+  {legacy && <script is:inline src={original + '/design-lab/experience.js'} defer></script>}
+  {legacy && <script is:inline src={original + '/design-lab/legacy-ui.js'} defer></script>}
+  {legacy && <script is:inline src={original + '/design-lab/culture-experience.js'} defer></script>}
+  {legacy && <div class="sr-only" role="status" aria-live="polite" data-global-status></div>}
 </body>
 </html>
