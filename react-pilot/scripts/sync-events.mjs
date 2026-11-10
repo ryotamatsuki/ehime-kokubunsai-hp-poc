@@ -23,4 +23,7 @@ const events = source.events.map((item) => {
 const output = resolve(import.meta.dirname, '../src/data/events.json');
 mkdirSync(resolve(import.meta.dirname, '../src/data'), {recursive:true});
 writeFileSync(output, JSON.stringify(events, null, 2) + '\n');
-console.log('Synced ' + events.length + ' events from existing v2 data; no events were invented.');
+if(!Array.isArray(source.cultures)||source.cultures.length<4||!Array.isArray(source.fieldnotes)||source.fieldnotes.length!==4) throw new Error('Culture sources changed unexpectedly');
+writeFileSync(resolve(import.meta.dirname,'../src/data/culture.json'),
+  JSON.stringify({festival:source.festival,cultures:source.cultures,fieldnotes:source.fieldnotes},null,2)+'\n');
+console.log('Synced ' + events.length + ' events and '+source.fieldnotes.length+' cultural field records from existing v2 data.');
