@@ -4,14 +4,14 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "sync": "node scripts/sync-events.mjs",
+    "sync": "node scripts/sync-events.mjs && node scripts/migrate-pages.mjs",
     "predev": "npm run sync",
     "dev": "astro dev",
     "prebuild": "npm run sync",
     "build": "astro build",
     "preview": "astro preview",
     "check": "npm run sync && astro check",
-    "test": "node --test tests/*.test.mjs"
+    "test": "npm run sync && node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
