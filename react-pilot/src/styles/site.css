@@ -1,0 +1,241 @@
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+@import '@astryxdesign/theme-stone/theme.css';
+
+:root{font-family:"Ehime Latin","Ehime Sans","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif;--ehime-paper:#f5f2ea;--ehime-ink:#151d36;--ehime-blue:#183c9e;--ehime-line:#d8d8d3;--ehime-muted:#596073;color:var(--ehime-ink);background:var(--ehime-paper);font-synthesis:none}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ehime-paper);color:var(--ehime-ink);line-height:1.8;min-width:280px}
+a{color:inherit;text-underline-offset:.23em}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ehime-blue);outline-offset:4px}
+img{max-width:100%;height:auto}
+button,input,select{font:inherit}
+.section-shell{max-width:1344px;margin-inline:auto;padding-inline:clamp(16px,3.4vw,48px)}
+.skip-link{position:absolute;z-index:100;top:6px;left:12px;padding:12px 20px;transform:translateY(-180%);background:white;color:var(--ehime-ink)}
+.skip-link:focus{transform:translateY(0)}
+.poc-banner{background:#19345b;color:white;padding:7px max(16px,calc((100vw - 1248px)/2));display:flex;justify-content:space-between;gap:12px;font-size:12px;line-height:1.5}
+.site-header{background:rgba(245,242,234,.96);border-bottom:1px solid var(--ehime-line);position:sticky;top:0;z-index:40;backdrop-filter:blur(14px)}
+.header-inner{height:92px;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.brand{text-decoration:none;font-weight:800;letter-spacing:-.04em;font-size:clamp(16px,1.8vw,23px);line-height:1.5}
+.brand span{color:var(--ehime-blue)}
+.brand small{display:block;font-size:11px;font-weight:500;letter-spacing:.06em;color:var(--ehime-muted)}
+.desktop-nav{display:flex;flex-wrap:wrap;gap:clamp(12px,2vw,32px);font-size:14px;font-weight:700}
+.desktop-nav a{text-decoration:none;white-space:nowrap}
+.desktop-nav a:hover,.site-footer a:hover{color:var(--ehime-blue);text-decoration:underline}
+.mobile-nav{display:none;position:relative}
+.mobile-nav summary{cursor:pointer;list-style:none;min-height:44px;display:flex;align-items:center;border:1px solid #9da8b5;padding:0 12px;border-radius:4px;font-weight:700}
+.mobile-nav nav{position:absolute;right:0;top:calc(100% + 12px);z-index:50;background:white;min-width:230px;padding:10px;box-shadow:0 15px 55px #182d431f;border:1px solid var(--ehime-line)}
+.mobile-nav nav a{display:block;padding:14px 10px;min-height:44px;text-decoration:none;border-bottom:1px solid #ededed}
+.information-bar{background:#e5e9f2;border-bottom:1px solid #d2d9e5}
+.information-bar .section-shell{display:flex;align-items:center;gap:22px;min-height:54px;font-size:13px}
+.information-bar strong,.eyebrow{font-size:12px;letter-spacing:.16em;font-weight:800;color:var(--ehime-blue)}
+.information-bar p{margin:0;flex:1}
+.information-bar a{font-weight:700;white-space:nowrap}
+.hero{min-height:610px;display:grid;grid-template-columns:5fr 7fr;align-items:stretch;gap:4%;padding-block:66px 80px}
+.hero-content{align-self:center}
+.hero h1{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(56px,6.6vw,108px);line-height:1.23;letter-spacing:-.075em;font-weight:800;margin:20px 0 24px}
+.hero h1 span{color:var(--ehime-blue)}
+.hero-lead{font-size:clamp(20px,2vw,27px);font-weight:750;line-height:1.75;margin:0 0 17px}
+.body-muted{color:var(--ehime-muted);font-size:clamp(16px,1.45vw,19px);max-width:620px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-block:32px}
+.link-button{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 22px;min-height:52px;text-decoration:none;border-radius:5px;font-weight:750;font-size:16px;transition:background .16s ease,transform .16s ease}
+.link-button.primary{background:var(--ehime-blue);color:white}
+.link-button.primary:hover{background:#0f2e7e;transform:translateY(-2px)}
+.link-button.outline{border:1.5px solid #798499;background:transparent;color:var(--ehime-ink)}
+.link-button.outline:hover{background:white}
+.festival-date{margin-top:26px;padding-top:20px;border-top:1px solid #cacbca;font-size:13px;line-height:2;color:#344054}
+.festival-date strong{font-size:22px;letter-spacing:.04em;color:var(--ehime-blue)}
+.hero-visual{margin:0;position:relative;min-height:490px;align-self:stretch;overflow:hidden;background:#d6dfe1}
+.hero-visual img{height:100%;width:100%;position:absolute;inset:0;object-fit:cover}
+.hero-visual::after{content:"";inset:50% 0 0;position:absolute;background:linear-gradient(transparent,rgba(11,31,54,.62))}
+.hero-visual figcaption{position:absolute;z-index:2;bottom:24px;left:28px;right:18px;color:white;font-size:clamp(21px,2.6vw,33px);font-weight:800;line-height:1.4}
+.hero-visual figcaption small{display:block;font-size:12px;font-weight:500;margin-top:12px}
+.intro-band{display:grid;grid-template-columns:1fr 1fr;gap:7%;padding-block:75px 35px;border-top:1px solid var(--ehime-line)}
+.intro-band h2,.note-panel h2{font-size:clamp(28px,4vw,48px);letter-spacing:-.055em;line-height:1.48;margin:12px 0}
+.intro-band>p{align-self:end;margin:0 0 10px;font-size:19px;line-height:2;color:#465263}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-block:30px 100px}
+.feature-card{position:relative;text-decoration:none;display:flex;flex-direction:column;gap:10px;min-height:258px;padding:30px;border:1px solid #0000000d;transition:transform .16s ease,box-shadow .16s ease}
+.feature-card:hover{transform:translateY(-3px);box-shadow:0 16px 38px #172e4214}
+.feature-card strong{font-size:clamp(23px,2.3vw,32px);letter-spacing:-.04em}
+.feature-card p{color:#4d5b69;font-size:16px;line-height:1.8;max-width:28ch}
+.feature-arrow{font-size:25px;margin-top:auto;align-self:end}
+.pale-blue{background:#e1eafa}.pale-peach{background:#f8e9dd}.pale-green{background:#e3ede5}
+.note-panel{display:grid;grid-template-columns:1fr 1.2fr;gap:20px;padding-block:46px 54px;background:#e8e8e2;max-width:none;padding-inline:max(16px,calc((100vw - 1248px)/2))}
+.note-panel p{color:#4a5662;font-size:17px}
+.site-footer{background:#142b45;color:white;padding-block:55px 26px}
+.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:start}
+.site-footer .eyebrow{color:#b5c8ec}
+.footer-inner strong{font-size:clamp(23px,3vw,34px)}
+.footer-inner nav{display:flex;gap:18px;flex-wrap:wrap;max-width:460px;font-size:14px}
+.footer-disclaimer{color:#c6d2df;padding:18px 20px 0;text-align:center;font-size:12px;margin:30px 0 0;border-top:1px solid #ffffff2e}
+.list-heading{padding-block:65px 30px}
+.list-heading h1,.detail-header h1{font-size:clamp(40px,4.5vw,64px);line-height:1.3;letter-spacing:-.055em;margin:9px 0 14px}
+.filter-panel{display:grid;grid-template-columns:minmax(240px,2fr) repeat(4,minmax(110px,1fr)) auto;gap:14px;align-items:end;background:#fffdf8;padding:24px;border:1px solid var(--ehime-line);border-radius:10px}
+.filter-field{min-width:0}
+.filter-field label{font-size:14px;font-weight:750;display:block;margin-bottom:8px}
+.filter-field input,.filter-field select{width:100%;min-width:0;min-height:50px;border:1.4px solid #8893a1;background:white;color:var(--ehime-ink);padding:10px 12px;border-radius:5px;font-size:16px}
+.filter-reset{min-height:50px;display:flex;align-items:stretch}
+.results-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-block:46px 20px;border-bottom:1px solid var(--ehime-line)}
+.results-heading h2{font-size:30px;letter-spacing:-.04em;margin:0 0 15px}
+.results-heading p{margin:0 0 15px;font-weight:700}
+.event-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;padding-bottom:95px}
+.event-card{min-width:0;background:#fffdf8;border:1px solid #dddeda;border-radius:8px;overflow:hidden;box-shadow:0 3px 15px #2633480a}
+.event-image-link{display:block;aspect-ratio:3/2;background:#dce4eb;overflow:hidden}
+.event-image-link img{display:block;object-fit:cover;width:100%;height:100%;transition:transform .28s ease}
+.event-image-link:hover img{transform:scale(1.03)}
+.event-card-inner{padding:23px}
+.event-tags{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:#505c6e}
+.status{display:inline-block;padding:3px 10px;border-radius:3px;font-weight:750;font-size:13px;white-space:normal}
+.status.sample{background:#eee9dd;color:#624c26}
+.status.verified{background:#deebf5;color:#17456f}
+.event-card h3{font-size:22px;line-height:1.5;margin:14px 0 10px;letter-spacing:-.025em}
+.event-card h3 a{text-decoration:none}
+.event-card h3 a:hover{text-decoration:underline;color:var(--ehime-blue)}
+.event-card-inner>p{margin:10px 0;font-size:15px}
+.event-desc{color:#4f5c6b;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.event-card-footer{border-top:1px solid #dde1e3;margin-top:17px;padding-top:15px;font-size:13px;font-weight:700;color:#5b6270}
+.empty-state{padding:30px;background:white;border:1px solid #ddd}
+.detail-layout{display:grid;grid-template-columns:1fr 1fr;gap:42px;padding-block:66px 100px}
+.detail-header{grid-column:1}
+.detail-lead{font-size:20px;line-height:1.9;color:#485569}
+.notice{background:#faf0df;border-left:4px solid #a47729;padding:16px 20px;margin-top:28px}
+.notice strong{font-size:17px}.notice p{margin:5px 0 0;font-size:15px}
+.detail-image{grid-column:2;grid-row:1 / 3;margin:0;align-self:start}
+.detail-image img{width:100%;object-fit:cover;aspect-ratio:3/2}
+.detail-image figcaption{font-size:12px;color:#5a6672;margin-top:9px}
+.detail-information{grid-column:1 / 2}
+.detail-information h2{font-size:31px}
+.info-list{border-top:1px solid var(--ehime-line)}
+.info-list div{padding:15px 0;border-bottom:1px solid var(--ehime-line);display:grid;grid-template-columns:105px 1fr;gap:20px}
+.info-list dt{font-size:14px;color:#586274;font-weight:700}
+.info-list dd{margin:0;font-size:16px;overflow-wrap:anywhere}
+.note-text{padding:10px 0;color:#5c5260;font-size:15px}
+.source-link{font-size:15px;color:var(--ehime-blue);font-weight:700}
+.detail-actions{margin-bottom:0}
+@media(max-width:1000px){.desktop-nav{gap:12px;font-size:13px}.filter-panel{grid-template-columns:repeat(3,1fr)}.filter-field.wide{grid-column:span 3}.filter-reset{grid-column:1/-1}.event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr 1fr}.hero-visual{min-height:430px}}
+@media(max-width:740px){.poc-banner{font-size:10px}.poc-banner span:last-child{display:none}.header-inner{height:76px}.desktop-nav{display:none}.mobile-nav{display:block}.information-bar .section-shell{gap:12px;flex-wrap:wrap;padding-block:10px;line-height:1.6}.information-bar p{flex-basis:70%}.hero{display:flex;flex-direction:column;padding-block:38px 56px;gap:22px}.hero h1{font-size:clamp(56px,12vw,82px);margin:15px 0}.hero-visual{min-height:360px;aspect-ratio:4/3}.hero-visual img{position:absolute}.hero-visual figcaption{left:18px;bottom:18px}.intro-band{grid-template-columns:1fr;gap:8px;padding-block:40px 16px}.intro-band>p{font-size:17px}.feature-grid{grid-template-columns:1fr;padding-block:20px 64px}.feature-card{min-height:190px;padding:22px}.note-panel{grid-template-columns:1fr}.footer-inner{flex-direction:column}.filter-panel{grid-template-columns:1fr 1fr;padding:16px}.filter-field.wide{grid-column:span 2}.filter-reset{grid-column:span 2}.event-grid{grid-template-columns:1fr;gap:16px}.list-heading{padding-block:40px 18px}.detail-layout{grid-template-columns:1fr;gap:18px;padding-block:37px 65px}.detail-header,.detail-image,.detail-information{grid-column:1}.detail-image{grid-row:auto}.info-list div{grid-template-columns:87px 1fr;gap:12px}}
+@media(max-width:380px){.filter-panel{grid-template-columns:1fr}.filter-field.wide,.filter-reset{grid-column:1}.hero-actions{flex-direction:column;align-items:stretch}.feature-card p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+/* Human-centred navigation and preserved v2 functions across React pages. */
+.migrated-breadcrumb{display:flex;flex-wrap:wrap;gap:10px;align-items:center;color:#526077;font-size:13px;margin-bottom:29px;line-height:1.6}
+.migrated-breadcrumb a{text-underline-offset:4px}
+.results-note{font-size:14px;color:#5c6470;margin:-12px 0 25px;line-height:1.7}
+.event-support-label{font-size:13px!important;color:#37516b!important;background:#eff3f7;padding:8px 10px;line-height:1.6}
+.event-card-footer{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.save-control{background:transparent;border:1px solid #657c9a;border-radius:5px;color:#173e86;min-height:44px;padding:8px 15px;font-weight:750;font-size:14px;cursor:pointer;line-height:1.5}
+.save-control:hover,.save-control[aria-pressed=true]{background:#e0e9f8;border-color:#355aa3}
+.detail-save{min-height:52px;padding-inline:18px;font-size:15px}
+.react-migrated-page{padding-bottom:64px}
+.react-migrated-page .page-intro{padding-top:clamp(32px,4vw,62px)}
+.react-migrated-page .page-intro h1{color:var(--ehime-ink);letter-spacing:-.035em}
+.react-migrated-page .page-lead{max-width:850px}
+.react-migrated-page .legacy-content{max-width:100%}
+.react-migrated-page .button,.react-migrated-page input,.react-migrated-page select{border-radius:5px}
+.react-migrated-page a:focus-visible,.react-migrated-page button:focus-visible{outline:3px solid #183c9e;outline-offset:3px}
+@media(max-width:740px){
+  .results-note{margin-top:0}
+  .migrated-breadcrumb{margin-bottom:17px}
+  .react-migrated-page .page-intro{padding-top:29px}
+  .event-card-footer{align-items:stretch}
+  .save-control{text-align:center}
+}
+
+
+/* Cultural editorial extension — original Ehime materials, Astryx-enabled shell */
+.hero-discover{display:inline-flex;gap:19px;align-items:center;color:#233f82;text-underline-offset:7px;font-weight:700;font-size:15px}
+.atlas-section{background:#fffdf8;padding-block:clamp(46px,6.5vw,100px)}
+.atlas-intro,.section-intro{display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:end;margin-bottom:34px}
+.atlas-intro h2,.section-intro h2,.participate-intro h2{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-weight:500;font-size:clamp(32px,4.4vw,58px);letter-spacing:.004em;line-height:1.42;margin:13px 0}
+.atlas-intro>p,.section-intro>p{color:#505b6b;max-width:640px;font-size:19px;line-height:2}
+.atlas-controls{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #bec7d3;border-bottom:0}
+.atlas-choice{appearance:none;border:0;border-right:1px solid #bec7d3;border-bottom:1px solid #bec7d3;background:#f9faf7;text-align:left;cursor:pointer;padding:19px 18px;color:#1d2f4c;min-height:112px}
+.atlas-choice:last-child{border-right:0}
+.atlas-choice small{display:block;font-size:12px;color:#59667b;letter-spacing:.025em;margin-bottom:8px}
+.atlas-choice strong{font-size:20px;line-height:1.4;display:block;font-weight:700}
+.atlas-choice:hover{background:#eff2fa}
+.atlas-choice[aria-pressed=true]{background:#183c9e;color:white}
+.atlas-choice[aria-pressed=true] small{color:#e0e8fb}
+.atlas-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(270px,1fr);gap:5%;align-items:center}
+.atlas-photo{margin:0;min-width:0}
+.atlas-photo img{width:100%;height:clamp(300px,36vw,530px);object-fit:cover;display:block;background:#e0e4e9}
+.atlas-photo figcaption{font-size:12px;color:#526174;line-height:1.8;padding-top:12px;overflow-wrap:anywhere}
+.atlas-caption h3{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(28px,3.6vw,46px);font-weight:500;margin:12px 0 22px;line-height:1.45}
+.atlas-caption p:not(.eyebrow){font-size:18px;line-height:2;color:#4c596a;margin-bottom:34px}
+.text-action{display:flex;justify-content:space-between;align-items:center;gap:12px;max-width:360px;padding:12px 0;border-bottom:1px solid #aeb9cb;text-decoration:none;color:#1b4389;font-weight:750;font-size:15px;min-height:50px}
+.text-action:hover{color:#0e2a63;border-bottom-color:#183c9e}
+.culture-index{padding-block:clamp(46px,6.5vw,94px)}
+.culture-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.culture-card{min-height:305px;position:relative;display:flex;flex-direction:column;text-decoration:none;padding:28px 24px 22px;background:#e1eafa;border:1px solid #aab9cf;transition:transform .16s ease,box-shadow .16s ease}
+.culture-card-1{background:#f7ecdf;border-color:#decfbb}
+.culture-card-2{background:#dfece4;border-color:#b6c9bd}
+.culture-card-3{background:#e9e7ee;border-color:#c4c2cb}
+.culture-card:hover{transform:translateY(-3px);box-shadow:0 18px 35px #26334817}
+.culture-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:12px;color:#50607b}
+.culture-card h3{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-size:clamp(25px,2.5vw,34px);font-weight:500;line-height:1.5;letter-spacing:0;margin:37px 0 10px}
+.culture-card p{font-size:16px;color:#465669;line-height:1.85;margin:0}
+.culture-arrow{margin-top:auto;align-self:flex-end;font-size:24px}
+.event-section{background:#ebece9;padding-block:clamp(55px,7vw,96px)}
+.home-events-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.home-event-card{background:#fffdfa;min-width:0;border:1px solid #dbdfdd;overflow:hidden}
+.home-event-image{display:block;aspect-ratio:3/2;overflow:hidden}
+.home-event-image img{width:100%;height:100%;object-fit:cover;transition:transform .25s ease}
+.home-event-image:hover img{transform:scale(1.04)}
+.home-event-content{padding:22px}
+.home-event-content h3{font-size:20px;line-height:1.55;margin:17px 0 10px;font-weight:750}
+.home-event-content h3 a{text-decoration:none}
+.home-event-content h3 a:hover{text-decoration:underline}
+.home-event-content p{font-size:15px;margin:0 0 14px;color:#35445a}
+.home-event-content small{display:block;font-size:12px;line-height:1.6;color:#5c6475}
+.all-events-link{text-align:center;margin-top:36px}
+.participate-section{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;padding-block:clamp(65px,8vw,116px)}
+.participate-intro p:not(.eyebrow){font-size:19px;max-width:410px;color:#596576;line-height:2}
+.participate-links{display:flex;flex-direction:column;border-top:1px solid #bfc6ca}
+.participate-links a{text-decoration:none;display:grid;grid-template-columns:1fr auto;column-gap:14px;padding:22px 10px 25px;border-bottom:1px solid #bfc6ca;min-height:130px}
+.participate-links a:hover{background:#ebeff6}
+.participate-links a span{font-size:11px;letter-spacing:.12em;color:#315ba0;grid-column:1}
+.participate-links a strong{font-family:"Ehime Festival Display","Ehime Sans",sans-serif;font-weight:500;font-size:27px;margin:7px 0;grid-column:1}
+.participate-links a small{font-size:14px;color:#4e5d70;grid-column:1}
+.participate-links a b{grid-row:1/4;grid-column:2;align-self:center;font-size:24px;font-weight:500}
+.note-panel .text-action{margin-top:8px}
+@media(max-width:1080px){
+ .culture-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .culture-card{min-height:235px}
+ .home-events-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:740px){
+ .atlas-intro,.section-intro{grid-template-columns:1fr;gap:0;margin-bottom:22px}
+ .atlas-intro>p,.section-intro>p{font-size:16px}
+ .atlas-controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .atlas-choice{min-height:98px;padding:14px 12px}
+ .atlas-choice:nth-child(2){border-right:0}
+ .atlas-choice strong{font-size:16px}
+ .atlas-layout{grid-template-columns:1fr;gap:15px}
+ .atlas-photo img{height:auto;max-height:430px;aspect-ratio:4/3}
+ .atlas-caption h3{font-size:34px;margin-bottom:10px}
+ .atlas-caption p:not(.eyebrow){font-size:16px;margin-bottom:10px}
+ .culture-grid{gap:9px}
+ .culture-card{padding:20px 14px;min-height:240px}
+ .culture-card h3{font-size:24px;margin:26px 0 7px}
+ .culture-card p{font-size:14px}
+ .culture-meta{font-size:10px}
+ .home-events-grid{grid-template-columns:1fr;gap:16px}
+ .home-event-content{padding:17px}
+ .participate-section{grid-template-columns:1fr;gap:20px}
+ .participate-intro p:not(.eyebrow){font-size:16px}
+ .participate-links a strong{font-size:24px}
+}
+@media(max-width:340px){.culture-grid{grid-template-columns:1fr}.culture-card{min-height:175px}.atlas-choice strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.culture-card,.home-event-image img{transition:none}}
+
+
+/* Legibility refinements observed in Chromium at desktop and 390px. */
+.react-migrated-page .notebook-cover,
+.react-migrated-page .notebook-cover h2,
+.react-migrated-page .notebook-cover .label,
+.react-migrated-page .notebook-cover .notebook-themes,
+.react-migrated-page .notebook-cover .notebook-count,
+.react-migrated-page .notebook-cover .notebook-count strong,
+.react-migrated-page .notebook-cover .small{color:#fffdf8}
+.react-migrated-page .notebook-cover .notebook-pattern{color:#182d4b}
+.react-migrated-page .participation-print small{color:#f5f7ff}

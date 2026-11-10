@@ -1,0 +1,12 @@
+import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
+import {resolve,dirname} from 'node:path';
+const root=resolve(import.meta.dirname,'../..');
+const css=readFileSync(resolve(root,'design-lab/experience.css'),'utf8');
+const fontFaces=[...css.matchAll(/@font-face\{[^}]+\}/g)].map(m=>m[0]);
+if(fontFaces.length<10)throw new Error('Original v2 font definitions changed unexpectedly');
+const source='https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc/design-lab/';
+const safe=fontFaces.map(face=>face.replace(/url\((["']?)(assets\/[^)'"]+)\1\)/g,(_,quote,file)=>'url("'+source+file+'")'));
+const path=resolve(root,'react-pilot/public/ehime-fonts.css');
+mkdirSync(dirname(path),{recursive:true});
+writeFileSync(path,'/* Auto-derived from v2 CSS. Keep original OFL and font manifest at design-lab/assets/manifest.json. */\n'+safe.join('\n')+'\n');
+console.log('Preserved '+fontFaces.length+' original font-face declarations from the v2 design.');

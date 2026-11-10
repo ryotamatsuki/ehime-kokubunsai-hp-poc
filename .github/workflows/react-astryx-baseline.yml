@@ -1,0 +1,38 @@
+name: Collect v2 browser comparison baseline
+on:
+  push:
+    branches: [feature/react-astryx-pilot]
+    paths: ['.github/workflows/react-astryx-baseline.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy baseline routes and necessary assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import shutil
+          target = Path("snapshot")
+          files = [p for p in Path(".").glob("**/*.html") if not any(x in p.parts for x in (".git","comparison","design-lab","react-pilot",".cache"))]
+          files += [Path("style.css"), Path("script.js")]
+          files += list(Path("design-lab").glob("*.css"))
+          files += list(Path("design-lab").glob("*.js"))
+          files += list(Path("design-lab/assets").rglob("*"))
+          files += [Path("design-lab/components.html")]
+          for p in files:
+            if p.is_file():
+              dest = target/p
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              shutil.copyfile(p,dest)
+          print("Baseline saved:",len(files),"entries")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ehime-v2-baseline-for-browser-review
+          path: snapshot/
+          if-no-files-found: error
+          retention-days: 7

@@ -1,0 +1,32 @@
+{
+  "name": "ehime-kokubunsai-react-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-events.mjs && node scripts/sync-fonts.mjs && node scripts/migrate-pages.mjs",
+    "predev": "npm run sync",
+    "dev": "astro dev",
+    "prebuild": "npm run sync",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "npm run sync && astro check",
+    "test": "npm run sync && node --test tests/*.test.mjs",
+    "qa:build": "node scripts/qa-built.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.4.2",
+    "@astryxdesign/core": "0.7.11",
+    "@astryxdesign/theme-stone": "0.7.11",
+    "@stylexjs/stylex": "^0.19.0",
+    "astro": "^5.15.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.5",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "typescript": "^5.9.3"
+  }
+}

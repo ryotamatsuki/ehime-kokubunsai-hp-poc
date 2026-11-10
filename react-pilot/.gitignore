@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.astro/
+src/data/events.json
+.DS_Store
+
+public/ehime-fonts.css
+
+src/data/culture.json

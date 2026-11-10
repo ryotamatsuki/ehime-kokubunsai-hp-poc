@@ -1,0 +1,103 @@
+name: Publish isolated React Astryx preview
+
+on:
+  push:
+    branches: [feature/react-astryx-pilot]
+    paths:
+      - '.github/workflows/publish-react-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ehime-react-isolated-preview-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Checkout reviewed React source (not production main)
+        uses: actions/checkout@v4
+        with:
+          path: source
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: source/react-pilot
+        run: npm install --no-audit --no-fund
+
+      - name: Verify content, routes and static build
+        working-directory: source/react-pilot
+        run: |
+          npm run test
+          npm run check
+          npm run build
+          npm run qa:build
+
+      - name: Validate expected original GitHub Pages root and preview
+        run: |
+          test -f source/index.html
+          test -f source/.nojekyll
+          test -f source/react-pilot/dist/index.html
+          test -f source/react-pilot/dist/events/index.html
+          test -f source/react-pilot/dist/ehime-fonts.css
+          test -d source/react-pilot/dist/_astro
+          test -f source/react-pilot/dist/culture/notebook/index.html
+
+      - name: Checkout existing public site from main (without replacing it)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: published
+          persist-credentials: true
+
+      - name: Guard original site and copy preview into isolated subdirectory
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f published/index.html
+          test -f published/.nojekyll
+          test -f published/design-lab/compare.html
+          test ! -L published/react-pilot
+          rm -rf -- published/react-pilot
+          mkdir -p published/react-pilot
+          cp -a source/react-pilot/dist/. published/react-pilot/
+          cat > published/react-pilot/PREVIEW_README.txt <<'TXT'
+          Independent personal design PoC: React 19 + Astro + Meta Astryx.
+          Not an official government or festival organizer website.
+          Original v2 remains at the parent directory.
+          This is a preview, not the canonical site.
+          TXT
+          git -C published add -- react-pilot
+          changed="$(git -C published diff --cached --name-only)"
+          test -n "$changed"
+          unexpected="$(printf '%s\n' "$changed" | grep -v '^react-pilot/' || true)"
+          if test -n "$unexpected"; then
+            printf 'REFUSING to touch existing production files:\n%s\n' "$unexpected"
+            exit 1
+          fi
+          git -C published diff --quiet HEAD -- index.html .nojekyll design-lab/compare.html
+          echo 'Only the isolated react-pilot/ subtree is staged.'
+          printf '%s\n' "$changed" | wc -l
+
+      - name: Publish preview without changing root website
+        shell: bash
+        run: |
+          set -euo pipefail
+          git -C published config user.name 'github-actions[bot]'
+          git -C published config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C published commit -m 'Publish additive React Astryx preview under react-pilot only'
+          git -C published push origin HEAD:main
+
+      - name: Upload deployed preview manifest
+        if: success()
+        run: |
+          printf '%s\n' 'Preview path: /ehime-kokubunsai-hp-poc/react-pilot/' 'Original path: /ehime-kokubunsai-hp-poc/' > source/react-pilot/preview-publication.txt
+          cat source/react-pilot/preview-publication.txt

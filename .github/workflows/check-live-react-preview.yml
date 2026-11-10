@@ -1,0 +1,44 @@
+name: Smoke test public React preview URL
+
+on:
+  push:
+    branches: [feature/react-astryx-pilot]
+    paths: ['.github/workflows/check-live-react-preview.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check-public-pages:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check actual published Pages URLs without touching the live site
+        shell: bash
+        run: |
+          set -euo pipefail
+          base='https://ryotamatsuki.github.io/ehime-kokubunsai-hp-poc'
+          tmpdir="$(mktemp -d)"
+          trap 'rm -rf "$tmpdir"' EXIT
+          for path in \
+              'react-pilot/' \
+              'react-pilot/events/' \
+              'react-pilot/events/stage/' \
+              'react-pilot/culture/notebook/' \
+              'react-pilot/about/' \
+              'react-pilot/ehime-fonts.css'; do
+            echo "Verifying $base/$path"
+            curl --fail --show-error --location --retry 3 --retry-delay 2 --max-time 20 \
+              --output "$tmpdir/page" "$base/$path"
+            test -s "$tmpdir/page"
+          done
+          curl --fail --show-error --location --max-time 20 --output "$tmpdir/react.html" "$base/react-pilot/"
+          curl --fail --show-error --location --max-time 20 --output "$tmpdir/v2.html" "$base/"
+          grep -q 'React試験版' "$tmpdir/react.html"
+          grep -q 'data-experience="hiraku"' "$tmpdir/v2.html"
+          if cmp -s "$tmpdir/react.html" "$tmpdir/v2.html"; then
+            echo 'ERROR: preview incorrectly replaced original site'
+            exit 1
+          fi
+          echo 'PASS: published React routes, fonts and original v2 are independently available.'
