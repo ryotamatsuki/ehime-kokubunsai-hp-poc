@@ -1,0 +1,41 @@
+name: Browser comparison React and existing v2
+on:
+  push:
+    branches: [feature/react-astryx-pilot]
+    paths:
+      - 'react-pilot/**'
+      - '.github/workflows/react-astryx-visual.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pilot packages
+        working-directory: react-pilot
+        run: npm install --no-audit --no-fund
+      - name: Install Playwright and Chromium
+        working-directory: react-pilot
+        run: |
+          npm install --no-save playwright@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Build
+        working-directory: react-pilot
+        run: npm run build
+      - name: Compare real browser rendering and interactions
+        working-directory: react-pilot
+        run: node scripts/browser-review.mjs
+      - name: Archive screenshots and report even if a test fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ehime-react-v2-browser-comparison
+          path: react-pilot/browser-review
+          retention-days: 7
+          if-no-files-found: warn
